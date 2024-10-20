@@ -1,0 +1,41 @@
+import matplotlib.pyplot as plt
+from matplotlib.patches import Ellipse, Polygon
+
+# Створюємо нову фігуру
+fig, ax = plt.subplots()
+
+# Білий еліпс (зовнішня частина емблеми)
+ellipse_outer_white = Ellipse((0.5, 0.6), 0.8, 1.2, edgecolor='black', facecolor='white', lw=2)
+ax.add_patch(ellipse_outer_white)
+
+# Чорний еліпс (середня частина емблеми)
+ellipse_middle_black = Ellipse((0.5, 0.6), 0.7, 1.1, edgecolor='black', facecolor='black', lw=2)
+ax.add_patch(ellipse_middle_black)
+
+# Помаранчевий еліпс (внутрішня частина емблеми)
+ellipse_inner_orange = Ellipse((0.5, 0.6), 0.6, 1, edgecolor='black', facecolor='orange', lw=2)
+ax.add_patch(ellipse_inner_orange)
+
+# Внутрішня помаранчева фігура (полум'я)
+flame = Polygon([(0.5, 0.75), (0.55, 0.65), (0.5, 0.55), (0.45, 0.65)], closed=True, facecolor='orange', edgecolor='black', lw=2)
+ax.add_patch(flame)
+
+# Додаємо молотки
+ax.plot([0.4, 0.45], [0.25, 0.35], color='black', lw=3)
+ax.plot([0.45, 0.4], [0.25, 0.35], color='black', lw=3)
+
+# Додаємо текст "ШАХТАР"
+ax.text(0.5, 0.6, 'ШАХТАР', horizontalalignment='center', verticalalignment='center', fontsize=20, color='white', fontweight='bold')
+
+# Додаємо рік "1936"
+ax.text(0.5, 0.4, '1936', horizontalalignment='center', verticalalignment='center', fontsize=12, color='white')
+
+# Налаштування межі осей
+ax.set_xlim(0, 1)
+ax.set_ylim(0, 1)
+
+# Видаляємо осі
+ax.axis('off')
+
+# Показуємо емблему
+plt.show()

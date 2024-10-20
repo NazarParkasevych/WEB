@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Футбольний сайт</title>
+    <script>
+        function showSection(sectionId) {
+            // Сховати всі секції
+            const sections = document.querySelectorAll('.info-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Сховати текст привітання
+            const greetingText = document.getElementById('greeting');
+            greetingText.style.display = 'none';
+
+            // Сховати всі кнопки
+            const buttons = document.querySelectorAll('.info-button');
+            buttons.forEach(button => {
+                button.style.display = 'none';
+            });
+
+            // Показати обрану секцію
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function showClubs() {
+            // Показати кнопку АПЛ
+            const aplButton = document.getElementById('apl-button');
+            aplButton.style.display = 'block';
+
+            // Сховати всі інші кнопки
+            const buttons = document.querySelectorAll('.info-button');
+            buttons.forEach(button => {
+                button.style.display = 'none';
+            });
+
+            // Показати кнопки клубів
+            const aplDropdown = document.getElementById('apl-dropdown');
+            aplDropdown.style.display = 'block'; // Показати список АПЛ
+
+            // Сховати текст привітання
+            const greetingText = document.getElementById('greeting');
+            greetingText.style.display = 'none';
+        }
+
+        function showTeams() {
+            // Сховати кнопку АПЛ
+            const aplButton = document.getElementById('apl-button');
+
+            // Показати кнопки команд
+            const teamButtons = document.querySelectorAll('.team-button');
+            teamButtons.forEach(button => {
+                button.style.display = 'inline-block'; // Показати кнопки команд
+            });
+
+            aplButton.style.display = 'none'; // Сховати кнопку АПЛ
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Футбольний сайт</h1>
+    </header>
+    
+    <main>
+        <h3 id="greeting">Привіт! Про що саме бажаєте дізнатися?</h3>
+        <div class="button-container">
+            <button onclick="showSection('news')" class="info-button">Новини</button>
+            <button onclick="showClubs()" class="info-button">Клуби</button>
+            <button onclick="showSection('transfers')" class="info-button">Трансфери</button>
+        </div>
+        
+        <div class="apl-dropdown" id="apl-dropdown" style="display: none;">
+            <button id="apl-button" class="team-button" style="display: none;" onclick="showTeams()">АПЛ</button>
+            <button onclick="showSection('team-info')" class="team-button" style="display: none;">Футбольна команда "Зірка"</button>
+            <button onclick="showSection('manchester-city')" class="team-button" style="display: none;">Манчестер Сіті</button>
+            <button onclick="showSection('liverpool')" class="team-button" style="display: none;">Ліверпуль</button>
+        </div>
+
+        <div id="news" class="info-section" style="display: none;">
+            <h2>Новини</h2>
+            <p>Сьогодні в АПЛ пройшов захоплюючий матч, у якому перемогла команда "Зірка"!</p>
+        </div>
+
+        <div id="clubs" class="info-section" style="display: none;">
+            <h2>Клуби</h2>
+            <p>У АПЛ є безліч відомих клубів, таких як "Манчестер Сіті" і "Ліверпуль".</p>
+        </div>
+
+        <div id="transfers" class="info-section" style="display: none;">
+            <h2>Трансфери</h2>
+            <p>Цього літа "Зірка" підписала нового гравця, що підсилить команду.</p>
+        </div>
+
+        <div id="team-info" class="info-section" style="display: none;">
+            <h2>Футбольна команда "Зірка"</h2>
+            <h3>Склад команди</h3>
+            <ul>
+                <li>Гравець 1</li>
+                <li>Гравець 2</li>
+                <li>Гравець 3</li>
+            </ul>
+            <h3>Досягнення</h3>
+            <p>Чемпіони міста 2023 року!</p>
+            <h3>Контакти</h3>
+            <p>Email: info@zirka.com</p>
+        </div>
+
+        <div id="manchester-city" class="info-section" style="display: none;">
+            <h2>Манчестер Сіті</h2>
+            <p>Манчестер Сіті - один з найуспішніших клубів АПЛ.</p>
+        </div>
+
+        <div id="liverpool" class="info-section" style="display: none;">
+            <h2>Ліверпуль</h2>
+            <p>Ліверпуль - клуб з багатою історією та відданими фанатами.</p>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
