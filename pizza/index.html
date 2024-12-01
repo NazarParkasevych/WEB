@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favorite Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pizza "Паперонні"</h1>
+        <nav class="flex">
+            <a href="details.html" class="">Деталі</a>
+            <a href="#about">Про піцу</a>
+            <a href="#contact">Контакти</a>
+        </nav>
+    </header>
+
+    <!-- Основний блок з інформацією про піцу -->
+    <div class="main-content" style="display: flex; padding: 20px;">
+        <!-- Ліва частина - зображення піци -->
+        <div class="left-section" style="width: 50%; padding: 10px;">
+            <img src="pizza.jpg" alt="Зображення піци Паперонні" style="width: 100%; border-radius: 10px;">
+        </div>
+
+        <!-- Права частина - опис піци -->
+        <div class="right-section" style="width: 50%; padding: 10px;">
+            <h2>Про піцу Паперонні</h2>
+            <p>Піца Паперонні - це улюблена піца багатьох завдяки своїм насиченим смакам та чудовому поєднанню інгредієнтів.</p>
+            <p>Дізнатися більше про цю піцу можна <a href="https://uk.wikipedia.org/wiki/Пепероні" target="_blank">тут</a>.</p>
+
+            <!-- Список інгредієнтів -->
+            <div class="ingredients">
+                <h3>Інгредієнти:</h3>
+                <ul>
+                    <li>Томатний соус</li>
+                    <li>Моцарела</li>
+                    <li>Пепероні</li>
+                    <li>Орегано</li>
+                </ul>
+            </div>
+
+            <!-- Вибір розміру піци -->
+            <div class="order-section" style="margin-top: 15px;">
+                <h3>Оберіть розмір піци</h3>
+                <label>
+                    <input type="radio" name="size" value="15"> 15 см
+                </label>
+                <label>
+                    <input type="radio" name="size" value="30"> 30 см
+                </label>
+
+                <!-- Кнопка замовлення -->
+                <button type="button">Замовити зараз</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>Авторське право © 2024. Всі права захищені.</p>
+        <p>Знайдіть нас у соціальних мережах:
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>

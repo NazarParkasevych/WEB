@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Футбольний сайт</title>    
+</head>
+<body>
+    <header>
+        <h1>Футбольний сайт</h1>
+    </header>
+    
+    <main>
+        <h3 id="greeting">Привіт! Про що саме бажаєте дізнатися?</h3>
+        <div class="button-container">
+            <button onclick="showSection('news')" class="info-button">Новини</button>
+            <button onclick="showClubs()" class="info-button">Клуби</button>
+            <button onclick="showSection('transfers')" class="info-button">Трансфери</button>
+        </div>
+
+        <!-- Кнопка Англія -->
+        <button id="england-button" class="extra-button" style="display: none;" onclick="showEngland()">Англія</button>
+
+        <!-- Кнопка АПЛ -->
+        <button id="apl-button" class="extra-button" style="display: none;" onclick="showAplTeams()">АПЛ</button>
+        
+        <!-- Кнопка Чемпіоншип -->
+        <button id="championship-button" class="extra-button" style="display: none;" onclick="showChampionshipTeams()">Чемпіоншип</button>
+
+        <!-- Кнопка Перша Ліга -->
+        <button id="oneleague-button" class="extra-button" style="display: none;" onclick="showOneLeagueTeams()">Перша Ліга</button>
+        
+        <!-- Кнопка Друга Ліга -->
+        <button id="twoleague-button" class="extra-button" style="display: none;" onclick="showTwoLeagueTeams()">Друга Ліга</button>
+
+
+         <!-- Кнопки команд "АПЛ" -->
+        <div class="apl-dropdown" id="apl-dropdown" style="display: none;">
+            <div class="team-buttons">
+                <button onclick="showTeamOptions('arsenal')" class="team-button" style="display: none;">Арсенал</button>
+                <button onclick="showTeamOptions('aston villa')" class="team-button" style="display: none;">Астон Вілла</button>
+                <button onclick="showTeamOptions('bournemouth')" class="team-button" style="display: none;">Борнмут</button>
+                <button onclick="showTeamOptions('brentford')" class="team-button" style="display: none;">Брентфорд</button>
+                <button onclick="showTeamOptions('brighton')" class="team-button" style="display: none;">Брайтон</button>
+                <button onclick="showTeamOptions('chelsea')" class="team-button" style="display: none;">Челсі</button>
+                <button onclick="showTeamOptions('crystal palace')" class="team-button" style="display: none;">Кристал Пелес</button>
+                <button onclick="showTeamOptions('everton')" class="team-button" style="display: none;">Евертон</button>
+                <button onclick="showTeamOptions('fulham')" class="team-button" style="display: none;">Фулгем</button>
+                <button onclick="showTeamOptions('ipswich')" class="team-button" style="display: none;">Іпсвіч</button>
+                <button onclick="showTeamOptions('leicester')" class="team-button" style="display: none;">Лестер</button>
+                <button onclick="showTeamOptions('liverpool')" class="team-button" style="display: none;">Ліверпуль</button>
+                <button onclick="showTeamOptions('manchester-city')" class="team-button" style="display: none;">Манчестер Сіті</button>
+                <button onclick="showTeamOptions('manchester-united')" class="team-button" style="display: none;">Манчестер Юнайтед</button>
+                <button onclick="showTeamOptions('newcastle')" class="team-button" style="display: none;">Ньюкасл Юнайтед</button>
+                <button onclick="showTeamOptions('nottingham forest')" class="team-button" style="display: none;">Ноттінгем форест</button>
+                <button onclick="showTeamOptions('sounthampton')" class="team-button" style="display: none;">Саутгемптон</button>
+                <button onclick="showTeamOptions('tottenham')" class="team-button" style="display: none;">Тоттенгем</button>
+                <button onclick="showTeamOptions('west ham')" class="team-button" style="display: none;">Вест Гем</button>
+                <button onclick="showTeamOptions('wolverhampton')" class="team-button" style="display: none;">Вулвергемптон</button>
+            </div>
+        </div>
+
+        <!-- Кнопки команд "Чемпіоншип" -->
+        <div class="championship-dropdown" id="championship-dropdown" style="display: none;">
+            <div class="team-buttons">
+                <button onclick="showTeamOptions('blackburn rovers')" class="team-button" style="display: none;">Блекберн Роверз</button>
+                <button onclick="showTeamOptions('bristol city')" class="team-button" style="display: none;">Бристоль Сіті</button>
+                <button onclick="showTeamOptions('burnley')" class="team-button" style="display: none;">Бернлі</button>
+                <button onclick="showTeamOptions('cardiff')" class="team-button" style="display: none;">Кардіфф</button>
+                <button onclick="showTeamOptions('coventry')" class="team-button" style="display: none;">Ковентрі</button>
+                <button onclick="showTeamOptions('derby county')" class="team-button" style="display: none;">Дербі Каунті</button>
+                <button onclick="showTeamOptions('hull city')" class="team-button" style="display: none;">Халл Сіті</button>
+                <button onclick="showTeamOptions('leeds')" class="team-button" style="display: none;">Лідс</button>
+                <button onclick="showTeamOptions('luton')" class="team-button" style="display: none;">Лутон</button>
+                <button onclick="showTeamOptions('middlesbrough')" class="team-button" style="display: none;">Мідлсбро</button>
+                <button onclick="showTeamOptions('milwall')" class="team-button" style="display: none;">Міллволл</button>
+                <button onclick="showTeamOptions('norwich')" class="team-button" style="display: none;">Норвіч</button>
+                <button onclick="showTeamOptions('oxford united')" class="team-button" style="display: none;">Оксфорд Юнайтед</button>
+                <button onclick="showTeamOptions('plymouth')" class="team-button" style="display: none;">Плімут</button>
+                <button onclick="showTeamOptions('portsmouth')" class="team-button" style="display: none;">Портсмут</button>
+                <button onclick="showTeamOptions('preston')" class="team-button" style="display: none;">Престон</button>
+                <button onclick="showTeamOptions('queens park rangers')" class="team-button" style="display: none;">Квінз Парк Рейнджерс</button>
+                <button onclick="showTeamOptions('sheffield united')" class="team-button" style="display: none;">Шеффілд Юнайтед</button>
+                <button onclick="showTeamOptions('sheffield wednesday')" class="team-button" style="display: none;">Шеффілд Венсдей</button>
+                <button onclick="showTeamOptions('stoke city')" class="team-button" style="display: none;">Сток Сіті</button>
+                <button onclick="showTeamOptions('sunderland')" class="team-button" style="display: none;">Сандерленд</button>
+                <button onclick="showTeamOptions('swansea')" class="team-button" style="display: none;">Свонсі</button>
+                <button onclick="showTeamOptions('watford')" class="team-button" style="display: none;">Вотфорд</button>
+                <button onclick="showTeamOptions('west bromwich')" class="team-button" style="display: none;">Вест Бромвіч</button>
+            </div>
+        </div>
+        
+        <!-- Кнопоки команд "Першої ліги" -->
+        <div class="oneleague-dropdown" id="oneleague-dropdown" style="display: none;">
+            <div class="team-buttons">
+                <button onclick="showTeamOptions('barnsley')" class="team-button" style="display: none;">Барнслі</button>
+                <button onclick="showTeamOptions('birmingham')" class="team-button" style="display: none;">Бірмінгем</button>
+                <button onclick="showTeamOptions('blackpool')" class="team-button" style="display: none;">Блекпул</button>
+                <button onclick="showTeamOptions('bolton')" class="team-button" style="display: none;">Болтон</button>
+                <button onclick="showTeamOptions('bristol rovers')" class="team-button" style="display: none;">Бристоль Роверс</button>
+                <button onclick="showTeamOptions('burton')" class="team-button" style="display: none;">Бертон</button>
+                <button onclick="showTeamOptions('cambridge united')" class="team-button" style="display: none;">Кембридж Юнайтед</button>
+                <button onclick="showTeamOptions('charlton')" class="team-button" style="display: none;">Чарльтон</button>
+                <button onclick="showTeamOptions('crawley')" class="team-button" style="display: none;">Кроулі</button>
+                <button onclick="showTeamOptions('exeter')" class="team-button" style="display: none;">Ексетер</button>
+                <button onclick="showTeamOptions('huddersfield')" class="team-button" style="display: none;">Хаддерсфілд</button>
+                <button onclick="showTeamOptions('leyton orient')" class="team-button" style="display: none;">Лейтон Орієнт</button>
+                <button onclick="showTeamOptions('lincoln')" class="team-button" style="display: none;">Лінкольн</button>
+                <button onclick="showTeamOptions('mansfield')" class="team-button" style="display: none;">Менсфілд</button>
+                <button onclick="showTeamOptions('northampton')" class="team-button" style="display: none;">Нортгемптон</button>
+                <button onclick="showTeamOptions('peterbrough')" class="team-button" style="display: none;">Пітерборо</button>
+                <button onclick="showTeamOptions('reading')" class="team-button" style="display: none;">Редінг</button>
+                <button onclick="showTeamOptions('rotherham')" class="team-button" style="display: none;">Ротергем</button>
+                <button onclick="showTeamOptions('shrewsbury')" class="team-button" style="display: none;">Шрусбері</button>
+                <button onclick="showTeamOptions('stevenage')" class="team-button" style="display: none;">Стівенедж</button>
+                <button onclick="showTeamOptions('stockport county')" class="team-button" style="display: none;">Стокпорт Каунті</button>
+                <button onclick="showTeamOptions('wigan')" class="team-button" style="display: none;">Віган</button>
+                <button onclick="showTeamOptions('wrexham')" class="team-button" style="display: none;">Рексем</button>
+                <button onclick="showTeamOptions('wycombe')" class="team-button" style="display: none;">Віком</button>
+            </div>
+        </div>
+
+        <!-- Кнопки команд "Другої ліги" -->
+        <div class="twoleague-dropdown" id="twoleague-dropdown" style="display: none;">
+            <div class="team-buttons">
+                <button onclick="showTeamOptions('accrington')" class="team-button" style="display: none;">Аккрингтон</button>
+                <button onclick="showTeamOptions('barrow')" class="team-button" style="display: none;">Барроу</button>
+                <button onclick="showTeamOptions('bradford city')" class="team-button" style="display: none;">Бредфорд Сіті</button>
+                <button onclick="showTeamOptions('bromley')" class="team-button" style="display: none;">Бромлі</button>
+                <button onclick="showTeamOptions('carlisle')" class="team-button" style="display: none;">Карлайл</button>
+                <button onclick="showTeamOptions('cheltenham')" class="team-button" style="display: none;">Челтнем</button>
+                <button onclick="showTeamOptions('chesterfield')" class="team-button" style="display: none;">Честерфілд</button>
+                <button onclick="showTeamOptions('colchester')" class="team-button" style="display: none;">Колчестер</button>
+                <button onclick="showTeamOptions('crewe')" class="team-button" style="display: none;">Крю</button>
+                <button onclick="showTeamOptions('doncaster')" class="team-button" style="display: none;">Донкастер</button>
+                <button onclick="showTeamOptions('fleetwood')" class="team-button" style="display: none;">Флітвуд</button>
+                <button onclick="showTeamOptions('gillingham')" class="team-button" style="display: none;">Гіллінгем</button>
+                <button onclick="showTeamOptions('grimsby')" class="team-button" style="display: none;">Грімсбі</button>
+                <button onclick="showTeamOptions('harrogate')" class="team-button" style="display: none;">Харрогейт</button>
+                <button onclick="showTeamOptions('mc dons')" class="team-button" style="display: none;">Мілтон Кінз Донз</button>
+                <button onclick="showTeamOptions('morecambe')" class="team-button" style="display: none;">Моркем</button>
+                <button onclick="showTeamOptions('newport')" class="team-button" style="display: none;">Ньюпорт</button>
+                <button onclick="showTeamOptions('notts-county')" class="team-button" style="display: none;">Ноттс Каунті</button>
+                <button onclick="showTeamOptions('port-vale')" class="team-button" style="display: none;">Порт Вейл</button>
+                <button onclick="showTeamOptions('salford')" class="team-button" style="display: none;">Солфорд</button>
+                <button onclick="showTeamOptions('swindon')" class="team-button" style="display: none;">Свіндон</button>
+                <button onclick="showTeamOptions('tranmere')" class="team-button" style="display: none;">Транмер</button>
+                <button onclick="showTeamOptions('walsall')" class="team-button" style="display: none;">Волсолл</button>
+                <button onclick="showTeamOptions('wimbledon')" class="team-button" style="display: none;">Вімблдон</button>
+            </div>
+        </div>
+
+
+        <!-- Логотипи команд АПЛ -->
+        <img id="arsenal-logo" src="premier league(English)/arsenal.png" alt="Арсенал" style="display: none; width: 100px;">
+        <img id="aston villa-logo" src="premier league(English)/aston villa.png" alt="Астон Вілла" style="display: none; width: 100px;">
+        <img id="bournemouth-logo" src="premier league(English)/bournemouth.png" alt="Борнмут" style="display: none; width: 100px;">
+        <img id="brentford-logo" src="premier league(English)/brentford.png" alt="Брентфорд" style="display: none; width: 100px;">
+        <img id="brighton-logo" src="premier league(English)/brighton.png" alt="Брайтон" style="display: none; width: 100px;">
+        <img id="chelsea-logo" src="premier league(English)/chelsea.png" alt="Челсі" style="display: none; width: 100px;">
+        <img id="crystal palace-logo" src="premier league(English)/crystal palace.png" alt="Кристал Пелес" style="display: none; width: 100px;">
+        <img id="everton-logo" src="premier league(English)/everton.png" alt="Евертон" style="display: none; width: 100px;">
+        <img id="fulham-logo" src="premier league(English)/fulham.png" alt="Фулгем" style="display: none; width: 100px;">
+        <img id="ipswich-logo" src="premier league(English)/ipswich.png" alt="Іпсвіч" style="display: none; width: 100px;">
+        <img id="leicester-logo" src="premier league(English)/leicester.png" alt="Лестер" style="display: none; width: 100px;">
+        <img id="liverpool-logo" src="premier league(English)/liverpool.png" alt="Ліверпуль" style="display: none; width: 100px;">
+        <img id="manchester-city-logo" src="premier league(English)/manchester-city.png" alt="Манчестер Сіті" style="display: none; width: 100px;">
+        <img id="manchester-united-logo" src="premier league(English)/manchester-united.png" alt="Манчестер Юнайтед" style="display: none; width: 100px;">
+        <img id="newcastle-logo" src="premier league(English)/newcastle.png" alt="Ньюкасл Юнайтед" style="display: none; width: 100px;">
+        <img id="nottingham forest-logo" src="premier league(English)/nottingham forest.png" alt="Ноттінгем форест" style="display: none; width: 100px;">
+        <img id="sounthampton-logo" src="premier league(English)/sounthampton.png" alt="Саутгемптон" style="display: none; width: 100px;">
+        <img id="tottenham-logo" src="premier league(English)/tottenham.png" alt="Тоттенгем" style="display: none; width: 100px;">
+        <img id="west ham-logo" src="premier league(English)/west ham.png" alt="Вест Гем" style="display: none; width: 100px;">
+        <img id="wolverhampton-logo" src="premier league(English)/wolverhampton.png" alt="Вулвергемптон" style="display: none; width: 100px;">
+        <!-- логотипи команд Чемпіоншип -->
+        <img id="blackburn rovers-logo" src="Championship(English)/blackburn rovers.png" alt="Блекберн Роверз" style="display: none; width: 100px;">
+        <img id="bristol city-logo" src="Championship(English)/bristol city.png" alt="Бристоль Сіті" style="display: none; width: 100px;">
+        <img id="burnley-logo" src="Championship(English)/burnley.png" alt="Бернлі" style="display: none; width: 100px;">
+        <img id="cardiff-logo" src="Championship(English)/cardiff.png" alt="Кардіфф" style="display: none; width: 100px;">
+        <img id="coventry-logo" src="Championship(English)/coventry.png" alt="Ковентрі" style="display: none; width: 100px;">
+        <img id="derby county-logo" src="Championship(English)/derby county.png" alt="Дербі Каунті" style="display: none; width: 100px;">
+        <img id="hull city-logo" src="Championship(English)/hull city.png" alt="Халл Сіті" style="display: none; width: 100px;">
+        <img id="leeds-logo" src="Championship(English)/leeds.png" alt="Лідс" style="display: none; width: 100px;">
+        <img id="luton-logo" src="Championship(English)/luton.png" alt="Лутон" style="display: none; width: 100px;">
+        <img id="middlesbrough-logo" src="Championship(English)/middlesbrough.png" alt="Мідлсбро" style="display: none; width: 100px;">
+        <img id="milwall-logo" src="Championship(English)/milwall.png" alt="Міллволл" style="display: none; width: 100px;">
+        <img id="norwich-logo" src="Championship(English)/norwich.png" alt="Норвіч" style="display: none; width: 100px;">
+        <img id="oxford united-logo" src="Championship(English)/oxford united.png" alt="Оксфорд Юнайтед" style="display: none; width: 100px;">
+        <img id="plymouth-logo" src="Championship(English)/plymouth.png" alt="Плімут" style="display: none; width: 100px;">
+        <img id="portsmouth-logo" src="Championship(English)/portsmouth.png" alt="Портсмут" style="display: none; width: 100px;">
+        <img id="preston-logo" src="Championship(English)/preston.png" alt="Престон" style="display: none; width: 100px;">
+        <img id="queens park rangers-logo" src="Championship(English)/queens park rangers.png" alt="Квінз Парк Рейнджерс" style="display: none; width: 100px;">
+        <img id="sheffield united-logo" src="Championship(English)/sheffield united.png" alt="Шеффілд Юнайтед" style="display: none; width: 100px;">
+        <img id="sheffield wednesday-logo" src="Championship(English)/sheffield wednesday.png" alt="Шеффілд Венсдей" style="display: none; width: 100px;">
+        <img id="stoke city-logo" src="Championship(English)/stoke city.png" alt="Сток Сіті" style="display: none; width: 100px;">
+        <img id="sunderland-logo" src="Championship(English)/sunderland.png" alt="Сандерлент" style="display: none; width: 100px;">
+        <img id="swansea-logo" src="Championship(English)/swansea.png" alt="Свонсі" style="display: none; width: 100px;">
+        <img id="watford-logo" src="Championship(English)/watford.png" alt="Вотфорд" style="display: none; width: 100px;">
+        <img id="west bromwich-logo" src="Championship(English)/west bromwich.png" alt="Вест Бромвіч" style="display: none; width: 100px;">
+        <!-- логотипи команд Першої Ліги -->
+        <img id="barnsley-logo" src="One league(English)/barnsley.png" alt="Барнслі" style="display: none; width: 100px;">
+        <img id="birmingham-logo" src="One league(English)/birmingham.png" alt="Бірмінгем" style="display: none; width: 100px;">
+        <img id="blackpool-logo" src="One league(English)/blackpool.png" alt="Блекпул" style="display: none; width: 100px;">
+        <img id="bolton-logo" src="One league(English)/bolton.png" alt="Болтон" style="display: none; width: 100px;">
+        <img id="bristol rovers-logo" src="One league(English)/bristol rovers.png" alt="Бристоль Роверс" style="display: none; width: 100px;">
+        <img id="burton-logo" src="One league(English)/burton.png" alt="Бертон" style="display: none; width: 100px;">
+        <img id="cambridge united-logo" src="One league(English)/cambridge united.png" alt="Кембридж Юнайтед" style="display: none; width: 100px;">
+        <img id="charlton-logo" src="One league(English)/charlton.png" alt="Чарльтон" style="display: none; width: 100px;">
+        <img id="crawley-logo" src="One league(English)/crawley.png" alt="Кроулі" style="display: none; width: 100px;">
+        <img id="exeter-logo" src="One league(English)/exeter.png" alt="Ексетер" style="display: none; width: 100px;">
+        <img id="huddersfield-logo" src="One league(English)/huddersfield.png" alt="Хаддерсфілд" style="display: none; width: 100px;">
+        <img id="leyton orient-logo" src="One league(English)/leyton orient.png" alt="Лейтон Орієнт" style="display: none; width: 100px;">
+        <img id="lincoln-logo" src="One league(English)/lincoln.png" alt="Лінкольн" style="display: none; width: 100px;">
+        <img id="mansfield-logo" src="One league(English)/mansfield.png" alt="Менсфілд" style="display: none; width: 100px;">
+        <img id="northampton-logo" src="One league(English)/northampton.png" alt="Нортгемптон" style="display: none; width: 100px;">
+        <img id="peterbrough-logo" src="One league(English)/peterbrough.png" alt="Пітерборо" style="display: none; width: 100px;">
+        <img id="reading-logo" src="One league(English)/reading.png" alt="Редінг" style="display: none; width: 100px;">
+        <img id="rotherham-logo" src="One league(English)/rotherham.png" alt="Ротергем" style="display: none; width: 100px;">
+        <img id="shrewsbury-logo" src="One league(English)/shrewsbury.png" alt="Шрусбері" style="display: none; width: 100px;">
+        <img id="stevenage-logo" src="One league(English)/stevenage.png" alt="Стівенедж" style="display: none; width: 100px;">
+        <img id="stockport county-logo" src="One league(English)/stockport county.png" alt="Стокпорт Каунті" style="display: none; width: 100px;">
+        <img id="wigan-logo" src="One league(English)/wigan.png" alt="Віган" style="display: none; width: 100px;">
+        <img id="wrexham-logo" src="One league(English)/wrexham.png" alt="Рексем" style="display: none; width: 100px;">
+        <img id="wycombe-logo" src="One league(English)/wycombe.png" alt="Віком" style="display: none; width: 100px;">
+        <!-- логотипи команд Другої ліги -->
+        <img id="accrington-logo" src="Two league(English)/accrington.png" alt="Аккрингтон" style="display: none; width: 100px;">
+        <img id="barrow-logo" src="Two league(English)/barrow.png" alt="Барроу" style="display: none; width: 100px;">
+        <img id="bradford city-logo" src="Two league(English)/bradford city.png" alt="Бредфорд" style="display: none; width: 100px;">
+        <img id="bromley-logo" src="Two league(English)/bromley.png" alt="Бромлі" style="display: none; width: 100px;">
+        <img id="carlisle-logo" src="Two league(English)/carlisle.png" alt="Карлайл" style="display: none; width: 100px;">
+        <img id="cheltenham-logo" src="Two league(English)/cheltenham.png" alt="Челтнем" style="display: none; width: 100px;">
+        <img id="chesterfield-logo" src="Two league(English)/chesterfield.png" alt="Честерфілд" style="display: none; width: 100px;">
+        <img id="colchester-logo" src="Two league(English)/colchester.png" alt="Колчестер" style="display: none; width: 100px;">
+        <img id="crewe-logo" src="Two league(English)/crewe.png" alt="Крю" style="display: none; width: 100px;">
+        <img id="doncaster-logo" src="Two league(English)/doncaster.png" alt="Донкастер" style="display: none; width: 100px;">
+        <img id="fleetwood-logo" src="Two league(English)/fleetwood.png" alt="Флітвуд" style="display: none; width: 100px;">
+        <img id="gillingham-logo" src="Two league(English)/gillingham.png" alt="Гіллінгем" style="display: none; width: 100px;">
+        <img id="grimsby-logo" src="Two league(English)/grimsby.png" alt="Грімсбі" style="display: none; width: 100px;">
+        <img id="harrogate-logo" src="Two league(English)/harrogate.png" alt="Харрогейт" style="display: none; width: 100px;">
+        <img id="mc dons-logo" src="Two league(English)/mc dons.png" alt="Мілтон Кінз Донз" style="display: none; width: 100px;">
+        <img id="morecambe-logo" src="Two league(English)/morecambe.png" alt="Моркем" style="display: none; width: 100px;">
+        <img id="newport-logo" src="Two league(English)/newport.png" alt="Ньюпорт" style="display: none; width: 100px;">
+        <img id="notts-county-logo" src="Two league(English)/notts-county.png" alt="Ноттс Коунті" style="display: none; width: 100px;">
+        <img id="port-vale-logo" src="Two league(English)/port-vale.png" alt="Порт Вейл" style="display: none; width: 100px;">
+        <img id="salford-logo" src="Two league(English)/salford.png" alt="Солфорд" style="display: none; width: 100px;">
+        <img id="swindon-logo" src="Two league(English)/swindon.png" alt="Свіндон" style="display: none; width: 100px;">
+        <img id="tranmere-logo" src="Two league(English)/tranmere.png" alt="Транмер" style="display: none; width: 100px;">
+        <img id="walsall-logo" src="Two league(English)/walsall.png" alt="Волсолл" style="display: none; width: 100px;">
+        <img id="wimbledon" src="Two league(English)/wimbledon.png" alt="Вімблдон" style="display: none; width: 100px;">
+
+
+
+        <!-- Додайте текст для відображення -->
+        <div id="team-options-text" style="display: none;">
+            <p>Виберіть, що бажаєте переглянути про команду:</p>
+            <button onclick="showTeamDetails('players')">Гравці</button>
+            <button onclick="showTeamDetails('description')">Опис команди</button>
+            <button onclick="showTeamDetails('trophies')">Трофеї</button>
+        </div>
+
+
+        <!-- Деталі команди -->
+        <div id="players" class="team-detail" style="display: none;"></div>
+        <div id="description" class="team-detail" style="display: none;"></div>
+        <div id="trophies" class="team-detail" style="display: none;"></div>
+    </main>
+</body>
+</html>

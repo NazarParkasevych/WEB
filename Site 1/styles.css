@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Чорний фон */
+    color: white; /* Білий текст */
+}
+
+header {
+    background-color: #007bff;
+    text-align: center;
+    padding: 20px;
+}
+
+.team-logo {
+    width: 100px; /* Задайте ширину логотипу */
+    height: auto; /* Зберігає пропорції логотипу */
+    margin-top: 10px;
+}
+
+.button-container {
+    display: flex; /* Вирівнює кнопки в ряд */
+    justify-content: center; /* Вирівнює кнопки по центру */
+    margin: 20px 0;
+}
+
+.team-button,
+.apl-button,
+.info-button {
+    background-color: transparent; /* Прозорий фон */
+    color: white; /* Білий текст */
+    border: 2px solid white; /* Білий обвод */
+    padding: 10px 20px; /* Внутрішній відступ */
+    font-size: 16px; /* Розмір шрифту */
+    cursor: pointer; /* Курсор у вигляді руки */
+    margin: 0 10px; /* Відстань між кнопками */
+    transition: background-color 0.3s, color 0.3s; /* Плавний перехід */
+}
+
+.team-button:hover,
+.apl-button:hover,
+.info-button:hover {
+    background-color: white; /* Білий фон при наведенні */
+    color: black; /* Чорний текст при наведенні */
+}
+
+.apl-dropdown, .championship-dropdown, .oneleague-dropdown, .twoleague-dropdown {
+    text-align: center; /* Вирівнює вміст по центру */
+    margin: 20px 0; /* Відстань між секціями */
+}
+
+.team-buttons {
+    display: flex; /* Вирівнює кнопки клубів в ряд */
+    justify-content: center; /* Вирівнює кнопки клубів по центру */
+    flex-wrap: wrap; /* Дозволяє кнопкам переноситися на новий ряд, якщо не вистачає місця */
+}
+
+.info-section {
+    padding: 20px;
+}

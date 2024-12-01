@@ -1,0 +1,100 @@
+/* Загальний стиль */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Заголовок */
+header {
+    background-color: #27ae60;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Секція про футбол */
+#about-football {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#about-football p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#football-photo {
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Індивідуальні стилі для зображень */
+#football_photo-1 {
+    border: 5px solid red;
+}
+
+#football_photo-2 {
+    border: 5px solid blue;
+}
+
+#football_photo-3 {
+    border: 5px solid green;
+}
+
+#football_photo-4 {
+    border: 5px solid yellow;
+}
+
+#football_photo-5 {
+    border: 5px solid purple;
+}
+
+/* Списки */
+h2 {
+    color: #2980b9;
+    margin-top: 40px;
+}
+
+ul, ol {
+    margin-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+b {
+    color: #e67e22;
+}
+
+/* Футер */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #34495e;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Посилання */
+a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
