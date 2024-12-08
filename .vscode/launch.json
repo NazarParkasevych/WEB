@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "file:///C:/Users/Nazarii/OneDrive/Pulpit/WEB/Site%201/index.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

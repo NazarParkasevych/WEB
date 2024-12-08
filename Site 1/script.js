@@ -11,6 +11,7 @@ function showSection(sectionId) {
 
 function showClubs() {
     document.getElementById('england-button').style.display = 'block';
+    document.getElementById('belgium-button').style.display = 'block';
     const buttons = document.querySelectorAll('.info-button');
     buttons.forEach(button => button.style.display = 'none');
     document.getElementById('greeting').style.display = 'none';
@@ -22,6 +23,8 @@ function showEngland() {
     document.getElementById('oneleague-button').style.display = 'block';
     document.getElementById('twoleague-button').style.display = 'block';
     document.getElementById('england-button').style.display = 'none';
+    // Приховуємо кнопку "Бельгія
+    document.getElementById('belgium-button').style.display = 'none';    
 }
 
 function showAplTeams() {
@@ -64,10 +67,11 @@ function showTwoLeagueTeams() {
     document.getElementById('twoleague-dropdown').style.display = 'block';
 }
 
+
 // Дані про команди
 const teamData = {
     arsenal: {
-        players: 'Goalkeepers: #13 Martin Lucas Nygaard, #32 Neto, #22 David Raya, #62 Rojas Alexei, #1 Setford Tommy;                                                                       Defenders: #33 Riccardo Calafiori, #6 Gabriel, #4 Kaccuri Maldini, #15 Jakub Kiwior, #5 Monlouis Zane, #3 Josh Nichols, #2 William Salliba, #3 Kieran Tierney, #12 Jurrien Timber, #18 Tokehiro Tomiyasu, #17 Oleksandr Zinchenko; Midfielders: #11 Nathan Butler-Oyedeji, #6 Jimi Gower, #29 Kai Havertz, #76 Ayden Heaven, #20 Jorginho, #49 Myles Lewis-Skelly, #23 Mikel Merino, #53 Ethan Nwaneri, #8 Martin Odegaard, #10 Oulad M`Hand Salah, #5 Thomas Partey, #41 Declan Rice, #2 Josh Robinson, #63 Michal Rociak; Forwards: #9 Gabriel Jesus, #7 Ismael Kabia, #11 Gabriel Martinelli, #7 Bukayo Saka, #30 Raheem Sterling, #19 Leandro Trossard; Coach: Mikel Arteta',
+        players: 'Goalkeepers: #13 Martin Lucas Nygaard, #32 Neto, #22 David Raya, #62 Rojas Alexei, #1 Setford Tommy; Defenders: #33 Riccardo Calafiori, #6 Gabriel, #4 Kaccuri Maldini, #15 Jakub Kiwior, #5 Monlouis Zane, #3 Josh Nichols, #2 William Salliba, #3 Kieran Tierney, #12 Jurrien Timber, #18 Tokehiro Tomiyasu, #17 Oleksandr Zinchenko; Midfielders: #11 Nathan Butler-Oyedeji, #6 Jimi Gower, #29 Kai Havertz, #76 Ayden Heaven, #20 Jorginho, #49 Myles Lewis-Skelly, #23 Mikel Merino, #53 Ethan Nwaneri, #8 Martin Odegaard, #10 Oulad M`Hand Salah, #5 Thomas Partey, #41 Declan Rice, #2 Josh Robinson, #63 Michal Rociak; Forwards: #9 Gabriel Jesus, #7 Ismael Kabia, #11 Gabriel Martinelli, #7 Bukayo Saka, #30 Raheem Sterling, #19 Leandro Trossard; Coach: Mikel Arteta',
         description: 'Чудова команда',
         trophies: 'Кубок Англії'
     },
@@ -120,4 +124,25 @@ function showTeamDetails(detailType) {
         }
         detailElement.style.display = 'block'; // Відобразити потрібну інформацію
     }
+}
+// Бельгія
+function showBelgium() {
+    document.getElementById('jupiler-pro-league-button').style.display = 'block';
+    document.getElementById('challenger-pro-league-button').style.display = 'block';
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+}
+function showJupilerProLeagueTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#jupiler-pro-league-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('jupiler-pro-league-button').style.display = 'none';
+    document.getElementById('challenger-pro-league-button').style.display = 'none';
+    document.getElementById('jupiler-pro-league-dropdown').style.display = 'block';
+}
+function showChallengerProLeagueTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#challenger-pro-league-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('challenger-pro-league-button').style.display = 'none';
+    document.getElementById('jupiler-pro-league-button').style.display = 'none';
+    document.getElementById('challenger-pro-league-dropdown').style.display = 'block';
 }
