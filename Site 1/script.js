@@ -121,27 +121,27 @@ const teamData = {
         trophies:''
     },
     'leicester':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        players:'Goalkeepers:#71 Steve Bausor, #30 Mads Hermansen, #31 Daniel Iversen, #1 Danny Ward; Defenders: #4 Conor Coady, #3 Wout Faes, #50 Harvey Godsmark-Ford, #2 James Justin, #16 Victor Kristiansen, #5 Caleb Okoli, #21 Ricardo Pereira, #33 Luke Thomas, #23 Jannik Vestergaard; Midfielders: #37 Will Alves, #10 Logan Briggs, #40 Facundo Buonanotte, #17 Hamza Choudhury, #14 Bobby De Cordova-Reid, Bilal El Khannouss, #34 Michael Golding, #6 Wilfred Ndidi, #22 Oliver Skipp, #24 Boubakary Soumare, #8 Harry Winks; Forwards: #18 Jordan Ayew, #20 Patson Daka, #29 Odsonne Edouard, #7 Issahaku Fatawu, #10 Stephy Mavididi, #35 Kasey McAteer, #9 Jamie Vardy; Coach: Ruud van Nistelrooy',
         description:'',
         trophies:''
     },
     'liverpool':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        players:'Goalkeepers: #1 Alisson, #95 Harvey Davies, #56 Vitezslav Jaros, #62 Caoimhin Kelleher; Defenders: #66 Trent Alexander-Arnold, #84 Conor Bradley, #2 Joe Gomez, #5 Ibrahima Konate, #78 Jarell Quansah, #26 Andrew Robertson, #21 Konstantinos Tsimikas, #4 Virgil van Dijk; Midfielders: #19 Harvey Elliot, #3 Wataru Endo, #38 Ryan Gravenberch, #17 Curtis Jones, #10 Alexis Mac Allister, #6 James McConnell, #80 Tyler Morton, #5 Amara Nallo, #98 Trey Nyoni, #8 Dominik Szobaszlai; Forwards: #14 Federico Chiesa, #7 Luis Diaz, #20 Diogo Jota, #18 Cody Gakpo, #9 Darwin Nunez, #11 Ranel Young, #11 Mohamed Salah; Coach: Arne Slot',
         description:'',
         trophies:''
     },
     'manchester-city':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach:',
+        players:'Goalkeepers: #33 Scott Carson, #31 Ederson, #18 Stefan Ortega; Defenders: #25 Manuel Akanji, #6 Nathan Ake, #4 kaden Braithwaite, #3 Ruben Dias, #24 Josko Gvardiol, #82 Rico Lewis, #4 Stephen Mfuni, #3 Lakyle Samuel, #66 Jahmai Simpson-Pusey, #5 John Stones, #2 Kyle Walker, #97 Josh Wilson-Esbrand; Midfielders: #52 Oscar Bobb, #17 Kevin De Bruyne, #47 Phil Foden, #10 Jack Grealish, #19 Ilkay Gundogan, #8 Mateo Kovacic, #87 James McAtee, #16 Harrison Miles, #27 Matheus Nunes, #75 Nico O`Reilly, #16 Rodri, #20 Bernardo Silva, #56 Jacob Wright; Forwards: #7 Farid Alfa-Ruprecht, #11 Jeremy Doku, #9 Erling Haaland, #11 Reigan Heskey, #10 Justin Oboavwoduo, #26 Savinho; Coach: Pep Guardiola',
         description:'',
         trophies:''
     },
     'manchester-united':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach:',
+        players:'Goalkeepers: #1 Altay Bayindir, #22 Tom Heaton, #1 Dermot Mee, #24 Ande Onana; Defenders: #41 Harry Amass, #20 Diogo Dalot, #35 Jonny Evans, #5 Louis Jackson, #87 Godwill Kukonki, #2 Victor Lindelof, #5 Harry Maguire, #12 Tyrell Malacia, #6 Lisandro Martinez, #3 Noussair Mazraoui, #3 Sam Murray, #66 Habbeb Ogunneye, #23 Luke Shaw, #15 Leny Yoro, #4 Matthijs de Ligt; Midfielders: #18 Casemiro, #6 Toby Collyer, #14 Christian Eriksen, #8 Bruno Fernandes, #75 Jayce Fitzgerald, #10 Jack Fletcher, #6 Daniel Gore, #37 Kobbie Mainoo, #7 Mason Moount, #25 Manuel Ugarte; Forwards: #21 Antony, #16 Amad Diallo, #11 Ethan Ennis, #17 Alejandro Garnacho, #9 Rasmus Hojlund, #7 Sam Mather, #10 Marcus Rashford, #9 Ethan Wheatley, #73 Ethan Williams, #11 Joshua Zirkzee; Coach: Ruben Amorim',
         description:'',
         trophies:''
     },
     'newcastle':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach:',
+        players:'Goalkeepers: #1 Martin Dubravka, #29 Mark Gillespie, #22 Nick Pope, #26 John Ruddy, #19 Odysseas Vlachodimos; Defenders: #33 Dan Burn, #20 Lewis Hall, #25 Lloyd Kelly, #17 Emil Krafth, #21 Valentino Livramento, #3 Alex Murphy, #5 Fabian Schar, #13 Matt Targett, #2 Kieran Trippier; Midfielders: #39 Bruno Guimaraes, #10 Alfie Harrison, #4 Travis Hernes, #7 Joelintoon, #36 Seean Longstaff, #8 Lewis Miley, #8 Anthony Munda, #23 Jacob Murphy, #8 Sandro Tonali, #10 Jay Turner-Cooke, #28 Joe Willock; Forwards: #24 Miguel Almiron, #11 Harvey Barnes, #11 Jonny Emerson, #10 Anthony Gordon, #14 Alexander Isak, #11 Garang Kuol, #18 William Osula, #9 Ben Parkinson, #7 Trevan Sanusi, #9 Callum Wilson; Coach: Eddie Howe',
         description:'',
         trophies:''
     },
