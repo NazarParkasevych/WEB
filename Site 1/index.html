@@ -19,24 +19,137 @@
             <button onclick="showClubs()" class="info-button">Клуби</button>
             <button onclick="showSection('transfers')" class="info-button">Трансфери</button>
         </div>
+<!-- Albania -->
+        <button id="albania-button" class="extra-button" style="display: none;" onclick="showAlbania()">Албанія</button>
+        <button id="superleague-button" class="extra-button" style="display: none;" onclick="showSuperleagueTeams()">Суперліга</button>
+        <div class="superleague-dropdown" id="superleague-dropdown" style="display: none;">
+            <div class="team-buttons">
+                <button onclick="showTeamOptions('bylis')" class="team-button" style="display: none;">Біліс</button>
+                <button onclick="showTeamOptions('dinamo tirana')" class="team-button" style="display: none;">Динамо Тирана</button>
+                <button onclick="showTeamOptions('egnatia')" class="team-button" style="display: none;">Егнатія</button>
+                <button onclick="showTeamOptions('elbasani')" class="team-button" style="display: none;">Ельбасані</button>
+                <button onclick="showTeamOptions('laci')" class="team-button" style="display: none;">Лачі</button>
+                <button onclick="showTeamOptions('partizani')" class="team-button" style="display: none;">Партизані</button>
+                <button onclick="showTeamOptions('skenderbeu')" class="team-button" style="display: none;">Скендербеу</button>
+                <button onclick="showTeamOptions('teuta')" class="team-button" style="display: none;">Теута</button>
+                <button onclick="showTeamOptions('tirana')" class="team-button" style="display: none;">Тирана</button>
+                <button onclick="showTeamOptions('vllaznia')" class="team-button" style="display: none;">Влазнія</button>
+            </div>
+        </div>
+        <img id="bylis-logo" src="Albania (Superlig)/bylis.png" alt="Біліс" style="display: none; width: 100px;">
+        <img id="dinamo tirana-logo" src="Albania (Superlig)/dinamo tirana.png" alt="Динамо Тирана" style="display: none; width: 100px;">
+        <img id="egnatia-logo" src="Albania (Superlig)/egnatia.png" alt="Егнатія" style="display: none; width: 100px;">
+        <img id="elbasani-logo" src="Albania (Superlig)/elbasani.png" alt="Ельбасані" style="display: none; width: 100px;">
+        <img id="laci-logo" src="Albania (Superlig)/laci.png" alt="Лачі" style="display: none; width: 100px;">
+        <img id="partizani-logo" src="Albania (Superlig)/partizani.png" alt="Партизані" style="display: none; width: 100px;">
+        <img id="skenderbeu-logo" src="Albania (Superlig)/skenderbeu.png" alt="Скендербеу" style="display: none; width: 100px;">
+        <img id="teuta-logo" src="Albania (Superlig)/teuta.png" alt="Теута" style="display: none; width: 100px;">
+        <img id="tirana-logo" src="Albania (Superlig)/tirana.png" alt="Тирана" style="display: none; width: 100px;">
+        <img id="vllaznia-logo" src="Albania (Superlig)/vllaznia.png" alt="Влазнія" style="display: none; width: 100px;">
 
-        <!-- Кнопка Англія -->
+
+<!-- Austria -->
+        <button id="austria-button" class="extra-button" style="display: none;" onclick="showAustria()">Австрія</button>
+        <button id="bundesliga-button" class="extra-button" style="display: none;" onclick="showBundesligaTeams()">Бундесліга</button>
+        <div class="bundesliga-dropdown" id="bundesliga-dropdown" style="display: none;">
+            <div class="team-buttons">
+                <button onclick="showTeamOptions('altach')" class="team-button" style="display: none;">Альтах</button>
+                <button onclick="showTeamOptions('austria klagenfurt')" class="team-button" style="display: none;">Аустрія Клагенфурт</button>
+                <button onclick="showTeamOptions('austria vienna')" class="team-button" style="display: none;">Аустрія Відень</button>
+                <button onclick="showTeamOptions('grazer')" class="team-button" style="display: none;">Грацер</button>
+                <button onclick="showTeamOptions('hartberg')" class="team-button" style="display: none;">Хартберг</button>
+                <button onclick="showTeamOptions('lask')" class="team-button" style="display: none;">Ласк</button>
+                <button onclick="showTeamOptions('linz')" class="team-button" style="display: none;">Лінц</button>
+                <button onclick="showTeamOptions('rapid')" class="team-button" style="display: none;">Рапід</button>
+                <button onclick="showTeamOptions('salzburg')" class="team-button" style="display: none;">Зальцбург</button>
+                <button onclick="showTeamOptions('sturm graz')" class="team-button" style="display: none;">Штурм Грац</button>
+                <button onclick="showTeamOptions('tirol')" class="team-button" style="display: none;">Тіроль</button>
+                <button onclick="showTeamOptions('wolfsberger')" class="team-button" style="display: none;">Вольфсберг</button>
+            </div>
+        </div>
+        <img id="altach-logo" src="Austria (Bundesliga)/altach.png" alt="Альтах" style="display: none; width: 100px;">
+        <img id="austria klagenfurt-logo" src="Austria (Bundesliga)/austria klagenfurt.png" alt="Аустрія Клагенфурт" style="display: none; width: 100px;">
+        <img id="austria vienna-logo" src="Austria (Bundesliga)/austria vienna.png" alt="Аустрія Відень" style="display: none; width: 100px;">
+        <img id="grazer-logo" src="Austria (Bundesliga)/grazer.png" alt="Грацер" style="display: none; width: 100px;">
+        <img id="hartberg-logo" src="Austria (Bundesliga)/hartberg.png" alt="Хартберг" style="display: none; width: 100px;">
+        <img id="lask-logo" src="Austria (Bundesliga)/lask.png" alt="Ласк" style="display: none; width: 100px;">
+        <img id="linz-logo" src="Austria (Bundesliga)/linz.png" alt="Лінц" style="display: none; width: 100px;">
+        <img id="rapid-logo" src="Austria (Bundesliga)/rapid.png" alt="Рапід" style="display: none; width: 100px;">
+        <img id="salzburg-logo" src="Austria (Bundesliga)/salzburg.png" alt="Зальцбург" style="display: none; width: 100px;">
+        <img id="sturm graz-logo" src="Austria (Bundesliga)/sturm graz.png" alt="Штурм Грац" style="display: none; width: 100px;">
+        <img id="tirol-logo" src="Austria (Bundesliga)/tirol.png" alt="Тіроль" style="display: none; width: 100px;">
+        <img id="wolfsberger-logo" src="Austria (Bundesliga)/wolfsberger.png" alt="Вольфсберг" style="display: none; width: 100px;">
+
+<!-- Andorra -->
+<button id="andorra-button" class="extra-button" style="display: none;" onclick="showAndorra()">Андорра</button>
+<button id="firstdivision-button" class="extra-button" style="display: none;" onclick="showFirstDivisionTeams()">Перший дивізіон</button>
+<div class="firstdivision-dropdown" id="firstdivision-dropdown" style="display: none;">
+    <div class="team-buttons">
+        <button onclick="showTeamOptions('atletic escaldes')" class="team-button" style="display: none;">Атлетик Ескальдес</button>
+        <button onclick="showTeamOptions('esperanca')" class="team-button" style="display: none;">Есперанса</button>
+        <button onclick="showTeamOptions('fc santa coloma')" class="team-button" style="display: none;">ФК Санта Колома</button>
+        <button onclick="showTeamOptions('inter escaldes')" class="team-button" style="display: none;">Інтер Ескальдес</button>
+        <button onclick="showTeamOptions('la massana')" class="team-button" style="display: none;">Ла-Массана</button>
+        <button onclick="showTeamOptions('ordino')" class="team-button" style="display: none;">Ордіно</button>
+        <button onclick="showTeamOptions('pas de la casa')" class="team-button" style="display: none;">Пас-де-ла-Каса</button>
+        <button onclick="showTeamOptions('penya')" class="team-button" style="display: none;">Пеня</button>
+        <button onclick="showTeamOptions('rangers')" class="team-button" style="display: none;">ФК Рейнджерс</button>
+        <button onclick="showTeamOptions('ue santa coloma')" class="team-button" style="display: none;">УП Санта Колома</button>
+    </div>
+</div>
+        <img id="atletic escaldes-logo" src="Andorra (first division)/atletic escaldes.png" alt="Атлетик Ескальдес" style="display: none; width: 100px;">
+        <img id="esperanca-logo" src="Andorra (first division)/esperanca.png" alt="Есперанса" style="display: none; width: 100px;">
+        <img id="fc santa coloma-logo" src="Andorra (first division)/fc santa coloma.png" alt="ФК САнта Колома" style="display: none; width: 100px;">
+        <img id="inter escaldes-logo" src="Andorra (first division)/inter escaldes.png" alt="Інтер Ескальдес" style="display: none; width: 100px;">
+        <img id="la massana-logo" src="Andorra (first division)/la massana.png" alt="Ла-Массана" style="display: none; width: 100px;">
+        <img id="ordino-logo" src="Andorra (first division)/ordino.png" alt="Ордіно" style="display: none; width: 100px;">
+        <img id="pas de la casa-logo" src="Andorra (first division)/pas de la casa.png" alt="Пас-де-ла-Каса" style="display: none; width: 100px;">
+        <img id="penya-logo" src="Andorra (first division)/penya.png" alt="Пеня" style="display: none; width: 100px;">
+        <img id="rangers-logo" src="Andorra (first division)/rangers.png" alt="Рейнджерс" style="display: none; width: 100px;">
+        <img id="ue santa coloma-logo" src="Andorra (first division)/ue santa coloma.png" alt="УП Санта Колома" style="display: none; width: 100px;">
+
+<!-- Azerbaijan -->
+<button id="azerbaijan-button" class="extra-button" style="display: none;" onclick="showAzerbaijan()">Азербайджан</button>
+<button id="premierleague-button" class="extra-button" style="display: none;" onclick="showPremierLeagueTeams()">Прем`єр Ліга</button>
+<div class="premierleague-dropdown" id="premierleague-dropdown" style="display: none;">
+    <div class="team-buttons">
+        <button onclick="showTeamOptions('araz')" class="team-button" style="display: none;">Араз</button>
+        <button onclick="showTeamOptions('kapaz')" class="team-button" style="display: none;">Кяпаз</button>
+        <button onclick="showTeamOptions('neftchi baku')" class="team-button" style="display: none;">Нефтчі Баку</button>
+        <button onclick="showTeamOptions('qarabag')" class="team-button" style="display: none;">Карабах</button>
+        <button onclick="showTeamOptions('sabah baku')" class="team-button" style="display: none;">Сабах Баку</button>
+        <button onclick="showTeamOptions('sabail')" class="team-button" style="display: none;">Сабаїл</button>
+        <button onclick="showTeamOptions('shamakhi')" class="team-button" style="display: none;">Шамахи</button>
+        <button onclick="showTeamOptions('sumqayit')" class="team-button" style="display: none;">Сумгаїт</button>
+        <button onclick="showTeamOptions('turan')" class="team-button" style="display: none;">Туран</button>
+        <button onclick="showTeamOptions('zira')" class="team-button" style="display: none;">Зіра</button>
+    </div>
+</div>
+<img id="araz-logo" src="Azerbaijan (premier league)/araz.png" alt="Араз" style="display: none; width: 100px;">
+<img id="kapaz-logo" src="Azerbaijan (premier league)/kapaz.png" alt="Кяпаз" style="display: none; width: 100px;">
+<img id="neftchi baku-logo" src="Azerbaijan (premier league)/neftchi baku.png" alt="Нефтчі Баку" style="display: none; width: 100px;">
+<img id="qarabag-logo" src="Azerbaijan (premier league)/qarabag.png" alt="Карабах" style="display: none; width: 100px;">
+<img id="sabah baku-logo" src="Azerbaijan (premier league)/sabah baku.png" alt="Сабах Баку" style="display: none; width: 100px;">
+<img id="sabail-logo" src="Azerbaijan (premier league)/sabail.png" alt="Сабаїл" style="display: none; width: 100px;">
+<img id="shamakhi-logo" src="Azerbaijan (premier league)/shamakhi.png" alt="Шамахи" style="display: none; width: 100px;">
+<img id="sumqayit-logo" src="Azerbaijan (premier league)/sumqayit.png" alt="Сумгаїт" style="display: none; width: 100px;">
+<img id="turan-logo" src="Azerbaijan (premier league)/turan.png" alt="Туран" style="display: none; width: 100px;">
+<img id="zira-logo" src="Azerbaijan (premier league)/zira.png" alt="Зіра" style="display: none; width: 100px;">
+
+
+
+<!-- England -->
+<!-- Кнопка Англія -->
         <button id="england-button" class="extra-button" style="display: none;" onclick="showEngland()">Англія</button>
-
-        <!-- Кнопка АПЛ -->
+<!-- Кнопка АПЛ -->
         <button id="apl-button" class="extra-button" style="display: none;" onclick="showAplTeams()">АПЛ</button>
-        
-        <!-- Кнопка Чемпіоншип -->
+<!-- Кнопка Чемпіоншип -->
         <button id="championship-button" class="extra-button" style="display: none;" onclick="showChampionshipTeams()">Чемпіоншип</button>
-
-        <!-- Кнопка Перша Ліга -->
-        <button id="oneleague-button" class="extra-button" style="display: none;"         onclick="showOneLeagueTeams()">Перша Ліга</button>
-        
-        <!-- Кнопка Друга Ліга -->
+<!-- Кнопка Перша Ліга -->
+        <button id="oneleague-button" class="extra-button" style="display: none;" onclick="showOneLeagueTeams()">Перша Ліга</button>
+<!-- Кнопка Друга Ліга -->
         <button id="twoleague-button" class="extra-button" style="display: none;" onclick="showTwoLeagueTeams()">Друга Ліга</button>
-
-
-         <!-- Кнопки команд "АПЛ" -->
+<!-- Кнопки команд "АПЛ" -->
         <div class="apl-dropdown" id="apl-dropdown" style="display: none;">
             <div class="team-buttons">
                 <button onclick="showTeamOptions('arsenal')" class="team-button" style="display: none;">Арсенал</button>
@@ -248,15 +361,14 @@
          <img id="walsall-logo" src="Two league(English)/walsall.png" alt="Волсолл" style="display: none; width: 100px;">
          <img id="wimbledon-logo" src="Two league(English)/wimbledon.png" alt="Вімблдон" style="display: none; width: 100px;">
 
-        <!-- Кнопка Бельгія -->
+<!-- Belgium -->
+<!-- Кнопка Бельгія -->
          <button id="belgium-button" class="extra-button" style="display: none;" onclick="showBelgium()">Бельгія</button>
-        <!-- Кнопка Вища Бельгійськa ліги -->
+<!-- Кнопка Вища Бельгійськa ліги -->
         <button id="jupiler-pro-league-button" class="extra-button" style="display: none;" onclick="showJupilerProLeagueTeams()">Вища Бельгійська ліга</button>
-
-        <!-- Кнопка Бельгійська ліга 2 -->
+<!-- Кнопка Бельгійська ліга 2 -->
         <button id="challenger-pro-league-button" class="extra-button" style="display: none;" onclick="showChallengerProLeagueTeams()">Бельгійська ліга 2</button>
-
-         <!-- Кнопки команд "Вища Бельгійська ліга" -->
+<!-- Кнопки команд "Вища Бельгійська ліга" -->
         <div class="jupiler-pro-league-dropdown" id="jupiler-pro-league-dropdown" style="display: none;">
             <div class="team-buttons">
                 <button onclick="showTeamOptions('anderlecht')" class="team-button" style="display: none;">Андерлехт</button>
