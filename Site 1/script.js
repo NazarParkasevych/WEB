@@ -17,10 +17,69 @@ function showClubs() {
     document.getElementById('azerbaijan-button').style.display = 'block';
     document.getElementById('belgium-button').style.display = 'block';
     document.getElementById('bolgaria-button').style.display = 'block';
-
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'block';
     const buttons = document.querySelectorAll('.info-button');
     buttons.forEach(button => button.style.display = 'none');
     document.getElementById('greeting').style.display = 'none';
+}
+
+
+function showTeamOptions(teamId) {
+    // Сховати всі логотипи
+    const logos = document.querySelectorAll('img[id$="-logo"]');
+    logos.forEach(logo => logo.style.display = 'none');
+
+    // Сховати всі деталі
+    document.querySelectorAll('.team-detail').forEach(detail => {
+        detail.style.display = 'none';
+        detail.textContent = ''; // Очищення попередніх даних
+    });
+
+    // Показати текст і кнопки для деталей
+    document.getElementById('team-options-text').style.display = 'block';
+
+    // Відобразити логотип обраної команди
+    const logo = document.getElementById(`${teamId}-logo`);
+    if (logo) {
+        logo.style.display = 'block';
+    }
+
+    // Зберегти поточну команду
+    window.currentTeam = teamId;
+}
+
+function showTeamDetails(detailType) {
+    // Сховати всі деталі
+    document.querySelectorAll('.team-detail').forEach(detail => detail.style.display = 'none');
+
+    // Отримати дані для обраної команди з декількох джерел
+    const team1 = teamData[window.currentTeam] || {};
+    const team2 = teamData_1[window.currentTeam] || {};
+    const team3 = teamData_2[window.currentTeam] || {};
+    const team4 = teamData_3[window.currentTeam] || {};
+    const team5 = teamData_4[window.currentTeam] || {};
+    const team6 = teamData_5[window.currentTeam] || {};
+    const team7 = teamData_6[window.currentTeam] || {};
+    const team8 = teamData_7[window.currentTeam] || {};
+    // Об'єднати дані з обох джерел
+    const combinedTeam = {
+        players: `${team1.players || ''} ${team2.players || ''} ${team3.players || ''} ${team4.players || ''} ${team5.players || ''} ${team6.players || ''} ${team7.players || ''} ${team8.players} `.trim(),
+        description: `${team1.description || ''} ${team2.description || ''} ${team3.description || ''} ${team4.description || ''} ${team5.description || ''} ${team6.description || ''} ${team7.description || ''} ${team8.description}`.trim(),
+        trophies: `${team1.trophies || ''} ${team2.trophies || ''} ${team3.trophies || ''} ${team4.players || ''} ${team5.trophies || ''} ${team6.trophies || ''} ${team7.trophies || ''} ${team8.trophies}`.trim()
+    };
+
+    // Відобразити інформацію залежно від типу деталей
+    const detailElement = document.getElementById(detailType);
+    if (combinedTeam) {
+        if (detailType === 'players') {
+            detailElement.textContent = combinedTeam.players;
+        } else if (detailType === 'description') {
+            detailElement.textContent = combinedTeam.description;
+        } else if (detailType === 'trophies') {
+            detailElement.textContent = combinedTeam.trophies;
+        }
+        detailElement.style.display = 'block'; // Відобразити потрібну інформацію
+    }
 }
 
 function showEngland() {
@@ -34,7 +93,8 @@ function showEngland() {
     document.getElementById('austria-button').style.display = 'none'; 
     document.getElementById('andorra-button').style.display = 'none'; 
     document.getElementById('azerbaijan-button').style.display = 'none'; 
-    document.getElementById('bolgaria-button').style.display = 'none';  
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
 }
 
 function showAplTeams() {
@@ -75,63 +135,6 @@ function showTwoLeagueTeams() {
     document.getElementById('championship-button').style.display = 'none';
     document.getElementById('oneleague-button').style.display = 'none';
     document.getElementById('twoleague-dropdown').style.display = 'block';
-}
-
-function showTeamOptions(teamId) {
-    // Сховати всі логотипи
-    const logos = document.querySelectorAll('img[id$="-logo"]');
-    logos.forEach(logo => logo.style.display = 'none');
-
-    // Сховати всі деталі
-    document.querySelectorAll('.team-detail').forEach(detail => {
-        detail.style.display = 'none';
-        detail.textContent = ''; // Очищення попередніх даних
-    });
-
-    // Показати текст і кнопки для деталей
-    document.getElementById('team-options-text').style.display = 'block';
-
-    // Відобразити логотип обраної команди
-    const logo = document.getElementById(`${teamId}-logo`);
-    if (logo) {
-        logo.style.display = 'block';
-    }
-
-    // Зберегти поточну команду
-    window.currentTeam = teamId;
-}
-
-function showTeamDetails(detailType) {
-    // Сховати всі деталі
-    document.querySelectorAll('.team-detail').forEach(detail => detail.style.display = 'none');
-
-    // Отримати дані для обраної команди з декількох джерел
-    const team1 = teamData[window.currentTeam] || {};
-    const team2 = teamData_1[window.currentTeam] || {};
-    const team3 = teamData_2[window.currentTeam] || {};
-    const team4 = teamData_3[window.currentTeam] || {};
-    const team5 = teamData_4[window.currentTeam] || {};
-    const team6 = teamData_5[window.currentTeam] || {};
-    const team7 = teamData_6[window.currentTeam] || {};
-    // Об'єднати дані з обох джерел
-    const combinedTeam = {
-        players: `${team1.players || ''} ${team2.players || ''} ${team3.players || ''} ${team4.players || ''} ${team5.players || ''} ${team6.players || ''} ${team7.players}`.trim(),
-        description: `${team1.description || ''} ${team2.description || ''} ${team3.description || ''} ${team4.description || ''} ${team5.description || ''} ${team6.description || ''} ${team7.description}`.trim(),
-        trophies: `${team1.trophies || ''} ${team2.trophies || ''} ${team3.trophies || ''} ${team4.players || ''} ${team5.trophies || ''} ${team6.trophies || ''} ${team7.trophies}`.trim()
-    };
-
-    // Відобразити інформацію залежно від типу деталей
-    const detailElement = document.getElementById(detailType);
-    if (combinedTeam) {
-        if (detailType === 'players') {
-            detailElement.textContent = combinedTeam.players;
-        } else if (detailType === 'description') {
-            detailElement.textContent = combinedTeam.description;
-        } else if (detailType === 'trophies') {
-            detailElement.textContent = combinedTeam.trophies;
-        }
-        detailElement.style.display = 'block'; // Відобразити потрібну інформацію
-    }
 }
 
 
@@ -615,6 +618,7 @@ function showAlbania() {
     document.getElementById('azerbaijan-button').style.display = 'none';
     document.getElementById('belgium-button').style.display = 'none';
     document.getElementById('bolgaria-button').style.display = 'none';
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
 }
 function showSuperleagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -685,6 +689,7 @@ function showAustria() {
     document.getElementById('azerbaijan-button').style.display = 'none';
     document.getElementById('belgium-button').style.display = 'none';
     document.getElementById('bolgaria-button').style.display = 'none';
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
 }
 function showBundesligaTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -765,6 +770,7 @@ function showAndorra() {
     document.getElementById('azerbaijan-button').style.display = 'none';
     document.getElementById('belgium-button').style.display = 'none';
     document.getElementById('bolgaria-button').style.display = 'none';
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
 
 }
 function showFirstDivisionTeams() {
@@ -836,6 +842,7 @@ function showAzerbaijan() {
     document.getElementById('andorra-button').style.display = 'none';
     document.getElementById('belgium-button').style.display = 'none';
     document.getElementById('bolgaria-button').style.display = 'none';
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
 }
 function showPremierLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -907,6 +914,7 @@ function showBelgium() {
     document.getElementById('andorra-button').style.display = 'none'; 
     document.getElementById('azerbaijan-button').style.display = 'none';   
     document.getElementById('bolgaria-button').style.display = 'none';
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
 }
 function showJupilerProLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1097,6 +1105,8 @@ function showBolgaria() {
     document.getElementById('andorra-button').style.display = 'none'; 
     document.getElementById('azerbaijan-button').style.display = 'none';   
     document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
+    
 }
 function showFirstLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1188,3 +1198,84 @@ const teamData_6 = {
 
 }
 
+// Боснія і Герцеговина
+function showBosniaandHerzegovina() {
+    document.getElementById('wwinligabih-button').style.display = 'block';
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    
+}
+function showWWINligaBIHTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#wwinligabih-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('wwinligabih-button').style.display = 'none';
+    document.getElementById('wwinligabih-dropdown').style.display = 'block';
+}
+const teamData_7 = {
+    'borac banja luka':{
+        players:'Goalkeepers: #12 Nikola Grujic, #13 Filip Manojlovic, #92 Nikola Milicevic, #1 Damjan Siskovski; Defenders: #24 Jurich Carolina, #6 Niko Datkovic, #16 Sebastian Herrera, #2 Bart Meijers, #4 Nikola Pejovic, #31 Savo Susic, #93 Marko Vukcevic; Midfielders: #22 David Cavic, #15 Srdjan Grahovac, #11 Damir Hrelja, #45 Petar Karaklajic, #5 Boban Nikolov, #98 Sandi Ogrinec, #8 Aleks Pihler, #77 Stefan Savic, #88 Dino Skorup, #18 Aleksandar Subic, #23 Stojan Vranjes; Forwards: #30 Gregor Dajde, #99 Djordje Despotovic, #14 Pavle Djajic, #9 Esmir Hasukic, #50 Nedim Keranovic, #27 Enver Kulasin, #20 Zoran Kvrzic, #49 Stefan Marcetic, #51 Luka Misimovic, #7 Nikola Sreckovic, #10 David Vukovic; Coach: Mladen Zizovic',
+        description:'Боснійський футбольний клуб із Баня-Луки, заснований 1926 року. Сербською «борац» означає «боєць».',
+        trophies:'Кубок Югославії: 87/88; Мітропакух: 1992 рік; Друга Ліга Боснії та Герцеговини ФБІГ: 18/19, 16/17, 07/08, 05/06, 00/01; Кубок Боснії та Герцеговини: 09/10; Чемпіон Боснії та Герцеговини: 23/24, 20/21, 10/11;'
+    },
+    'fk sarajevo':{
+        players:'Goalkeepers: #13 Sanin Musija, #42 Emil Rockov, #39 Lovre Rogic; Defenders: #3 Elnes Alajmovic, #22 Amar Beganovic, #33 Nidal Celik, #3 Elvir Durakovic, #16 Filip Jovic, #77 Mihael Kupresak, #4 Nermin Mujkic, #6 Vinko Soldo, #28 Bruno Unusic; Midfielders: #32 Nemanja Andjusic, #29 Vladan Bubanja, #14 Aleksandar Djordjevic, #44 Miomir Djurickovic, #8 Muamer Hamzic, #21 Momodou Jatta, #8 Eldar Mehmedovic, #10 Mirza Mustafic, #18 Domagoj Pavicic; Forwards: #7 Giorgi Guliashvili, #11 Francis Kyeremehh, #5 Karlo Lulic, #9 Oliveira Renan, #19 Andreja Ristic, #20 Ahmed Tiro, #99 Aldin Turkes; Coach: Zoran Zekic',
+        description:'Професійний футбольний клуб з однойменного міста, столиці Боснії і Герцеговини. Заснований 24 жовтня 1946 року, клуб був найуспішнішою командою з Боснії, на території колишньої Югославії, вигравши два чемпіонати країни. Сьогодні це один з найвидатніших клубів у національній прем`єр лізі, де команда двічі вигравала чемпіонат і 4 рази кубок країни.',
+        trophies:'Суперкубок Боснії та Герцеговини: 1997 рік; Чемпіон Югославії: 84/85, 66/67; Кубок Боснії та Герцеговини: 20/21, 18/19, 13/14, 04/05, 01/02, 97/98, 96/97; Чемпіон Боснії та Герцеговини: 19/20, 18/19, 14/15, 06/07, 98/99;'
+    },
+    'gosk gabela':{
+        players:'Goalkeepers: #12 Ivan Jelinic, #22 Tarik Karic, #32 Vasillije Kolak, #1 Aleksa Milojevic, #15 Nikola Peric; Defenders: #34 Josip Katavic, #2 Marko Mandic, #16 Josip Milicevic, #9 Dino Mizic, #15 Nikola Peric, #6 Riad Suta; Midfielders: #21 Haris Balavac, #88 Faruk Gogic, #10 Antonio Kacunko, #5 Dan Lagumdzija, #30 Hamza Ljukovac, #8 Viktor Lukic, #77 Ivan Maric, #44 Davide Martic, #25 Martin Sroler; Forwards: #3 Gabrijel Coko, #11 Ivan Novakovic, #70 Karlo Peric; Coach: Admir Adzem',
+        description:'Професійний футбольний клуб із міста Габела , Боснія та Герцеговина . Хорватською мовою GOŠK є абревіатурою від «Gabeoski Omladinski Športski Klub» ( букв. « Молодіжний спортивний клуб Габела » ). Зараз клуб виступає в Прем`єр-лізі Боснії і Герцеговини. Їхнім домашнім майданчиком є ​​стадіон Періца-Перо Павловіч (раніше називався «Подавала» та Ерар ) у Габелі, який може вмістити близько 3000 людей. GNK Dinamo Zagreb подарував клубу 5000 стільців. Їхні прихильники відомі як Сині леви (Plavi lavovi). Вони були засновані в 2001 році. Перший м`яч у Габелу привезли Андрія Корда та Відан Крвавац у 1919 році з Мостара. 1941–45 клуб було розпущено через Другу світову війну . У 1948 році клуб було створено знову. Клуб був названий GOŠK за рекомендаціями Мілорада Мандрапи в 1958 році. Під назвою GOŠK клуб досяг поступового покращення конкурентних результатів. Габела входить до числа найпопулярніших спортивних міст колишньої Югославії . У Соціалістичній Федеративній Республіці Югославія GOŠK переважно грав у Четвертій нефедеральній лізі (зона Мостара) у сезонах (1948–60, 1962–63, 1964–66, 1968–92) і тричі в третій лізі (1961–1961). 62, 1963–64, 1966–67). У 1990-х роках GOŠK грав у Першій лізі Герцег-Боснії , між 2001 та 2003 роками у Другій лізі ФБіХ , а між 2003 та 2011 роками у Першій лізі ФБіГ . У сезоні 2010–2011 ГОШК посів 1-ше місце в Першій лізі ФБіГ і піднявся до Прем`єр-ліги Боснії та Герцеговини , елітної футбольної ліги країни. Їм вдалося повторити це досягнення в сезоні 2016–17 і грати в боснійській Прем’єр-лізі до сезону 2018–19 , коли клуб зайняв останнє 12-е місце та повернувся до Першої ліги ФБІГ. GOŠK повернувся до Прем`єр-ліги в сезоні 2022–2023 Першої ліги ФБіГ.',
+        trophies:'Друга ліга Боснії та Герцеговини ФБІГ: 22/23, 16/17, 10/11;'
+    },
+    'igman k':{
+        players:'Goalkeepers: #12 Aldin Ceman, #13 Alvin Cosic, #30 Igor Roncevic; Defenders: #55 Adin Bajric, #17 Kenan Hebibovic, #98 Harun Kozic, #22 Luka Posinkovic, #29 Edin Sehic, #5 Amir Velic; Midfielders: #15 Almir Bekic, #4 Armin Besagic, #44 Edis Buturovic, #24 Ivan Djoric, #6 Amer Arljevic, #8 Elvedin Heric, #23 Anes Hrustanovic, #3 Jovan Nikolic, #20 Bakir Nurkovic; Forwards: #11 Milos Acimovic, #19 Stefan Bozic, #10 Stefan Denkovic, #18 Said Duranovic, #7 Anel Hebibovic, #28 Aldin Mesic, #9 Belmin Mesinovic, #99 Mirsad Ramic, #88 Tallo; Coach: Husref Musemic',
+        description:'Професійний боснійський футбольний клуб із міста Коніц (Герцеговинсько-Неретванський кантон). Клуб заснований у 1920 році під назвою ФК «Прені». За часів Королівства Югославії клуб виступав на регіональному рівні та не претендував на підвищення в класі. Після завершення Другої світової війни в новій вже соціалістичній Югославії ФК «Прені» виступав у міських або обласних лігах. У 1947 році змінює назву на «Ноно Белша/Прені», правда у 1952 році повертають стару назву. У 1958 році команда знову змінює ім`я цього разу на «Ігман», включно до сезону 1965/66 коли два роки клуб називався «Желєзнічар». У 1967 році команда повертає стару та сучасну назву — «Іґман». До початку 1990-х клуб виступав здебільшого на республіканському рівні. Через війну в Боснії клуб припинив свої виступи на цей період. З 1995 до початку 2000-х років «Ігман» виступав на нижчих рівнях. З середини нульових років команда є постійним учасником другої Боснійської ліги, де за всю історію виборила п`ять титулів, що є рекордом. З сезону 2017–18 команда з Коніца виступає в першій лізі. У сезоні 2021–22 «Іґман» здобув перемогу в лізі та підвищився до Прем`єр-ліги. Домашнім стадіоном клубу є Міський, яка вміщує 5 000 глядачів.',
+        trophies:'Друга ліга Боснії та Герцеговини ФБІГ: 21/22;'
+    },
+    'posusje':{
+        players:'Goalkeepers: #77 Boris Bacak, #12 Marko Galic, #1 Antonio Soldo; Defenders: #4 Alexis Abrego Franco, #3 Ante Bekavac, #20 Josip Beslic, #19 Ivan Maric, #88 Dominik Mihaljevic, #15 Karlo Stapic, #5 Branko Vrgoc; Midfielders: #22 Zvonimir Begic, #27 Marko Hanuljak, #10 Karlo Kamenar, #96 Rijad Kobiljar, #21 Bautista Lelli Genaro, #17 Marko Martinovic, #97 Niko Miocic; Forwards: #99 Gabrijel Boban, #47 Fran Culjak, #16 Branko Curdo, #8 Bruno Jenjic, #11 Nikola Mandic, #33 Dario Pavkovic, #7 Leonardo Petrovic; Coach: Borislav Grbavac',
+        description:'Професійний боснійський футбольний клуб із міста Посуш`є (Західногерцеговинський кантон). Клуб засновано 1950 році під назвою «Зідар». З 1963 року клуб називався «Боксит», сучасна назва з 1990-х років. Домашня арена клубу «Мокрі Долац» (в перекладжі означає Мокра Долина) вміщує 8,000 глядачів. У 1999 та 2000 роках хорватська етнічна команда двічі здобувала перемогу в етнічній хорватській лізі Боснії того часу. У сезоні 2017–18 «Посуш`є» став переможцем південної групи Другої ліги Боснії і Герцеговини та поступився у плей-оф підвищення. За підсумками сезону 2020–21 клуб перейшов до Прем`єр-ліги..',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'radnik bijeljina':{
+        players:'Goalkeepers:#27 Nikola Lakic, #30 Dalibor Mitrovic, #1 Filip Samurovic ; Defenders: #3 Filip Antonijevic, #5 Andrija Janjic, #4 Stefan Josipovic, #6 Vladimir Pavlovic Jovan, #16 Eldar Sivac, #9 Aleksandar Vasic, #14 Savo Veljkic; Midfielders: #17 Nebojsa Gavric, #12 Ognjen Klenpic, #8 Damjan Krajisnik, #88 Miroslav Maricic, #26 Mirzad Mehanovic, #20 Amar Pekaric, #21 Marko Perisic, #25 Ognjen Ristanovic, #24 Stefan Santrac, #18 Sedad Subasic; Forwards: #19 Milorad Albijanic, #92 Joel Da Silva, #7 Dragan Doslo, #90 Strahinja Jovanovic, #23 Andrija Losic, #10 Nathan, #11 Djordje Pantelic, #29 Danilo Teodorovic; Coach: Velibor Djuric',
+        description:'Професіональний футбольний клуб з міста Бієліна , розташованого на північному сході Боснії та Герцеговини . Домашні матчі клуб проводить на міському стадіоні Бієліна , який вміщує 6000 місць. Вони виступають у Прем`єр-лізі Боснії та Герцеговини . Ім`я Радник означає робітник. Перший футбольний клуб був привезений до Бієліни в 1916 році. Першим футбольним клубом був FK Podrinje , заснований у 1919 році. Пізніше були створені інші клуби, такі як FK Zora в 1920 році, FK Građanski в 1923 році та FK Semberija в 1935 році. весь регіон Посавлє та Подріньє виступав у провінційних лігах Белградської футбольної підасоціації. Після закінчення Другої світової війни було створено ФК «Радник».',
+        trophies:'Кубок Боснії та Герцеговини: 15/16; Друга ліга Боснії та Герцеговини RS: 23/24, 11/12, 04/05, 98/99'
+    },
+    'siroki brijeg':{
+        players:'Goalkeepers: #51 Ivan Puljic, #12 Tomislav Tomic; Defenders: #7 Dino Coric, #13 Josip Jelic, #20 Matija Kolaric, #30 Ivan Kraljevic, #26 Bozo Musa, #2 Ivan Pranjic, #5 Matej Senic, #95 Patrick Stanic, #24 Filip Taraba, #6 Stipe Vucur; Midfielders: #77 Ivan Jukic, #10 Zvonimir Kozulj, #17 Franjo Posavac, #4 Bozo Prusina, #16 Mato Stanic, #90 Tomislav Tomic, #8 Damir Zlomislic; Forwards: #11 Ilija Bagaric, #9 Stephen Chinedu, #37 Matej Gaspar, #23 Miroslav Ilicic, #27 Domagoj Jelavic, #14 Gojko Jelic, #15 Cyrille Kpan, #21 Daniel Lukic, #19 Filip Matic; Coach: Toni Karacic',
+        description:'Футбольний клуб з Боснії і Герцеговини, базується у місті Широкі Брієг, розташованому в західній частині країни на берегах річки Лиштиця 20 кілометрів на захід від Мостара.',
+        trophies:'Кубок Боснії та Герцеговини: 16/17, 12/13, 06/07; Чемпіон Боснії та Герцеговини: 05/06, 03/04'
+    },
+    'sloboda':{
+        players:'Goalkeepers: #12 Eldin Lolic, #13 Azir Muminovic, #1 Elvir Trako; Defenders: #19 Harun Beganovic, #3 Danis Bratovcic, #44 Drazen Dubackic, #19 Harun Hadzibeganovic, #4 Eldin Hasanbegovic, #5 Aleksandar Ignjatovic, #3 Tarik Isic, #19 Faris Jasarevic, #46 Mihajlo Jovasevic, #10 Enedin Mutalic, #77 Marat Zlibanovic; Midfielders: #21 Ajdin Beganovic, #10 Petar Bojo, #20 Aldin Cajic, #55 Mirza Delimedjac, #21 Adnan Dzafic, #6 Haris Hasanovic, #22 Aldin Hrvanovic, #14 Alen Kurtalic; Forwards: #9 Obren Cvijanovic, #11 Kenan Dervisagic, #18 Takeru Komiya, #27 Ali Mahmud, #7 Nihad Sero, #10 Tallison; Coach: Darko Mitrovic',
+        description:'Професіональний боснійський футбольний клуб із міста Тузла.',
+        trophies:'Кубок Інтертото: 82/83; Друга ліга Боснії та Герцеговини ФБІГ: 23/24, 13/14'
+    },
+    'sloga doboj':{
+        players:'Goalkeepers: #1 Filip Eric, #25 Bojan Pavlovic, #30 Ajdin Zilic; Defenders: #24 Bojan Batar, #13 Slobodan Djekic, #35 Srdjan Grabez, #33 Josip Kvesic, #28 Milan Milanovic, #5 Albin Omic, #17 Haris Ovcina, #15 Dusan Ristic, #23 Minja Tatic, #93 Boris Varga; Midfielders: #3 Franko Dadic, #7 Dejan Delic, #70 Nemanja Dokic, #8 Stefan Lazarevic, #44 Dejan Milicevic, #77 Stefan Milosavljevic, #22 Dejan Popara, #4 Damir Sadikovic, #6 Ognjen Seslak, #20 Mladen Veselinovic; Forwards: #9 Lazar Ackar, #9 Jakov Barbaric, #92 Toni Jovic, #14 Zoran Karac, #11 Momcilo Mrkaic, #21 Vasilije Perkovic, #99 Dejan Vidic; Coach: Vlado Jagodic',
+        description:'Професійний боснійський футбольний клуб із міста Добой (Республіка Сербська). Клуб засновано 19 липня 1945 року. У сезоні 1947–48 здобув право на кваліфікаційні матчі за право виступати на республіканському рівні. В 1950 році «Слога» провела у регіональній лізі Тузли. Наступні сезони команда провела в регіональних лігах та третьому дивізіоні. У сезонах 1955–1958, 1983–84 та 1986–87 років команда з Добою провела у другому дивізіоні чемпіонату Югославії. Через війну в Боснії клуб припинив свої виступи на цей період. З 1995 по 2002 роки «Слога» виступала в Першому дивізіоні Республіки Сербської. З 1998 року понижений до другого рівня на один сезон, а згодом опустився і до третьої ліги. З середини 2010-х років клуб поступово здобував підвищення у класі. З сезону 2020–21 виступав в Першій лізі. За підсумками сезону 2021–22 «Слога» посіла друге місце в лізі та здобула право дебютувати на найвищому рівні.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'velez mostar':{
+        players:'Goalkeepers: #25 Tomislav Duka, #31 Osman Hadzikic, #12 Faris Ribic; Defenders: #22 Karlo Isasegi, #33 Haris Jogunovic, #44 Adi Mehremic, #2 Ante Orec, #18 Nikola Savic, #23 Klemen Sturm; Midfielders: #13 Lohan Alves Lucio Elzio, #6 Dino Halilovic, #8 Ante Hrkac, #80 Blaz Laus Tino, #11 Mihael Mlinaric, #7 Omar Prses, #38 Dzenan Puce, #55 Arman Rebac, #16 Tarik Sikalo, #28 Edo Vehabovic; Forwards: #19 Armando Bobaj, #45 Kenan Djuliman, #17 Nermin Haskic, #26 Milan Jevtovic, #47 Amar Milak, #9 Tonci Mujan, #77 Zurab Museliani, #20 Ivan Saric; Coach: Irfan Buz',
+        description:'Боснійський футбольний клуб із Мостара, заснований 1922 року. Грає у Прем`єр-лізі Боснії і Герцеговини. Володар Кубку Боснії і Герцеговини з футболу 2022 року. Бронзовий призер чемпіонату Боснії і Герцеговини 2021 року. Клуб названий на честь розташованої поруч гори Вележ, яка названа на честь одного зі старовинних слов`янських богів — Велеса. «Вележ» — один з найуспішніших клубів у Боснії та Герцеговині. В часи колишньої Югославії «Вележ» майже завжди був у югославській Першій лізі. В Першу лігу Югославії клуб вперше потрапив в сезоні 1952/1953 років, в тому ж сезоні одразу й вибув. Повернувся до Вищої ліги Югославії клуб в сезоні 1955/1956 років, і з того часу жодного разу не вилітав. Клуб зараз грає на стадіоні «Врапчичи» (Vrapčići Stadium), хоча історичним є стадіон Бієлі-Брієґ (Bijeli Brijeg Stadium). Але у зв`язку з тим, що територія Мостару була поділена на хорватську та боснійську території, стадіон «Бієлі-Брієґ» відійшов іншому клубу з Мостара — «Зрінські». Саме на стадіоні «Бієлі-Брієґ» футбольний клуб «Вележ» двічі вигравав Кубок Югославії — у 1981 та 1986 роках, а також доходив до 1/4 Фіналу Кубка УЄФА в сезоні 1974/75 років.',
+        trophies:'Кубок Югославії: 85/86, 80/81; Друга ліга Боснії та Герцеговини ФБІГ: 18/19, 05/06; Кубок Боснії та Герцеговини: 21/22'
+    },
+    'zeljeznicar':{
+        players:'Goalkeepers: #1 Tarik Abdulahovic, #12 Adel Duskaj, #13 Vedad Muftic; Defenders: #4 Nemanja Cavnic, #24 Marin Galic, #6 Marin Karamarko, #26 Malik Kolic, #44 Azur Mahmic, #33 Stipo Markovic, #2 Edwin Odinaka, #3 Stefan Radinovic, #25 Aiman Semdin, #19 Mustafa Sukilovic; Midfielders: #22 Abdulmalik Al Jaber, #17 Huso Karjasevic, #70 Martin Mircevski, #88 Samir Radovac, #16 Dzenan Sabic; Forwards: #23 Aleksandar Boljevic, #14 Matej Cvetanoski, #9 Filip Dangubic, #5 Afan Foco, #10 Amer Hiros, #7 Sulejman Krpic, #18 Ognjen Lausevic; Coach: Denis Coric',
+        description:'Професіональний боснійський футбольний клуб, який базується в Сараєво, заснований 6 серпня 1921 року. Є одним з найуспішніших у країні. Назву «Желєзнічар» можна перекласти як «Залізничники», оскільки клуб було засновано групою робітників залізничної дороги. У Боснії команда відома перш за все тим, що вміє виховувати молодих талановитих гравців, а не займається їх купівлею. Дуже часто по завершенні сезону «Желєзнічар» розпродує своїх футболістів, щоб стабілізувати та покращити фінансове становище клубу.',
+        trophies:'Суперкубок Боснії та Герцеговини: 01/01, 2000, 1998; Чемпіон Югославії: 71/72; Кубок Боснії та Герцеговини: 17/18, 11/12, 10/11, 02/03, 00/01, 99/00; Чемпіон Боснії та Герцеговини: 13/12, 12/11, 10/09, 02/01, 01/00, 97/98;'
+    },
+    'zrinjski':{
+        players:'Goalkeepers: #18 Goran Karacic, #35 Marko Maric, #1 Anis Sefo; Defenders: #4 Hrvoje Barisic, #27 Slobodan Jakovljevic, #70 Marin Magdic, #12 Petar Mamic, #5 Ilija Masic, #50 Kerim Memija, #44 Toni Sunjic; Midfielders: #42 Marijan Cavar, #6 Josip Corluka, #20 Antonio Ivancic, #7 Alen Jurilj, #81 Marko Kozina, #8 Frano Mlinar, #14 Ivan Posavec, #29 Antonio Prskalo, #19 Tarik Ramic, #21 Igor Savic, #23 Stefano Surdanovic, #91 Mario Ticinovic; Forwards: #77 Besart Abdurahimi, #2 Antonio Arapovic, #99 Nemanja Bilbija, #97 David Camber, #25 Mario Cuze, #10 Tomislav Kis, #17 Matija Malekinusic, #11 Nardin Mulahusejnovic, #96 Anes Rusevic, #30 Fran Topic; Coach: ',
+        description:'Боснійський футбольний клуб із Мостара, заснований 1905 року. Виступає у Прем`єр-лізі Боснії та Герцеговини.',
+        trophies:'Кубок Боснії та Герцеговини: 23/24, 22/23, 07/08; Чемпіон Боснії та Герцеговини: 22/23, 21/22, 17/18, 16/17, 15/16, 13/14, 08/09, 04/05;'
+    }
+}
