@@ -18,6 +18,12 @@ function showClubs() {
     document.getElementById('belgium-button').style.display = 'block';
     document.getElementById('bolgaria-button').style.display = 'block';
     document.getElementById('bosnia and Herzegovina-button').style.display = 'block';
+    document.getElementById('armenia-button').style.display = 'block';
+    document.getElementById('gibraltar-button').style.display = 'block';
+    document.getElementById('greece-button').style.display = 'block';
+    document.getElementById('georgia-button').style.display = 'block';
+    document.getElementById('denmark-button').style.display = 'block';
+
     const buttons = document.querySelectorAll('.info-button');
     buttons.forEach(button => button.style.display = 'none');
     document.getElementById('greeting').style.display = 'none';
@@ -61,11 +67,16 @@ function showTeamDetails(detailType) {
     const team6 = teamData_5[window.currentTeam] || {};
     const team7 = teamData_6[window.currentTeam] || {};
     const team8 = teamData_7[window.currentTeam] || {};
+    const team9 = teamdata_8[window.currentTeam] || {};
+    const team10 = teamdata_9[window.currentTeam] || {};
+    const team11 = teamdata_10[window.currentTeam] || {};
+    const team12 = teamData_11[window.currentTeam] || {};
+    const team13 = teamData_12[window.currentTeam] || {};
     // Об'єднати дані з обох джерел
     const combinedTeam = {
-        players: `${team1.players || ''} ${team2.players || ''} ${team3.players || ''} ${team4.players || ''} ${team5.players || ''} ${team6.players || ''} ${team7.players || ''} ${team8.players} `.trim(),
-        description: `${team1.description || ''} ${team2.description || ''} ${team3.description || ''} ${team4.description || ''} ${team5.description || ''} ${team6.description || ''} ${team7.description || ''} ${team8.description}`.trim(),
-        trophies: `${team1.trophies || ''} ${team2.trophies || ''} ${team3.trophies || ''} ${team4.players || ''} ${team5.trophies || ''} ${team6.trophies || ''} ${team7.trophies || ''} ${team8.trophies}`.trim()
+        players: `${team1.players || ''} ${team2.players || ''} ${team3.players || ''} ${team4.players || ''} ${team5.players || ''} ${team6.players || ''} ${team7.players || ''} ${team8.players || ''} ${team9.players || ''} ${team10.players || ''} ${team11.players || ''} ${team12.players || ''} ${team13.players}`.trim(),
+        description: `${team1.description || ''} ${team2.description || ''} ${team3.description || ''} ${team4.description || ''} ${team5.description || ''} ${team6.description || ''} ${team7.description || ''} ${team8.description || ''} ${team9.description|| ''} ${team10.description || ''} ${team11.description || ''} ${team12.description || ''} ${team13.description}`.trim(),
+        trophies: `${team1.trophies || ''} ${team2.trophies || ''} ${team3.trophies || ''} ${team4.players || ''} ${team5.trophies || ''} ${team6.trophies || ''} ${team7.trophies || ''} ${team8.trophies || ''} ${team9.trophies || ''} ${team10.trophies || ''} ${team11.trophies || ''} ${team12.trophies || ''} ${team13.trophies}`.trim()
     };
 
     // Відобразити інформацію залежно від типу деталей
@@ -92,9 +103,15 @@ function showEngland() {
     document.getElementById('albania-button').style.display = 'none';    
     document.getElementById('austria-button').style.display = 'none'; 
     document.getElementById('andorra-button').style.display = 'none'; 
-    document.getElementById('azerbaijan-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';
+    document.getElementById('belgium-button').style.display = 'none';  
     document.getElementById('bolgaria-button').style.display = 'none'; 
     document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
+    document.getElementById('armenia-button').style.display = 'none'; 
+    document.getElementById('gibraltar-button').style.display = 'none'; 
+    document.getElementById('greece-button').style.display = 'none'; 
+    document.getElementById('georgia-button').style.display = 'none'; 
+    document.getElementById('denmark-button').style.display = 'none';
 }
 
 function showAplTeams() {
@@ -610,7 +627,7 @@ const teamData = {
 
 // Albania
 function showAlbania() {
-    document.getElementById('superleague-button').style.display = 'block';
+    document.getElementById('superlig-button').style.display = 'block';
     document.getElementById('albania-button').style.display = 'none';
     document.getElementById('england-button').style.display = 'none';  
     document.getElementById('austria-button').style.display = 'none';  
@@ -618,13 +635,18 @@ function showAlbania() {
     document.getElementById('azerbaijan-button').style.display = 'none';
     document.getElementById('belgium-button').style.display = 'none';
     document.getElementById('bolgaria-button').style.display = 'none';
-    document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';  
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';  
+    document.getElementById('georgia-button').style.display = 'none'; 
+    document.getElementById('denmark-button').style.display = 'none';  
 }
-function showSuperleagueTeams() {
+function showSuperLigTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
-    document.querySelectorAll('#superleague-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
-    document.getElementById('superleague-button').style.display = 'none';
-    document.getElementById('superleague-dropdown').style.display = 'block';
+    document.querySelectorAll('#superlig-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('superlig-button').style.display = 'none';
+    document.getElementById('superlig-dropdown').style.display = 'block';
 }
 const teamData_1 = {
     'bylis':{
@@ -690,6 +712,11 @@ function showAustria() {
     document.getElementById('belgium-button').style.display = 'none';
     document.getElementById('bolgaria-button').style.display = 'none';
     document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
+    document.getElementById('armenia-button').style.display = 'none'; 
+    document.getElementById('gibraltar-button').style.display = 'none'; 
+    document.getElementById('greece-button').style.display = 'none'; 
+    document.getElementById('georgia-button').style.display = 'none'; 
+    document.getElementById('denmark-button').style.display = 'none';
 }
 function showBundesligaTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -771,6 +798,11 @@ function showAndorra() {
     document.getElementById('belgium-button').style.display = 'none';
     document.getElementById('bolgaria-button').style.display = 'none';
     document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
+    document.getElementById('armenia-button').style.display = 'none'; 
+    document.getElementById('gibraltar-button').style.display = 'none'; 
+    document.getElementById('greece-button').style.display = 'none'; 
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none'; 
 
 }
 function showFirstDivisionTeams() {
@@ -842,7 +874,12 @@ function showAzerbaijan() {
     document.getElementById('andorra-button').style.display = 'none';
     document.getElementById('belgium-button').style.display = 'none';
     document.getElementById('bolgaria-button').style.display = 'none';
-    document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none'; 
+    document.getElementById('gibraltar-button').style.display = 'none'; 
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none'; 
+    document.getElementById('denmark-button').style.display = 'none';  
 }
 function showPremierLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -915,6 +952,11 @@ function showBelgium() {
     document.getElementById('azerbaijan-button').style.display = 'none';   
     document.getElementById('bolgaria-button').style.display = 'none';
     document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
+    document.getElementById('armenia-button').style.display = 'none'; 
+    document.getElementById('gibraltar-button').style.display = 'none'; 
+    document.getElementById('greece-button').style.display = 'none'; 
+    document.getElementById('georgia-button').style.display = 'none'; 
+    document.getElementById('denmark-button').style.display = 'none';
 }
 function showJupilerProLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1106,6 +1148,11 @@ function showBolgaria() {
     document.getElementById('azerbaijan-button').style.display = 'none';   
     document.getElementById('belgium-button').style.display = 'none';
     document.getElementById('bosnia and Herzegovina-button').style.display = 'none'; 
+    document.getElementById('armenia-button').style.display = 'none'; 
+    document.getElementById('gibraltar-button').style.display = 'none'; 
+    document.getElementById('greece-button').style.display = 'none'; 
+    document.getElementById('georgia-button').style.display = 'none'; 
+    document.getElementById('denmark-button').style.display = 'none';
     
 }
 function showFirstLeagueTeams() {
@@ -1209,6 +1256,11 @@ function showBosniaandHerzegovina() {
     document.getElementById('azerbaijan-button').style.display = 'none';   
     document.getElementById('belgium-button').style.display = 'none';
     document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('armenia-button').style.display = 'none'; 
+    document.getElementById('gibraltar-button').style.display = 'none'; 
+    document.getElementById('greece-button').style.display = 'none'; 
+    document.getElementById('georgia-button').style.display = 'none'; 
+    document.getElementById('denmark-button').style.display = 'none';
     
 }
 function showWWINligaBIHTeams() {
@@ -1277,5 +1329,429 @@ const teamData_7 = {
         players:'Goalkeepers: #18 Goran Karacic, #35 Marko Maric, #1 Anis Sefo; Defenders: #4 Hrvoje Barisic, #27 Slobodan Jakovljevic, #70 Marin Magdic, #12 Petar Mamic, #5 Ilija Masic, #50 Kerim Memija, #44 Toni Sunjic; Midfielders: #42 Marijan Cavar, #6 Josip Corluka, #20 Antonio Ivancic, #7 Alen Jurilj, #81 Marko Kozina, #8 Frano Mlinar, #14 Ivan Posavec, #29 Antonio Prskalo, #19 Tarik Ramic, #21 Igor Savic, #23 Stefano Surdanovic, #91 Mario Ticinovic; Forwards: #77 Besart Abdurahimi, #2 Antonio Arapovic, #99 Nemanja Bilbija, #97 David Camber, #25 Mario Cuze, #10 Tomislav Kis, #17 Matija Malekinusic, #11 Nardin Mulahusejnovic, #96 Anes Rusevic, #30 Fran Topic; Coach: ',
         description:'Боснійський футбольний клуб із Мостара, заснований 1905 року. Виступає у Прем`єр-лізі Боснії та Герцеговини.',
         trophies:'Кубок Боснії та Герцеговини: 23/24, 22/23, 07/08; Чемпіон Боснії та Герцеговини: 22/23, 21/22, 17/18, 16/17, 15/16, 13/14, 08/09, 04/05;'
+    }
+}
+
+// Вірменія
+function showArmenia() {
+    document.getElementById('premierliga-button').style.display = 'block';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none'; 
+    document.getElementById('greece-button').style.display = 'none'; 
+    document.getElementById('georgia-button').style.display = 'none'; 
+    document.getElementById('denmark-button').style.display = 'none';
+}
+function showPremierLigaTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#premierliga-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('premierliga-button').style.display = 'none';
+    document.getElementById('premierliga-dropdown').style.display = 'block';
+}
+const teamdata_8 = {
+    'alashkert':{
+        players:'Goalkeepers: #1 Vlad Chatunts, #22 Gor Manukyan, #71 Valerio Vimercati; Defenders: #8 Clinton Bangura, #16 Arsen Galstyan, #15 Arman Khachatryan, #4 Armen Manucharyan, #2 Yuri Martirisyan, #21 Vaspurak Minasyan, #19 Hayk Musakhanyan, #27 Vadym Paramonov, #94 Vazha Patsatsia, #33 Alen Poghosyan; Midfielders: #23 Petros Avetisyan, #7 Vahagn Hayrapetyan, #9 Benik Hovhannisyan, #99 Narek Hovhannisyan, #5 Rumyan Hovsepyan, #70 Haggai Katoh, #19 Haik Moussakhanian, #98 Murilo Rosa; Forwards: #95 Bladimir Diaz, #10 Jose Embalo, #11 Aleksandar Glisic, #88 Armen Hovhannisyan, #77 Jefferson, #20 Narek Manukyan, #55 Sargis Metoyan, #17 Zakaria Sanogo; Coach: Abraham Khashmanyan',
+        description:' вірменська футбольна команда з міста Мартуні, заснована у 1990 році та відновлена у 2011. Нині виступає у Вірме́нській Прем`є́р-лі́зі. Перший сезон у великому футболі команда провела у 1992 році в Прем`єр-лізі, де посіла 24-е місце з 24-х команд, які брали участь у першому розіграші чемпіонату Вірменії. За правилами наступний сезон команда повинна була проводити у чемпіонаті за рангом нижче, але знялася зі змагань ще до його початку. Перед початком чемпіонату 1998 року клуб відродився і подав заявку на участь у першій лізі. За підсумками першості «Алашкерт» розташувався в середині таблиці, посівши 6-е місце. У 1999 команда в черговий раз знімається з розіграшу чемпіонату. Однак клуб продовжує існувати і намагається долучитися до учасників Першої ліги сезону 2000 але пізніше все ж знявся зі змагань до початку чемпіонату і згодом був розформований. Наприкінці 2011 року успішний підприємець Баграт Навоян вирішив відродити команду. Головним тренером був призначений Альберт Саркісян, помічниками якого стали Гагік Симонян і Армен Багумян. Все справи клубу і формування команди були покладені на Саркісяна. За невеликий проміжок часу він включив до складу кілька талановитих молодих футболістів з місцевих спортивних шкіл, зокрема, зі шкіл «П`юніка» та «Міки». Команда взяла участь у чемпіонаті першої ліги Вірменії 2012/13, проводячи всі ігри на стадіоні Наїрі. Першим серйозним придбанням команди став Сергій Ерзрумян. Згодом до команди приєднався Арам Акопян. У сезоні 2015/16 команда брала участь у розіграші єврокубків, однак закінчила виступи після розіграшу другого кваліфікаційного раунду.',
+        trophies:'Суперкубок Вірменії: 21/22, 18/19, 16/17; Кубок Вірменії: 18/19; Чемпіон Вірменії: 20/21, 17/18, 16/17, 15/16'
+    },
+    'ararat yerevan':{
+        players:'Goalkeepers: #13 Poghos Ayvazyan, #82 Tiago Gomes; Defenders: #18 Malick Berte, #12 Clinton Dombila, #73 David Ghazaryan, #55 Narek Hambardzumyan, #3 Albert Khachumyan, #5 Rayane Mzoughi, #4 Volodya Samsonyan, #34 Sandro Tremoulet; Midfielders: #77 Aleksandr Aleksanyan, #8 Christopher Boniface, #6 Alassane Faye, #21 Serob Galstyan, #33 Gor Ghukasyan, #10 Artur Grigoryan, #81 Kassim Hadji, #20 Moussa Kante, #38 Moussa Kante, #37 Aramayis Khachatryan, #91 Suren Kirakosyan, #9 Gor Lulukyan, #23 Gor Malakyan, #54 Marcello, #70 Alen Mkrtchyan, #11 Armen Nahapetyan, #28 Gagik Simonyan; Forwards: #30 Aram Aslanyan, #14 Badem Diabira, #15 Kalifala Doumbia, #45 Hyllarion Goore, #27 Alen Vardanyan; Coach: Tigran Yesayan',
+        description:'найвідоміший з вірменських футбольних клубів, заснований у 1935 році в місті Єреван. Чемпіон СРСР 1973 року, срібний призер чемпіонатів СРСР 1971 і 1976 (весна). Дворазовий володар Кубка СРСР: 1973, 1975. Незмінний учасник вірменського чемпіонату з футболу (крім сезонів 2003 і 2010). Власником клубу є швейцарський підприємець вірменського походження Грач Капріелян.',
+        trophies:'Кубок срср: 1975, 1973 роки; Чемпіон срср: 1973 hsr; Суперкубок Вірменії: 09/10; Кубок Вірменії: 20/21, 2008, 96/97, 1995, 1994, 1993; Чемпіон Вірменії: 92/93'
+    },
+    'ararat-armenia':{
+        players:'Goalkeepers: #24 Arsen Beglaryan, #31 Danylo Kucher, #1 Rafael Manasyan; Defenders: #16 Edgar Grigoryan, #5 Hakob Hakobyan, #13 Kamo Hovhannisyan, #3 Julio Junior, #25 Aleksandr Pavlovets, #4 Joao Queiros; Midfielders: #21 Narek Alaverdyan, #20 Tera Luheni Alwyn, #10 Armen Ambartsumyan, #28 Davit Barseghyan, #30 Vardan Galstyan, #8 Hovhannes Harutyunyan, #19 Karen Muradyan, #12 Amos Nondi, #27 Davit Petrosyan; Forwards: #11 Jonathan Alexander Duarte Duran, #17 Mathew Gbomadu, #45 Marius Noubissi, #33 Eric Ocansey, #7 Alexis Rodriguez, #9 Artur Serobyan, #15 Tenton Yenne; Coach: Vardan Minasyan',
+        description:'вірменський футбольний клуб з Єревана. Команда «Аван Академія» була створена влітку 2017 року Рубеном Айрапетяном і складалася з випускників Єреванської футбольної академії[en] та гравців «Пюніка» різних вікових груп. Команду, що заявилась в Першу лігу, очолив колишній тренер «Пюніка» Артак Осеян. У грудні 2017 року президент групи компаній «Ташир» росіянин вірменського походження Самвел Карапетян став власником клубу і перейменував його в «Арарат-Москва». За підсумками сезону команда зайняла третє місце та вийшла у Прем`єр-лігу. У червні 2018 року стало відомо, що клуб об`єднався з московським «Араратом», що також фінансувався Карапетяном, і під новою назвою «Арарат-Вірменія» візьме участь у чемпіонаті вірменської Прем`єр-ліги сезону 2018/19, головним тренером призначено Андраніка Бабаяна.',
+        trophies:'Суперкубок Вірменії: 19/20; Кубок Вірменії: 23/24; Чемпіон Вірменії: 19/20, 18/19'
+    },
+    'bkma':{
+        players:'Goalkeepers: #77 Davit Davtyan, #12 Hayk Khacharyan, #1 Arman Nersesyan; Defenders: #14 Ruben Abrahamyan, #3 Gor Arakelyan, #4 Mark Avetisyan, #55 Hayk Ishkhanyan, #49 Alyosha Khachatryan, #5 Petik Manukyan, #2 Artur Mikhayelyan, #6 Argishti Petrosyan; Midfielders: #25 Vyacheslav Afyan, #10 Daniel Aghbalyan, #29 Artur Askaryan, #15 Michel Ayvazyan, #18 Levon Bashoyan, #24 Karlen Hovhannisyan, #8 Narek Janoyan, #17 Aram Khamoyan, #13 Hamlet Sargsyan, #35 Mihran Vahram Semerdzhyan, #22 Mher Tarloyan, #23 Vardan Tovmasyan, #19 Suren Tsarukyan; Forwards: #9 Arayik Eloyan, #45 Davit Hakobyan, #7 Misak Hakobyan, #21 Narek Hovhannisyan, #11 Edik Vardanyan; Coach: Armen Gyulbudaghyants',
+        description:'вірменський професійний футбольний клуб. За часів радянської влади у Вірменії в 1947 році в Єревані був заснований Центральний спортивний клуб армії Єреван . Він був широко відомий під російською абревіатурою як ЦСКА Єреван . Після здобуття Вірменією незалежності в 1991 році, БКМА дебютував на професійному рівні у внутрішніх футбольних змаганнях у Першій лізі Вірменії 1994 року , де вони зайняли 3 місце. У сезоні Першої ліги Вірменії 1995–96 вони зайняли 2-е місце після ФК «Арабкір» , щоб отримати можливість зустрітися з «Арагац Гюмрі» в матчі плей-офф за підвищення, в якому вони обіграли команду Вірменської Прем`єр-ліги та отримали підвищення на наступний сезон. У середині сезону 1997 року BKMA було закрито, і всі їхні матчі, що залишилися, були розраховані на користь суперників з рахунком 3–0, що призвело до 12-ї й останньої позиції та вильоту. Відтоді клуб не діє. У 2019 році БКМА було відроджено зусиллями міністра оборони Вірменії Давида Тонояна . Головний тренер команди – Рафаель Назарян , асистентом – Вараздат Аветисян.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'fc gandzasar':{
+        players:'Goalkeepers: #12 Karen Karapetyan, #1 Harutyun Melkonyan, #22 Tigran Vopanyan; Defenders: #21 Armen Asilyan, #14 Ofoeke Chibuike Emmanuel, #26 Ousmane Faye, #5 Shunto Kanda, #? Yura Manukyan, #4 Vahe Muradyan, #27 Pepe, #15 Salia Traore, #29 Suren Zakaryan; Midfielders: #9 Karen Davtyan, #32 Edgar Ghevondyan, #28 Armen Kirakosyan, #7 Bertrand Mani, #24 Israel Opoku, #3 Takafumi Sawada, #8 Sargis Shahinyan, #11 Erik Soghomonyan, #10 Alen Tatintsyan, #17 Artak Yedigaryan; Forwards: #6 Vrezh Chiloyan, #30 Ashot Kocharyan, #19 Gevorg Matevosyan, #16 Grigor Muradyan; Coach: Karen Barseghyan',
+        description:' вірменський футбольний клуб з Капана. Заснований 1963 року.',
+        trophies:'Кубок Вірменії: 17/18'
+    },
+    'noah':{
+        players:'Goalkeepers: #22 Ognjen Cancarevic, #29 Arthur Coneglian, #12 Artyom Davidov; Defenders: #19 Hovhannes Hambardzumyan, #6 Pedro Marcos, #14 Bryan Mendoza, #26 Aleksandar Miljkovic, #3 Sergey Muradyan, #28 Pablo, #37 Goncalo Silva, #4 Gudmundur Thorarinsson; Midfielders: #13 Robert Baghramyan, #33 Mohammed Bua Mbilia, #10 Artak Dashyan, #88 Yan Eteki, #20 Martin Gambos, #55 Artur Movsesyan, #81 Omar Imran Oulad, #17 Gustavo Sangare; Forwards: #18 Artem Avanesyan, #7 Helder Jose Castro Ferreira, #11 Eraldo Cinari, #71 Bilal Fofana, #8 Goncalo Gregorio, #24 Zaven Khudaverdyan, #27 Gor Manvelyan, #9 Aias Matheus, #30 Grenik Petrosyan, #93 Virgile Pinson; Coach: Rui Mota',
+        description:'вірменський професійний футбольний клуб, заснований 2017 року. Клуб базується в місті Армавір, де і проводить домашні матчі. Перший клуб в історії Ліги конференцій, який успішно подолав всі кваліфікаційні раунди до основного етапу турніру, ця подія відбулася в сезоні 2024/25. Футбольний клуб «Арцах» був заснований у червні 2017 року Севаном Асланяном, вірменським бізнесменом з Чехії. Перший матч клуб провів 2 липня 2017 року проти «Бананца» на стадіоні «Бананц». Товариський матч завершився з нульовою нічиєю. Тигран Єсаян став першим тренером новоспеченої команди і залишався на своєму посту до 29 січня 2018 року. Після цього головним тренером клубу став Армен Санамян, який замінив Єсаяна, За підсумками сезону 2017/18 вірменської Першої ліги клуб зайняв друге місце та вийшов у Прем`єр-лігу. На початку 2019 року власником клубу став Карен Абрахамян. Влітку 2019 року клуб було перейменовано на «Ноах».',
+        trophies:'Суперкубок Вірменії: 20/21; Кубок Вірменії: 19/20'
+    },
+    'pyunik yerevan':{
+        players:'Goalkeepers: #16 Henri Avagyan, #71 Stanislav Buchnev, #32 Sergey Mikaelyan; Defenders: #22 Alemao, #45 Marat Asatryan, #95 Anton Bratkov, #44 Juan Bravo, #60 Ishkhan Darbinyan, #3 Arman Hovhannisyan, #5 Santos James, #6 Juninho, #57 Aleksandr Petrosyan, #79 Sergiy Vakulenko, #33 Taron Voskanyan; Midfielders: #92 Bryan Alceus, #31 Hamlet Aleksanyan, #35 Petros Aleykan, #41 Zhirayr Ashikyan, #29 Eugeniu Cociuc, #97 David Davidyan, #10 Artak Grigoryan, #66 Martim Maia, #53 Artur Manukyan, #17 Levon Petrosyan, #4 Solomon Udo, #20 Lucas Villela; Forwards: #21 Agdon, #50 Narek Baroyan, #77 Sani Buhari, #18 Jose Caraballo, #8 Serges Deble, #38 Tigran Gevorgyan, #52 Samson Hakobyan, #7 Edgar Malakyan, #14 Yusuf Otubanjo, #9 Joao Paredes; Coach: Eghishe Melikyan',
+        description:'вірменський футбольний клуб з міста Єреван, заснований у 1992 році. В перекладі назва означає «Фенікс» (міфічний птах). Найтитулованіший клуб Вірменії. В його активі 14 чемпіонських титулів, 9 перемог у Суперкубку Вірменії та 8 перемог у Кубку Вірменії з футболу.',
+        trophies:'Суперкубок Вірменії: 15/16, 11/12, 10/11, 08/09, 07/08, 05/06, 04/05, 02/03, 97/98; Кубок Вірменії: 14/15, 13/14, 12/13, 2010, 2009, 2004, 2002, 95/96; Чемпіон Вірменії: 23/24 , 21/22 , 14/15 , 2010 , 2009 , 2008 , 2007 , 2006 , 04/05 , 03/04 , 02/03 , 01/02 , 00/01 , 96/97 , 95/96 , 91/92'
+    },
+    'shirak gyumri':{
+        players:'Goalkeepers: #96 Sokrat Hovhannisyan, #55 Lyova Karapetyan, #1 Darko Vukasinovic; Defenders: #25 Gagik Akulyan, #99 Robert Darbinyan, #18 Samvel Ghukasyan, #5 Hrayt Mkoyan, #4 Hamlet Mnatsakanyan, #2 Hovhannes Pahlevanyan, #44 Tigran Sumbulyan, #88 Yuri Vardanyan, #26 Aleksa Vidic; Midfielders: #8 Levon Darbinyan, #30 Gagik Hovhanesyan, #11 Sergey Manukyan, #6 Rafik Misakyan, #20 Rudik Mkrtchyan, #98 Vazgen Sargsyan, #19 Junior Traore, #7 Seryozha Urushanyan; Forwards: #47 Albert Darbinyan, #97 Cedric Doh, #57 Albert Gareginyan, #10 Razmik Hakobyan, #21 Donald Kodia, #77 Mory Kone, #9 Lyova Mryan, #23 Emil Papikyan; Coach: Arsen Hovhannisyan',
+        description:'вірменський футбольний клуб з міста Гюмрі. Заснований у 1958 році. Один з найстаріших клубів Вірменії.',
+        trophies:'Суперкубок Вірменії: 23/24, 17/18, 13/14, 03/04, 99/00, 96/97; Кубок Вірменії: 16/17, 11/12; Чемпіон Вірменії: 12/13, 98/99, 93/94, 91/92'
+    },
+    'urartu':{
+        players:'Goalkeepers: #91 Hayk Ghazaryan, #1 Gor Matinyan, #1 Mkhitar Umreyan; Defenders: #99 Khariton Ayvazyan, #4 Arman Ghazaryan, #16 Barry Isaac, #88 Zhirayr Margaryan, #19 Artur Melikyan, #33 Alik Mkrtchyan, #3 Erik Piloyan, #55 Erik Simonyan; Midfielders: #34 Ayoub Abou, #8 Narek Aghasaryan, #6 Luqman Gilmore, #21 Andrii Kravchuk, #22 Mikayel Mirzoyan, #7 Sergey Mkrtchyan; Forwards: #53 David Harutyunyan, #10 Karen Melkonyan, #77 Edgar Movsesyan, #14 Artem Polyarus, #11 Gevorg Tarakhchyan; Coach: ',
+        description:'вірменський футбольний клуб з Єревана. Заснований в 1992 році в місті Абовян. Клуб був заснований 20 січня 1992 року в місті Абовян (Котайк) вірменським підприємцем Саркисом Ісраеляном і названий ним на честь свого рідного села Бананц (нині Баян) в Азербайджані. У 1995 клуб наздоганяє фінансова криза і керівництво області вирішує об`єднати дві команди, які представляють дану область «Котайк» і «Бананц» в «Котайк» Абовян. У 2001 році клуб відроджується його засновником, тепер вже в Єревані, але під колишньою назвою. Клуб відразу входить до складу учасників першості Прем`єр ліги. У 2003 році відбулося об`єднання клубу «Бананц» з клубом «Спартак» (Єреван), оскільки керівником обох клубів був Саркис Ісраелян. Тільки виникла проблема назви майбутнього клубу. У результаті знайшли компроміс: яка команда виступить краще в чемпіонаті, її назву й отримає майбутній клуб. «Бананц» виступив краще. У липні 2004 року Бананц зустрічався із маріупольським Іллічівцем у рамках Кубка УЄФА 2004-05. Обидві гри завершилися із поразкою вірменського клубу із рахунком 0:2. 2 серпня 2019 року клуб був перейменований на Урарту. У липні 2024 року Естонія відмовила у візах чотирьом російським футболістам, що грали за клуб.. Вони приїхали на матч кваліфікації Ліги конференцій проти Калева.',
+        trophies:'Суперкубок Вірменії: 14/15; Кубок Вірменії: 22/23, 15/16, 2007, 1992; Чемпіон Вірменії: 22/23, 13/14'
+    },
+    'van':{
+        players:'Goalkeepers: #13 Narek Voskanyan; Defenders: #27 Citta Ba, #2 Serob Grigoryan, #22 Robert Hakobyan, #3 Emmanuel John, #44 Klaidher, #4 Norayr Nikoghosyan, #15 Arsen Sadoyan, #23 Clever Ime Sampson, #5 Davit Terteryan; Midfielders: #10 John Botegi, #19 Junior Dosso Alioune, #8 Yuri Gareginyan, #7 Karen Nalbandyan, #14 Izuchukwu Okonkwo, #20 Farayola Olawale; Forwards: #9 Jesse Akila, #99 Adama Diallo, #77 Kajally Drammeh, #11 Momo Fanye Toure, #17 Levon Vardanyan; Coach: Vahe Gevorgyan',
+        description:'вірменська футбольна команда з міста Чаренцаван, заснована у 2019. Нині виступає у Вірме́нській Прем`є́р-лі́зі. 31 травня 2019 вірмено-російський бізнесмен Олег Гукасов заснував футбольний клуб «Ван». Новостворена команда дебютувала в Першій лізі чемпіонату Вірменії сезону 2019—20. 30 липня 2020 клуб отримав ліцензію на право взяти участь у Вірменській Прем`єр-лізі сезону 2020—21. 31 липня 2020 року віцепрезидент Карен Барсегян заявив, що покидає посаду головного тренера, щоби зосередитися на посаді віцепрезидента клубу, а Севаду Арзуманяна призначили новим головним тренером команди.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'west armenia':{
+        players:'Goalkeepers: #13 Anatoliy Ayvazov, #88 Andrija Dragojevic, #1 Erik Lyansberg; Defenders: #3 Artak Asatryan, #14 Aventis Aventisyan, #17 Tigran Ayunts, #2 Artur Danielyan, #6 Jefferson Granado, #22 Alex Junior, #33 Artur Kartashyan, #25 Timur Rudoselskiy, #5 Armen Sargsyan, #5 Hayk Sargsyan, #10 Tigran Sargsyan, #4 Erik Smbatyan, #18 Arsen Yeghiazaryan; Midfielders: #16 Braima Cande, #21 Spartak Hayrapetyan, #66 Suleiman Idris, #8 Aram Kocharyan, #36 Vahram Makhsudyan, #99 Djibril Traore, #99 Issa Jibril Traore; Forwards: #80 Victor Chimezia Sunday, #7 Hadji Drame, #77 Martin Grigoryan, #9 Artur Israelyan, #32 Nwabueze Paschal, #19 Ibrahim Yusuf; Coach: Patrik Papyan',
+        description:'вірменський футбольний клуб з міста Єреван. 13 червня 2019 року Ваге Степанян офіційно оголосив про заснування ФК «Вест Вірменія» в Єревані. У перший рік заснування клуб виступав у першій лізі Вірменії, другому дивізіоні вірменського футболу. Спочатку клуб «Вест Вірменія» грав на стадіоні «Міка». 31 травня 2021 року клуб оголосив, що більше не братиме участі в усіх змаганнях через фінансові труднощі. У липні 2022 року разом із клубами «Міка», «Гандзасар Капан», «Сюнік» і резервною командою клубу «Лернаїн Арцах», клуб «Вест Вірменія» отримав ліцензію на участь у сезоні першої ліги Вірменії 2022—2023 років. У 32-й турі, за одну гру до кінця сезону, «Вест Вірменія» була офіційно оголошена чемпіоном першої ліги Вірменії сезону 2022—2023 років, і клуб вийшов до Прем`єр-ліги Вірменії на сезон 2023—2024 років. У першому сезоні виступів у найвищому дивізіоні клуб зайняв 7 місце з 10 учасників.',
+        trophies:'Клуб не вигравав трофеї'
+    }
+}
+
+// Гібралтар
+function showGibraltar() {
+    document.getElementById('nationalleague-button').style.display = 'block';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';  
+    document.getElementById('greece-button').style.display = 'none'; 
+    document.getElementById('georgia-button').style.display = 'none';   
+    document.getElementById('denmark-button').style.display = 'none';
+}
+function showNationalLeagueTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#nationalleague-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('nationalleague-button').style.display = 'none';
+    document.getElementById('nationalleague-dropdown').style.display = 'block';
+}
+const teamdata_9 = {
+    'college 1975 fc':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'europa fc':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'europa point':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'glacis united':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'lincoln red imps':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'lions gibraltar':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'lynx':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'magpies':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'manchester 62':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'mons calpe':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'st josephs':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    }
+} 
+
+// Греція
+function showGreece() {
+    document.getElementById('superleague-button').style.display = 'block';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    
+}
+function showSuperLeagueTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#superleague-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('superleague-button').style.display = 'none';
+    document.getElementById('superleague-dropdown').style.display = 'block';
+}
+const teamdata_10 = {
+    'aek athens':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'aris':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'asteras tripolis':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'athens kallithea':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'atromitos':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'lamia':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'levadiakos':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'ofi crete':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'olympiacos piraeus':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'panathinaikos':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'panetolikos':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'panserraikos':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'paok':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'volos':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    }
+}
+
+// Грузія
+function showGeorgia() {
+    document.getElementById('crystalbeterovnuliliga-button').style.display = 'block';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    
+}
+function showCrystalbetErovnuliLigaTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#crystalbeterovnuliliga-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('crystalbeterovnuliliga-button').style.display = 'none';
+    document.getElementById('crystalbeterovnuliliga-dropdown').style.display = 'block';
+}
+const teamData_11 = {
+    'dila gori':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'dinamo batumi':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'dinamo tbilisi':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'gagra':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'iberia 1999':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'kolkheti 1913':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'samgurali':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'samtredia':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'telavi':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'torpedo kutaisi':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    }
+}
+
+// Данія
+function showDenmark() {
+    document.getElementById('superliga-button').style.display = 'block';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    
+}
+function showSuperLigaTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#superliga-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('superliga-button').style.display = 'none';
+    document.getElementById('superliga-dropdown').style.display = 'block';
+}
+const teamData_12 = {
+    'aalborg':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'aarhus':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'brondby':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'fc copenhagen':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'lyngby':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'midtjylland':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'nordsjaelland':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'randers fc':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'silkeborg':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'sonderjyske':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'vejle':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'viborg':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
     }
 }
