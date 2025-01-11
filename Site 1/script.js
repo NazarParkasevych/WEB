@@ -1618,54 +1618,54 @@ function showCrystalbetErovnuliLigaTeams() {
 }
 const teamData_11 = {
     'dila gori':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #30 Nika Kavtaradze, #1 Davit Kereselidze, #16 Paolo Puladze; Defenders: #13 Joao Araujo, #4 Vakhtang Botchorishvili, #33 Ramaric Etou, #3 Kaly, #23 Antonio Lopes, #5 Zurab Rukhadze, #26 Jean-Marc Tiboue, #17 Omer Yitzhak; Midfielders: #6 Aleksandre Andronikashvili, #2 Giorgi Gaprindashvili, #15 Luka Iosebidze, #21 Joao Nobrega, #11 Otar Parulava; Forwards: #14 Dominic Amponsah, #28 Deo Bassinga, #20 Irakli Bughridze, #9 Ibrahima Drame, #7 Aboubacar Konte, #18 Lekso Otinashvili, #29 Moussa Sangare, #22 Shota Shekiladze, #27 Alya Toure, #10 Tayrell Wouter; Coach: Francisco Castro',
+        description:'Грузинський футбольний клуб з міста Горі. Заснований 1949 року. Клуб бере участь у Лізі Еровнулі, першому рівні в ієрархії грузинської футбольної системи, і проводить свої домашні ігри на стадіоні «Тенгіз Бурджанадзе».',
+        trophies:'Кубок Грузії: 11/12; Чемпіон Грузії: 14/15'
     },
     'dinamo batumi':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #13 Luka Kharatishvili, #1 Lazare Kupatadze, #30 Roin Kvaskhvadze, #16 Ricardo Silva, #1 Mate Turmanidze; Defenders: #36 Nikoloz Baladze, #35 Revaz Chiteishvili, #39 Guram Japaridze, #4 Luka Kapianidze, #23 Mamuka Kobakhidze, #32 Lasha-Giorgi Lomtatidze; Midfielders: #5 Santos Alef, #8 Mario Balburdia, #26 Nika Dumbadze, #20 Giorgi Gogmachadze, #38 Alexander Gugushvili, #22 Davit Inaishvili, #29 Jean Victor, #3 Giorgi Khutsishvili, #31 Tornike Kirkitadze, #6 Artem Mylchenko, #40 Dito Pachulia, #37 Giorgi Putkaradze, #25 Wanderson; Forwards: #11 Jalen Blesa, #7 Honore Gomis, #31 Revazi Injgia; Coach: Giorgi Chiabrishvili',
+        description:'Грузинський футбольний клуб з міста Батумі.',
+        trophies:'Суперкубок Грузії: 2022, 98/99; Кубок Грузії: 97/98; Чемпіон Грузії: 2023, 2021'
     },
     'dinamo tbilisi':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
-    },
+        players:'Goalkeepers: #36 Papuna Beruashvili, #34 Dachi Chochoshvili, #13 Mate Gagvishvili, #39 Davit Gogebashvili, #48 Giorgi Gongadze, #37 Mikheil Makatsaria, #12 Saba Tartarashvili; Defenders: #2 Saba Akhalkatsi, #2 Benson Anang, #15 Mukhran Bagrationi, #13 Tengo Gobeshia, #20 Rati Grigalava, #20 Giorgi Gvasalia, #35 Sunday Haruna, #17 Nosa Iyobosa Edokpolor, #3 Aleksandre Kalandadze, #15 Saba Kharebashvili, #40 Saba Khvadagiani, #5 Solomon Kvirkvelia, #4 Giorgi Nikolaishvili; Midfielders: #18 Tsotne Berelidze, #20 Jaba Kankava, #30 Tipe Karuumba, #8 Nodar Lominadze, #7 Tornike Morchiladze, #22 Nika Ninua, #16 Levan Osikmashvili, #39 Gela Sadghobelashvili, #7 Vakhtang Salia, #11 Saba Samushia, #6 Giorgi Tsetskhladze, #25 Nika Tshekladze, #25 Luka Tsulaia, #27 Nikoloz Ugrekhelidze; Forwards: #11 Luka Bubuteishvili, #22 Vasilios Gordeziani, #19 David Gotsiridze, #9 Jaduli Iobashvili, #47 Lusib Mekhtievi, #46 Levani Nachkebia, #24 Dominik Reiter, #10 Davit Skhirtladze, #38 Nikoloz Tsetskhladze, #12 Mate Vatsadze; Coach: ',
+        description:'Професіональний грузинський футбольний клуб з міста Тбілісі. Заснований у 1925 році клуб став одним з найсильніших серед радянського спортивного товариства «Динамо». Динамівці Тбілісі двічі вигравали чемпіонат СРСР (1964 та 1978 роки), проте бронзовими призерами ставали аж 13 разів, що набагато більше, аніж у будь-якого іншого клубу. Дворазовий володар Кубка СРСР з футболу (1976 та 1979 рр.). Найбільшим успіхом в історії клубу стала перемога у Кубку володарів кубків у 1981 році, який проходив у Дюссельдорфі. Динамівці переграли клуб з НДР «Карл Цейс» з міста Йєна з рахунком 2:1. У 1990 році грузинські клуби вийшли зі складу чемпіонату СРСР і почали проводити власні змагання. Назву команди змінили на «Іберія», але згодом перейменували назад. «Динамо» виграло всі національні першості 1990-х.',
+        trophies:'Кубок срср: 1979, 1976; Чемпіон срср: 1978, 1964; Суперкубок Грузії: 2023, 2021, 14/15, 13/14, 07/08, 04/05, 98/99, 96/97, 95/96; Кубок Грузії: 2016 , 14/15 , 13/14 , 12/13 , 08/09 , 03/04 , 02/03 , 96/97 , 95/96 , 94/95 , 93/94 , 92/93 , 91/92; Чемпіон Грузії: 2022, 2020, 2019, 15/16, 13/14, 12/13, 07/08, 04/05, 02/03, 98/99, 97/98, 96/97, 95/96, 94/95, 93/94, 92/93 , 91/92 , 90/91 , 89/90; Кубок володарів кубків: 80/81'
+    }, 
     'gagra':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #12 Giorgi Bediashvili, #31 Alexandr Dadeshkeliani, #1 Oleksandr Vorobey; Defenders: #25 Giorgi Chekhani, #26 Beka Gabiskiria, #13 Levan Gegetchkori, #4 Tornike Jangidze, #21 Levan Kakubava, #23 Giorgi Kimadze, #11 Luka Lakvekheliani, #18 Abduramane Ouloguem, #34 Augusto Jose Santos Porfirio, #20 Giorgi Ubilava; Midfielders: #15 Otar Aptsiauri, #19 Vinicius Grota, #9 Giorgi Lomtadze, #30 Gia Nadareishvili, #8 Giorgi Papuashvili, #14 Zurab Tchavtchanidze, #5 Mate Tsintsadze, #40 Zaza Tsitskishvili; Forwards: #35 Goga Gogoladze, #7 Nodar Kavtaradze, #33 Giorgi Kharebashvili, #22 Davit Natchkebia, #16 Cyrille Tchamba; Coach: Vladimer Khachidze',
+        description:'Грузинський футбольний клуб, заснований 2004 року, який з сезону 2011/12 грає у лізі Умаглесі. Команда представляє внутрішньо переміщених осіб, які були змушені покинути абхазьке місто Гагра. Територіально клуб розташований у Тбілісі.',
+        trophies:'Кубок Грузії: 2020, 10/11'
     },
     'iberia 1999':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #25 Saba Bochorishvili, #1 Revaz Kurtanidze, #31 Giorgi Makaridze; Defenders: #24 Darek Agyakwa, #17 Aleksandre Gaprindashvili, #5 Iva Gelashvili, #20 Giorgi Gogsadze, #4 Giorgi Jgerenaia, #16 Jemali-Giorgi Jinjolava, #2 Tsotne Kapanadze, #27 Aleksandre Narimanidze, #23 Giorgi Tabatadze; Midfielders: #6 Nikoloz Dadiani, #27 Java Flora, #7 Saba Geguchadze, #8 Bakar Kardava, #19 Givi Khachidze, #6 Gizo Mamageishvili, #17 Otar Mamegeishvili, #22 Iuri Tabatadze; Forwards: #29 Tornike Akhvlediani, #27 Floriss Djave, #10 Giorgi Kokhreidze, #19 Daniel Kvartskhava, #18 Irakli Sikharulidze, #9 Cheikne Sylla; Coach: Levan Korgalidze',
+        description:'Грузинський футбольний клуб з міста Тбілісі, заснований у 1999 році під назвою «Сабуртало». Виступає в Лізі Еровнулі. Домашні матчі приймає на стадіоні ім. Михайла Месхі, що вміщує 24 700 глядачів. Клуб «Сабуртало» засновано 20 серпня 1999 року у Тбілісі. Свою назву клуб отримав на честь однойменного району столиці Грузії. У перекладі з грузинської мови це слово означає «місце для гри в м`яч». У 2005 році в клубі сталися доленосні зміни. Змінився основний власник команди й президентом клубу став Таріел Хечікашвілі — майбутній міністр спорту і молоді у парламенті Грузії. Головною метою проєкту було створення місцевого футбольного клубу, орієнтованого на розвиток власної футбольної академії. Тренерський і адміністративний штаб клубу складався переважно з досвідчених грузинських спеціалістів, які мають досвід виступів у чемпіонатах СРСР, а також в грузинській Лізі Еровнулі. Результат не змусив себе чекати. У сезоні 2014/2015 команда виграла Першу лігу чемпіонату Грузії і вийшла до Вищої ліги. У сезоні 2018 після перемоги над тбіліським «Динамо» «Сабуртало» вперше в історії став чемпіоном Грузії. А у 2019 році команда дебютувала у кваліфікаційному раунді Ліги чемпіонів. 27 лютого 2024 року команда змінила назву на сучасну «Іберія 1999».',
+        trophies:'Суперкубок Грузії: 2020 рік; Кубок Грузії: 2023, 2021, 2019; Чемпіон Грузії: 2024, 2018'
     },
     'kolkheti 1913':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #35 Artyom Fastov, #1 Yaroslav Kotlyarov, #31 Danylo Ryabenko; Defenders: #16  Giorgi Akhaladze, #6 Archil Datuashvili, #3 Zurab Eradze, #4 Akaki Giunashvili, #15 Beka Kharshiladze, #14 Mouhamadou Konate, #29 Davit Pagava, #33 Tornike Shekiladze, #20 Mahamat Thiam; Midfielders: #25 Davit Andghuladze, #8 Davit Andrei, #26 Saidu Dia, #13 Saba Firanashvili, #28 Gabriel Ferreira, #7 Lasha Gvalia, #37 Demet Gvasalia, #17 Erekle Jijavadze, #40 Giorgi Kharebava, #2 Davit Khelaia, #23 Giorgi Moistsrapishvili, #23 Saba Zoidze, #30 Davit Zurabiani; Forwards: #10 Giorgi Abyashvilli, #21 Lado Chikhradze, #27 Davit Krasovsky, #18 Luka Kvashilava, #32 Rati Tqebuchava; Coach: Kakhader Chkhetiani',
+        description:'Грузинський футбольний клуб з Поті. Виступає у вищій лізі чемпіонату Грузії. Домашні матчі грає на стадіоні «Фазісі». Заснований у 1913 році. Раніше клуб називався «Колхіда». За радянських часів виступав у класі «Б» і другій лізі.',
+        trophies:'Друга ліга Грузії: 2023 рік'
     },
     'samgurali':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #13 Nodari Kalichava, #1 Anzor Kasradze, #40 Luka Kutaladze; Defenders: #3 Mate Abuladze, #7 Ilia Akhvlediani, #16 Bull, #23 Mekhrubon Karimov, #22 Tedo Kikabidze, #29 Nika Manjgaladze, #2 Bartul Markovina, #4 Omar Patarkatsishvili, #27 Lasha Shergelashvili; Midfielders: #18 Vato Arveladze, #10 Demur Chikhladze, #26 Zaza Iashvili, #5 Irakli Janjgava, #11 Luka Khorkgeli, #25 Anzor Tevzadze. #33 Luka Tsulaya, #20 Vianna Vinicius; Forwards: #15 Gean Rodrigues, #8 Jefinho, #19 Nika Kalandarishvili, #24 Nika Khorkheli, #35 Levan Kutalia, #9 Davit Mujiri, #9 Luca Sherozia, #31 Giorgi Topuria; Coach: Oleksandr Poklonskyi',
+        description:'Професіональний грузинський футбольний клуб з Цхалтубо. Клуб заснований у 1945 році під назвою «Самгуралі» (Цхалтубо). З моменту свого заснування виступав у республіканських футбольних турнірах. Найуспішнішими для клубу стали 1980-ті роки, коли команда 3 рази вигравала першість республіки та двічі ставала переможцем республіканського кубку. У 1990 році клуб дебютував у першому розіграші незалежного чемпіонату Грузії, в якому посів високе 4-те місце. У вищому дивізіоні виступав до сезону 2001/02 років. У сезоні 1994/95 років зайняв останнє 16-те місце в чемпіонаті й на рік вилетів до Ліги Пірвелі. У сезоні 1999/00 років зайняв 7-ме місце й знову на рік вилетів до Ліги Пірвелі. Але цього разу повернувся до вищого дивізіону лише на один сезон. У сезоні 2001/02 років посів останнє 12-те місце й повернувся до Ліги Пірвелі. З 2004 року через фінансові проблеми стартував у Лізі Регіоналі. У 2009 році клуб було реорганізовано, після чого він одразу вийшов до Ліги Пірвелі, в якій виступає й на даний час.',
+        trophies:'Клуб не вигравав трофеї'
     },
     'samtredia':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #25 Avtandil Labadze, #37 Demetri Mefarishvili; Defenders: #20 Filip Boskovski, #22 Jose Carrillo Mancilla, #4 Jemal Chachua, #3 Zurab Gigashvili, #15 Giorgi Kveladze, #34 Tsotne Sulakvelidze, #40 Davit Ubilava; Midfielders: #38 Murodali Aknazarov, #39 Andre, #8 Eric Barrios, #30 Malkhaz hitaishvili, #18 Levan Khmaladze, #10 Baiano Natan; Forwards: #9 Joseph Amoako, #2 Lasha Kvaratskhelia, #21 Inigo Martin, #10 Nathan Mello, #24 Roin Odishelidze, #6 Daniel Owusu; Coach: Goran Boicheski',
+        description:'Грузинський футбольний клуб з однойменного міста. Виступає в Лізі Умаглесі, найвищій лізі чемпіонату Грузії.',
+        trophies:'Суперкубок Грузії: 2017 рік; Чемпіон Грузії: 15/16'
     },
     'telavi':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #33 Beka Kurdadze, #21 Aleksandre Liparteliani, #1 levan Tandilashvili; Defenders: #5 Piruz Gabitashvili, #20 Temur Gognadze, #22 Davit Gogotishvili, #19 Nikoloz Gozalishvili, #6 Simao Junior, #4 Piruz Marakvelidze, #39 Lado Odishvili, #30 Anton Tolordava, #2 Tato Zhividze; Midfielders: #26 Abdullahi Aliyu, #3 Aleko Ananidze, #8 Mensalao Andre, #27 Mateo Joshue Fernandez Peralta, #18 Pitbull George, #24 Christos Kountouriotis, #17 Olaoluwa Ojetunde, #11 Eldar Parkinashvili, #23 Sidiki Traore, #12 Dachi Tsnobiladze; Forwards: #9 Jonel Desire, #28 Otar Gagnidze; Coach: Armen Adamyan',
+        description:'Грузинський футбольний клуб з Телаві. Заснований 2016 року. Клуб заснований у 2016 році колишніми футболістами Іраклієм Вашакідзе, Сосо Грішікашвілі та Олександром Амісулашвілі. У свій дебютний сезон клуб в Регіональній лізі здобув право виступати в Лізі Меоре. Наступного року вони фінішували другими в білій групі, а в плей-оф здолали «Гурію» 3-2. У 2018 році «Телаві» закріпився у Лізі Пірвелі. У Кубку Грузії обіграв, зокрема «Ділу», а в півфіналі поступився майбутнім володарям Кубку «Торпедо» (Кутаїсі). Наступного року команда продовжила шлях до найвищого дивізіону здолавши цього разу у плей-оф «Руставі» в двох матчах 2-1 та 1-0. Напередодні 2020 «Телаві» посилився дев`ятьма грузинськими гравцяма та чотирма легіонерами. За підсумками першого сезону клуб лише двічі зазнав поразки але при цьому в активі мав чотири перемоги та дванадцять нічиїх та фінішував на шостому місці. У 2021 команда посіла шосте місце. На сходинку нижче фінішували за результатами сезону 2022 року. Домашнею ареною команди є стадіон імені Гіві Чохелі, що вміщує 12 000 глядачів.',
+        trophies:'Клуб не вигравав трофеї'
     },
     'torpedo kutaisi':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #1 Oto Goshadze, #31 Filip Kljajic, #35 Luka Kvetenadze, #28 Avtandil Meparishvili; Defenders: #21 Auro, #15 Juba Dvatishvillli, #14 Levan Kharabadze, #22 Giorgi Mchedlishvili, #5 Tsotne Nadaraia, #12 Mamadou Sakho, #16 Nika Sandokhadze, #24 Amiran Tkeshelashvili, #2 Warley; Midfielders: #26 Aleko Basiladze, #18 Irakli Bidzinashvili, #11 Francois Ekongolo, #17 Luka Elbakidze, #7 Merab Gigauri, #11 Jorginho, #34 Nikoloz Kobuladze, #13 Giuli Mandzhgaladze, #10 Nikola Ninkovic, #4 Tim Oloko-Obi, #23 Tsotne Patsatsia, #30 Luka Rekhviashvili; Forwards: #14 Felipe Pires, #10 Paata Gudushauri, #9 Bjorn Johnsem, #19 Momo Yansane; Coach: Steve Kean',
+        description:'Грузинський футбольний клуб із міста Кутаїсі. Клуб тричі здобував чемпіонство, а після сезону 2006-07 втратив місце у найвищій лізі через фінансові проблеми, повернувся до ліги 2010 року.',
+        trophies:'Суперкубок Грузії: 2024, 2019, 2018; Кубок Грузії: 2022, 2018, 2016, 00/01, 98/99; Чемпіон Грузії: 2027, 01/02, 00/01, 99/00'
     }
 }
 
