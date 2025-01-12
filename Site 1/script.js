@@ -1695,63 +1695,63 @@ function showSuperLigaTeams() {
 }
 const teamData_12 = {
     'aalborg':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #22 Rody De Boer, #40 Bertil Gronkjaer, #1 Vincent Muller, #50 Bertil Pedersen; Defenders: #35 Eugene Amankwah, #24 Noel Arnorsson, #14 Andreas Bruus, #2 Oumar Diakhite, #44 Malthe Kjolby, #4 Lars Kramer, #20 Kasper Poul Molgaard Jorgensen, #5 Marc Nielsen, #3 Sebastian Otoa, #13 Bjarne Pudel; Midfielders: #21 Mads Bomholt, #16 Kasper Davidsen, #37 Amar Diagne, #21 Isak Hansen-Aaroen, #6 Mylian Jimenez, #8 Melker Widell; Forwards: #7 Jubril Adedeji, #9 Nicklas Helenius, #19 John Iredale, #17 Andres Jasson, #27 Kelvin John, #11 Mathias Jorgensen, #47 Valdemar Moller, #10 Oliver Ross, #39 Skovgaard; Coach: Menno van Dam',
+        description:'Професіональний данський футбольний клуб з міста Ольборга. Один з найстарших клубів країни. Клуб був заснований 1885 року. В 1928–1947 роках виступав у найвищій лізі Данії, в 1950-ті — 1980-ті роки чотири рази виходив у найвищу лігу і тричі вибував з неї. Завоювавши титул чемпіона у 1995 році, «Ольборг» вийшов до Ліги чемпіонів. У кваліфікаційному раунді київське «Динамо» розгромило данців 4:1 за сумою двох матчів, але внаслідок скандалу, пов`язаного з підкупом суддів українцями, «Ольборг» пройшов до групового етапу, де посів останнє місце в групі А. Вдруге до групового етапу найпрестижнішого євротрофею клуб вийшов у сезоні 2008/09 і посів третє місце в групі E. 23 жовтня 2014 року в третьому турі Ліги Європи команда обіграла київське «Динамо» з рахунком 3:0.',
+        trophies:'Кубок Данії: 13/14, 69/70, 65/66; Чемпіон Данії: 13/14, 07/08, 98/99, 94/95'
     },
     'aarhus':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #1 Jesper Hansen, #32 Jonathan Hutters, #13 Kristoffer Klaesson, #22 Leopold Wahlstedt; Defenders: #27 Michael Akoto, #26 Jacob Andersen, #4 Tobias Anker, #33 Luka Callo, #3 Henrik Dalsgaard, #24 Aksel Halsgaard, #40 Jonas Jensen-Abbew, #19 Eric Kahl, #25 Mikkel Kannegaard Kristensen, #14 Tobias Molgaard, #5 Frederik Tingager; Midfielders: #8 Mikael Anderson, #10 Kristian Arnstad, #23 Tobias Bach, #2 Felix Beijmo, #29 Frederik Brandhof, #20 Mikkel Duelund, #11 Gift Links, #7 Mads Madsen, #6 Nicolai Poulsen, #16 Max Power; Forwards: #15 Youssouph Badji, #31 Tobias Bech, #47 Frederik Emmery, #18 Richmond Gyamfi, #9 Patrick Mortensen, #? Stefen Tchamche; Coach: Uwe Rosler',
+        description:'Футбольний клуб з однойменного данського міста. Один з найстаріших і найуспішніших клубів Данії. Заснований 26 вересня 1880 року. Домашній стадіон — Орхус, який вміщає 20 000 глядачів.',
+        trophies:'Кубок Данії: 95/96 , 91/92 , 87/88 , 86/87 , 64/65 , 60/61 , 59/60 , 56/57 , 54/55; Чемпіон Данії: 85/86 , 59/60 , 56/57 , 55/56 , 54/55'
     },
     'brondby':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #1 Jonathan Aegidius, #8 Mamadou Jalloh, #16 Thomas Mikkelsen, #1 Patrick Pentz, #50 William Sonne Schmid; Defenders: #32 Frederik Alves, #46 Justin Che, #31 Sean Klaiber, #43 Lukas larsen, #5 Rasmus Lauritsen, #4 Jacob Rasmussen, #2 Sebastian Sebulonsen, #? Philip Sondergaard, #18 Kevin Tshiembe, #30 Jordi Vanlerberghe, #34 Ludwig Vraa-Jensen, #10 Daniel Wass; Midfielders: #37 Clement Bischoff, #39 Claridge Jensen Adam, #25 Bertram Kvist, #35 Noah Nartey, #22 Josip Radosevic, #6 Stijn Spierings, #7 Nicolai Vallys; Forwards: #11 Filip Bundgaard, #24 Marko Divkovic, #36 Mathias Kvistgaarden, #9 Ohi Omoijuanfo, #17 Mileta Rajovic, #28 Yuito Suzuki; Coach: ',
+        description:'Данський футбольний клуб з комуни Бреннбю в передмісті Копенгагена.',
+        trophies:'Кубок Данії: 17/18, 07/08, 04/05, 02/03, 97/98, 93/94, 88/89; Чемпіон Данії: 20/21, 04/05, 01/02, 97/98, 96/97, 95/96, 90/91, 89/90, 87/88, 86/87, 84/85'
     },
     'fc copenhagen':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #61 Oscar Buur, #? Eliot Guindy, #31 Alex Runarsson Runar, #21 Theo Sander, #1 Nathan Trott; Defenders: #3 Tristan Andrew, #58 Hjalte Bidstrup, #2 Kevin Diks, #5 Gabriel Pereira, #4 Munashe Garananga, #35 William Glindtvad, #22 Giorgi Gocholeishvili, #6 Pantelis Hatzidiakos, #13 Rodrigo Huescas, #15 Marcos Lopez, #24 Birger Meling; Midfielders: #7 Viktor Claesson, #36 William Clem, #27 Thomas Delaney, #33 Rasmus Falk, #38 Oliver Hojer, #12 Lukas Lerager, #8 Magnus Mattsson, #48 Hunor Nemeth, #? Tristan Panduro; Forwards: #30 Elias Achouri, #19 Amin Chiakha, #14 Andreas Cornelius, #? Abdul Daramy, #10 Mohamed Elyounoussi, #17 Victor Froholdt, #11 Jordan Larsson, #16 Robert; Coach: Jacob Neestrup',
+        description:'Данський футбольний клуб зі столиці країни, заснований 1 липня 1992 року. Виступає у данській Суперлізі.',
+        trophies:'Кубок Данії: 22/23, 16/17, 15/16, 14/15, 11/12, 08/09, 03/04, 96/97, 94/95; Чемпіон Данії: 22/23, 21/22, 18/19, 16/17, 15/16, 12/13, 10/11, 09/10, 08/09, 06/07, 05/06, 03/04, 02/ 03, 00/01, 92/93'
     },
     'lyngby':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #1 Davit Raagaard Jensen, #31 Jonas Krumrey, #40 Viggo Matthiesen-Andersen, #32 Jannich Storch; Defenders: #6 Andreas Bjelland, #23 Pascal Gregor, #3 Brien Hamalainen, #12 Magnus Jensen, #7 Willy Kumado, #5 Lucas Lissens, #4 Baptiste Rollandd, #24 Tobias Storm; Midfielders: #10 Rezan Corlu, #13 Dani, #23 Gustav Fraulo, #22 Peter Langhoff, #8 Mathias Rasmussen, #30 Marcel Romer, #14 Lauge Sandgrav, #35 William Steindorsson, #11 Magnus Warming; Forwards: #9 Malik Abubakari, #17 Jonathan Amon, #22 Nikolai Baden Frederiksen, #26 Frederik Gytkjaer, #21 Saevar Magnusson, #15 Michael Opoku, #37 Emil Thor Nielsen, #27 Clement Vendelbo Adam; Coach: Mikkel Beckmann',
+        description:'Данський футбольний клуб з Конгенс Люнгбю. Заснований 1921 року. З 2009 по 2013 команду очолював відомий тренер Нільс Фредеріксен.',
+        trophies:'Друга Ліга Данії: 15/16; Кубок Данії: 89/90, 84/85, 83/84; Чемпіон Данії: 91/92, 82/83'
     },
     'midtjylland':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #30 Ovie Ejeheri, #1 Jonas Lossl, #16 Elias Rafn Olafsson, #31 Liam Selin; Defenders: #6 Joel Andersson, #55 Victor Bak, #22 Mads Bech Sorensen, #4 Ousmane Diao, #13 Adam Gabriel, #73 Juninho, #3 Bilal Konteh Krubally, #3 Han-Beom Lee, #43 Kevin Mbabu, #29 Paulinho, #15 Christian Sorensen; Midfielders: #17 Kristoffer Askildsen, #19 Pedro Bravo, #20 Valdemar Byskov, #21 Denil Castillo, #10 Sofus Johannesen, #5 Emiliano Martinez, #24 Oliver Sorensen; Forwards: #27 Ola Brynhildsen, #18 Adam Buksa, #14 Edward Chilufya, #7 Franculino, #41 Mikel Gogorza, #25 Jan Kuchta, #53 Victor Lind, #11 Dario Osorio, #58 Aral Simsir; Coach: Thomas Thomasberg',
+        description:'Данський футбольний клуб з Гернінга, що виник 1999 року внаслідок злиття ФК «Ікаст» та ФК «Гернінг». Виступає в найвищому дивізіоні Данії.',
+        trophies:'Друга Ліга Данії: 99/00; Кубок Данії: 21/22, 18/19; Чемпіон Данії: 23/24, 19/20, 17/18, 14/15'
     },
     'nordsjaelland':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #13 Andreas Gulstorff Pedersen, #13 Andreas Hansen, #38 William Lykke; Defenders: #? Stephen Acquah, #2 Peter Ankersen, #4 Kian Hansen, #19 Boel Hey Lucas, #24 Lucas Hogsberg, #45 Noah Markmann, #15 Erik Marxen, #14 Tobias Salquist, #? Issaka Seidu; Midfielders: #12 Rocco Ascone, #16 Mark Brink, #8 Mario Dorgeles, #18 Justin Janssen, #20 Araphat Mohammed, #21 Zidan Sertdemir, #5 Daniel Svensson, #36 Caleb Yirenkyi; Forwards: #14 Walle Egeli Sindre, #11 Mads Hansen, #32 Milan Lloski, #17 Levy Nene, #10 Benjamin Nygren; Coach: Jens Olsen',
+        description:'Данський футбольний клуб з Фарума, заснований 1991 року. Виступає у данській Суперлізі. Команда відома атакувальною манерою гри за схемою 4-3-3. «Норшелланн» грає на стадіоні «Фарум Парк», розрахованому на 10 100 глядачів, з яких 9800 місць є сидячими. Клуб «Фарум» було утворено 1 січня 1991 року шляхом поєднання двох клубів «Farum Idræts Klub» (який було створено 1910 року) та «Stavnsholt Boldklub» (заснований у 1974 році). Створення нового клубу було ініційовано місцевими жителями, також була підтримка мера міста Фарум. «Фарум» один з рідкісних випадків вдалого об`єднання клубів у данському футболі. З недавніх часів клуб грає у Суперлізі. У сезоні 2008/09 «Норшелланн» здобув право на виступ у Кубку УЄФА. В першому раунді «дикі тигри» здолали естонський ФК TVMK Таллінн, але в другому поступились грецькому «Олімпіакосу».',
+        trophies:'Кубок Данії: 10/11, 09/10; Чемпіон Данії: 11/12'
     },
     'randers fc':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #1 Paul Izzo, #22 Emmanuel Ogura, #25 Oskar Snorre; Defenders: #5 Hugo Andersson, #4 Wessel Dammers, #44 Nikolas Dyhr, #24 Sabil Hansen, #3 Daniel Hoegh, #15 Bjorn Kopplin, #27 Oliver Olsen, #23 Christian Ostergaard; Midfielders: 353 Max Albaek, #6 John Bjorkengren, #17 Mathias Greve, #54 Andreassen Krogh Nikolaj, #14 Frederik Lauenborg, #50 Lasse Mandal, #16 Raun Pedersen Laurits, #28 Andre Romer, #20 Abdul Sulemana; Forwards: #21 Ernest Agyiri, #19 Tammer Bany, #10 Norman Campbell, #26 Florian Danho, #23 Mustapha Isah, #99 Simen Nordli, #90 Stephen Odey, #18 Noah Shamoun, #30 Mike Themsen, #7 Mohamed Toure; Coach: Rasmus Bertelsen',
+        description:'Данський футбольний клуб з однойменного міста, заснований 2003 року. Виступає в данській Суперлізі.',
+        trophies:'Кубок Данії: 20/21, 05/06'
     },
     'silkeborg':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #30 Aske Andresen, #1 Nicolai Larsen; Defenders: #40 Alexander Busch, #19 Jens Martin Gammelby, #4 Pedro Ganchas, #24 Alexander Madsen, #3 Robin Ostrom, #2 Andreas Poulsen, #25 Pontus Rodin, #? Simon Stuker; Midfielders: #8 Jeppe Andersen, #11 Frederik Carlsen, #33 Mads Freundlich, #21 Anders Klynge, #20 Mads Larsen, #24 Lasse Madsen, #6 Pelle Mattsson, #17 Callum McCowatt, #36 Julius Nielsen, #7 Ramazan Orazov, #? Mikkel Oxenberg; Forwards: #23 Tonni Adamsen, #10 Younes Bakiz, #41 Oskar Boesen, #35 Biller Mikkelsen Sebastian, #9 Alexander Simmelhack; Coach: Kent Nielsen',
+        description:'Професіональний данський футбольний клуб з міста Сількеборг. Клуб було створено в 1917 році, вийшов до вищого дивізіону національного чемпіонату в 1987 році, в 1990-их роках був одним з найуспішніших футбольних клубів Данії, переможці чемпіонату Данії сезону 1993/94 років, бронзовий призер сезону 1994/95 років, срібний призер чемпіонату Данії сезону 1997/98 років, а також переможець Кубку Данії 2001 року. Сікельборг декілька разів брав участь в єврокубках, став переможцем Кубку Інтертото 1996 року. Заснований в 1917 році, футбольна команда клубу виступала у вищих дивізіонах Ютландії, допоки в 1962 році на короткий час не вилетіла до третього дивізіону. Проте в 1966 році клуб вийшов до другого дивізіону чемпіонату Данії. У 1982 році команда зробила вирішальний крок для повернення до вищого футбольного дивізіону національного чемпіонату, було створено компанію «SIF Fodbold Support A/S», яка стала відповідальною за професіональний футбол у Сількеборзі. Як наслідок, у 1987 році клуб повернувся до елітного дивізіону національного чемпіонату. Цей вихід клубу до найвищого дивізіону національного чемпіонату настільки здивував футбольних уболівальників та, зокрема, журналістів газети «Politiken», що вони написали: «Буде величезним досягненням, якщо Сікельборг здобуде бодай кутовий удар». Проте вже в третьому матчі сезону в національному чемпіонаті «Сількеборг ІФ» у себе вдома з рахунком 1:0 переграв найпотужніший футбольний клуб Данії того часу, «Бронбю ІФ».',
+        trophies:'Друга Ліга Данії: 18/19, 13/14; Кубок Данії: 23/24, 00/01; Чемпіон Данії: 93/94'
     },
     'sonderjyske':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #16 Jacob Busk, #1 Nicolai Flo, #35 Noah Nguyen, #34 Benjamin Rasmussen, #34 Jens Rinke; Defenders: #5 Marc Dal Hende, #23 Gideon Duru, #4 Leo Ggretarsson Daniel, #3 Mads Ottesen, #36 Villads Sorensen, #12 Maxime Soulas, #3 Simon Waever, #33 Gustav Wagner, #13 dalton Wilkins; Midfielders: #28 Hamza Akman, #8 Lukas Bjorklund, #31 Mohamed Cherif, #7 Sefer Emini, #17 Jose Gallegos, #36 Escobar Jensen Sebastioan, #34 Simon Maass, #18 Ivan Nikolov, #22 Andreas Oggesen, #33 Anders Pedersen, #26 Tobias Sommer, #6 Rasmus Vinderslev; Forwards: #25 Mads Agger, #9 Ivan Djantou, #24 Olti Hyseni, #10 Mani Ingason Kristall, #20 Tobias Klysner, #34 Sebastian Larsen, #11 Alexander Lyng, #15 Lirim Qamili, #35 Albert Rrahmani; Coach: Thomas Norgaard',
+        description:'Данський футбольний клуб з міста Гадерслев. Спортивний клуб «Сенюске» створений в 1 січня 2004 та об`єднував команди з футболу, хокею та гандболу. У чемпіонаті 2015/16 команда з Гадерслева посіла найвище місце в історії клубу друге та кваліфікувався до Ліги Європи 2015/16.',
+        trophies:'Друга Ліга Данії: 23/24; Кубок Данії: 19/20'
     },
     'vejle':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #24 Haahr Jakobsen Tobias, #99 Gustav Knudsen, #1 Igor Vekic; Defenders: #3 Milko Albornoz, #38 David Colina, #23 Lasse Flo, #2 Thomas Gundelund Nielsen, #25 Luka Hujber, #29 Richard Jensen, #4 Oliver Provstgaard, #16 Andreas Tomaselli, #13 Stefan Velkov, #14 Damian van Bruggen; Midfielders: #5 Hamza Barry, #34 Lundrim Hetemi, #10 Kristian Kirkegaard, #8 Tobias Lauritsen, #71 Masaki Murata, #15 Ebenzeer Ofori; Forwards: #59 Marius Elvius, #17 Dimitrios Emmanouilidis, #37 Christian Gammelgaard, #18 Anders Jacobsen, #11 Musa Juwara, #7 Yeni Atito N`Gbakoto, #33 Emmanuel Yeboah; Coach: Mihai Teja',
+        description:'Данський футбольний клуб з однойменного міста, заснований у 1891 році, як клуб з крикету. У червні 2011 року шляхом об`єднання з футбольним клубом «Кольдінг» був створений новий футбольний клуб — «Вайле Кольдинг», але 2013 року клуб відновив свою окрему історію. У портовому містечку з населенням у 50 тисяч мешканців футбольний клуб було засновано ще в позаминулому столітті. За тривалий період часу «Вайле» переживав суперечливі етапи свого існування. Цей відрізок охопив серйозні злети і болісні падіння. У списку перемог у новітній історії клубу — з десяток великих трофеїв. П`ять разів «Вайле» ставав найсильнішою командою Данії (востаннє у 1984-му) і ще шість разів здобував Кубок країни.',
+        trophies:'Друга Ліга Данії: 22/23, 19/20, 17/18; Кубок Данії: 80/81 , 76/77 , 74/75 , 71/72 , 58/59 , 57/58; Чемпіон Данії: 83/84 , 77/78 , 71/72 , 70/71 , 57/58'
     },
     'viborg':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #16 Oscar Hedvall, #1 Lucas Lund; Defenders: #24 Daniel Anyembe, #23 Oliver Bundgaard, #4 Nicolas Burgy, #32 Lukas Kirkegaard, #30 Srdjan Kuzmic, #33 Mikkel Londal, #2 Ivan Nasberg, #55 Stipe Radic, #5 Zan Zaletel; Midfielders: #31 Carl Christensen, #31 Frederik Damkjer, #13 Jeppe Gronning, #12 Thomas Jorgensen, #19 Justin Lonwijk, #18 Manuel Mbom Jean, #31 Carl Nyggard, #7 Serginho, #6 Mads Sondergaard, #37 Jakob Vester, #28 Magnus Westergaard; Forwards: #21 Sofus Berger, #14 Anosike Ementa, #10 Isak Jensen, #17 Charly Nouck, #11 Renato Junior, #8 Ibrahim Said; Coach: ',
+        description:'Данський футбольний клуб з однойменного міста. Заснований 1 квітня 1896 року.',
+        trophies:'Друга Ліга Данії: 20/21, 14/15, 94/95; Кубок Данії: 99/00'
     }
 }
