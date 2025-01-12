@@ -23,6 +23,13 @@ function showClubs() {
     document.getElementById('greece-button').style.display = 'block';
     document.getElementById('georgia-button').style.display = 'block';
     document.getElementById('denmark-button').style.display = 'block';
+    document.getElementById('israel-button').style.display = 'block';
+    document.getElementById('ireland-button').style.display = 'block';
+    document.getElementById('iceland-button').style.display = 'block';
+    document.getElementById('italy-button').style.display = 'block';
+    document.getElementById('spain-button').style.display = 'block';
+
+
 
     const buttons = document.querySelectorAll('.info-button');
     buttons.forEach(button => button.style.display = 'none');
@@ -72,11 +79,16 @@ function showTeamDetails(detailType) {
     const team11 = teamdata_10[window.currentTeam] || {};
     const team12 = teamData_11[window.currentTeam] || {};
     const team13 = teamData_12[window.currentTeam] || {};
+    const team14 = teamData_13[window.currentTeam] || {};
+    const team15 = teamData_14[window.currentTeam] || {};
+    const team16 = teamData_15[window.currentTeam] || {};
+    const team17 = teamData_16[window.currentTeam] || {};
+    const team18 = teamData_17[window.currentTeam] || {};
     // Об'єднати дані з обох джерел
     const combinedTeam = {
-        players: `${team1.players || ''} ${team2.players || ''} ${team3.players || ''} ${team4.players || ''} ${team5.players || ''} ${team6.players || ''} ${team7.players || ''} ${team8.players || ''} ${team9.players || ''} ${team10.players || ''} ${team11.players || ''} ${team12.players || ''} ${team13.players}`.trim(),
-        description: `${team1.description || ''} ${team2.description || ''} ${team3.description || ''} ${team4.description || ''} ${team5.description || ''} ${team6.description || ''} ${team7.description || ''} ${team8.description || ''} ${team9.description|| ''} ${team10.description || ''} ${team11.description || ''} ${team12.description || ''} ${team13.description}`.trim(),
-        trophies: `${team1.trophies || ''} ${team2.trophies || ''} ${team3.trophies || ''} ${team4.players || ''} ${team5.trophies || ''} ${team6.trophies || ''} ${team7.trophies || ''} ${team8.trophies || ''} ${team9.trophies || ''} ${team10.trophies || ''} ${team11.trophies || ''} ${team12.trophies || ''} ${team13.trophies}`.trim()
+        players: `${team1.players || ''} ${team2.players || ''} ${team3.players || ''} ${team4.players || ''} ${team5.players || ''} ${team6.players || ''} ${team7.players || ''} ${team8.players || ''} ${team9.players || ''} ${team10.players || ''} ${team11.players || ''} ${team12.players || ''} ${team13.players || ''} ${team14.players || ''} ${team15.players || ''} ${team16.players || ''} ${team17.players || ''} ${team18.players}`.trim(),
+        description: `${team1.description || ''} ${team2.description || ''} ${team3.description || ''} ${team4.description || ''} ${team5.description || ''} ${team6.description || ''} ${team7.description || ''} ${team8.description || ''} ${team9.description|| ''} ${team10.description || ''} ${team11.description || ''} ${team12.description || ''} ${team13.description || ''} ${team14.description || ''} ${team15.description || ''} ${team16.description || ''} ${team17.description || ''} ${team18.description}`.trim(),
+        trophies: `${team1.trophies || ''} ${team2.trophies || ''} ${team3.trophies || ''} ${team4.players || ''} ${team5.trophies || ''} ${team6.trophies || ''} ${team7.trophies || ''} ${team8.trophies || ''} ${team9.trophies || ''} ${team10.trophies || ''} ${team11.trophies || ''} ${team12.trophies || ''} ${team13.trophies || ''} ${team14.trophies || ''} ${team1m15.trophies || ''} ${team16.trophies || ''} ${team17.trophies || ''} ${team18.trophies}`.trim()
     };
 
     // Відобразити інформацію залежно від типу деталей
@@ -112,6 +124,11 @@ function showEngland() {
     document.getElementById('greece-button').style.display = 'none'; 
     document.getElementById('georgia-button').style.display = 'none'; 
     document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
 }
 
 function showAplTeams() {
@@ -641,6 +658,11 @@ function showAlbania() {
     document.getElementById('greece-button').style.display = 'none';  
     document.getElementById('georgia-button').style.display = 'none'; 
     document.getElementById('denmark-button').style.display = 'none';  
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
 }
 function showSuperLigTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -717,6 +739,11 @@ function showAustria() {
     document.getElementById('greece-button').style.display = 'none'; 
     document.getElementById('georgia-button').style.display = 'none'; 
     document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
 }
 function showBundesligaTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -803,6 +830,11 @@ function showAndorra() {
     document.getElementById('greece-button').style.display = 'none'; 
     document.getElementById('georgia-button').style.display = 'none';
     document.getElementById('denmark-button').style.display = 'none'; 
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
 
 }
 function showFirstDivisionTeams() {
@@ -879,7 +911,12 @@ function showAzerbaijan() {
     document.getElementById('gibraltar-button').style.display = 'none'; 
     document.getElementById('greece-button').style.display = 'none';
     document.getElementById('georgia-button').style.display = 'none'; 
-    document.getElementById('denmark-button').style.display = 'none';  
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';  
 }
 function showPremierLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -957,6 +994,11 @@ function showBelgium() {
     document.getElementById('greece-button').style.display = 'none'; 
     document.getElementById('georgia-button').style.display = 'none'; 
     document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
 }
 function showJupilerProLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1153,7 +1195,11 @@ function showBolgaria() {
     document.getElementById('greece-button').style.display = 'none'; 
     document.getElementById('georgia-button').style.display = 'none'; 
     document.getElementById('denmark-button').style.display = 'none';
-    
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
 }
 function showFirstLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1261,6 +1307,11 @@ function showBosniaandHerzegovina() {
     document.getElementById('greece-button').style.display = 'none'; 
     document.getElementById('georgia-button').style.display = 'none'; 
     document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
     
 }
 function showWWINligaBIHTeams() {
@@ -1348,6 +1399,11 @@ function showArmenia() {
     document.getElementById('greece-button').style.display = 'none'; 
     document.getElementById('georgia-button').style.display = 'none'; 
     document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
 }
 function showPremierLigaTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1429,6 +1485,11 @@ function showGibraltar() {
     document.getElementById('greece-button').style.display = 'none'; 
     document.getElementById('georgia-button').style.display = 'none';   
     document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
 }
 function showNationalLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1510,6 +1571,11 @@ function showGreece() {
     document.getElementById('gibraltar-button').style.display = 'none';
     document.getElementById('georgia-button').style.display = 'none';
     document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
     
 }
 function showSuperLeagueTeams() {
@@ -1608,6 +1674,11 @@ function showGeorgia() {
     document.getElementById('greece-button').style.display = 'none';
     document.getElementById('denmark-button').style.display = 'none';
     document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
     
 }
 function showCrystalbetErovnuliLigaTeams() {
@@ -1685,6 +1756,11 @@ function showDenmark() {
     document.getElementById('gibraltar-button').style.display = 'none';
     document.getElementById('greece-button').style.display = 'none';
     document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
     
 }
 function showSuperLigaTeams() {
@@ -1753,5 +1829,776 @@ const teamData_12 = {
         players:'Goalkeepers: #16 Oscar Hedvall, #1 Lucas Lund; Defenders: #24 Daniel Anyembe, #23 Oliver Bundgaard, #4 Nicolas Burgy, #32 Lukas Kirkegaard, #30 Srdjan Kuzmic, #33 Mikkel Londal, #2 Ivan Nasberg, #55 Stipe Radic, #5 Zan Zaletel; Midfielders: #31 Carl Christensen, #31 Frederik Damkjer, #13 Jeppe Gronning, #12 Thomas Jorgensen, #19 Justin Lonwijk, #18 Manuel Mbom Jean, #31 Carl Nyggard, #7 Serginho, #6 Mads Sondergaard, #37 Jakob Vester, #28 Magnus Westergaard; Forwards: #21 Sofus Berger, #14 Anosike Ementa, #10 Isak Jensen, #17 Charly Nouck, #11 Renato Junior, #8 Ibrahim Said; Coach: ',
         description:'Данський футбольний клуб з однойменного міста. Заснований 1 квітня 1896 року.',
         trophies:'Друга Ліга Данії: 20/21, 14/15, 94/95; Кубок Данії: 99/00'
+    }
+}
+
+// Ізраїль
+function showIsrael() {
+    document.getElementById('ligathaal-button').style.display = 'block';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
+    
+}
+function showLigatHaalTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#ligathaal-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('ligathaal-button').style.display = 'none';
+    document.getElementById('ligathaal-dropdown').style.display = 'block';
+}
+const teamData_13 = {
+    'beitar jerusalem':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'hapoel beer sheva':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'hapoel hadera':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'hapoel haifa':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'hapoel jerusalem':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'ironi tiberias':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'kiryat shmona':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'maccabi bnei raina':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'maccabi haifa':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'maccabi petah tikva':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'maccabi tel aviv':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'netanya':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'sakhnin':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'sc ashdod':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    }
+} 
+
+// Ірландія
+function showIreland() {
+    document.getElementById('premierdivision-button').style.display = 'block';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
+    
+}
+function showPremierDivisionTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#premierdivision-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('premierdivision-button').style.display = 'none';
+    document.getElementById('premierdivision-dropdown').style.display = 'block';
+}
+const teamData_14 = {
+    'bohemians':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'cork city':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'derry city':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'drogheda':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'galway':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'shamrock rovers':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'shelbourne':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'sligo rovers':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'st. patricks':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'waterford':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    }
+}
+
+// Ісландія
+function showIceland() {
+    document.getElementById('bestadeildkarla-button').style.display = 'block';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
+    
+}
+function showBestaDeildKarlaTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#bestadeildkarla-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('bestadeildkarla-button').style.display = 'none';
+    document.getElementById('bestadeildkarla-dropdown').style.display = 'block';
+}
+const teamData_15 = {
+    'afturelding':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'akranes':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'breidablik':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'fram':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'hafnarfjordur':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'ka akureyri':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'kr reykjavik':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'stjarnan':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'valur':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'vestmannaeyjar':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'vestri':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'vikingur reykjavik':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    }
+}
+
+// Італія
+function showItaly() {
+    document.getElementById('seriaa-button').style.display = 'block';
+    document.getElementById('seriab-button').style.display = 'block';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
+}
+function showSeriaATeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#seriaa-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('seriaa-button').style.display = 'none';
+    document.getElementById('seriab-button').style.display = 'none';
+    document.getElementById('seriaa-dropdown').style.display = 'block';
+}
+function showSeriaBTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#seriab-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('seriab-button').style.display = 'none';
+    document.getElementById('seriaa-button').style.display = 'none';
+    document.getElementById('seriab-dropdown').style.display = 'block';
+}
+const teamData_16 = {
+    'atalanta':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    }, 
+    'bologna':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'cagliari':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'como':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'empoli':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'fiorentina':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'genoa':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'inter':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'juventus':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'lazio':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'lecce':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'milan':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'monza':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'napoli':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'parma':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'roma':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'torino':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'udineze':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'venezia':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'verona':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    }, 
+// seria b   
+    'bari':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'brescia':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'carrarese':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'catanzaro':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'cesena':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'cittadella':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'cosenza':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'cremonese':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'frosinone':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'juve stabia':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'mantova':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'modena':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'palermo':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'pisa':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'reggiana':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'ssalernitana':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'samprodia':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'sassuolo':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },    
+    'spezia':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'sudtirol':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    }        
+}
+
+
+
+// Іспанія
+function showSpain() {
+    document.getElementById('laliga-button').style.display = 'block';
+    document.getElementById('laliga2-button').style.display = 'block';
+    document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+}
+function showLaLigaTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#laliga-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('laliga-button').style.display = 'none';
+    document.getElementById('laliga2-button').style.display = 'none';
+    document.getElementById('laliga-dropdown').style.display = 'block';
+}
+
+function showLaLiga2Teams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#laliga2-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('laliga2-button').style.display = 'none';
+    document.getElementById('laliga-button').style.display = 'none';
+    document.getElementById('laliga2-dropdown').style.display = 'block';
+}
+const teamData_17 = {
+    'alaves':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'athletik bilbao':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'atletico madrid':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'barcelona':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'betis':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'celta vigo':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'espanyol':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'getafe':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'girona':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'las palmas':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'leganes':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'mallorca':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'osasuna':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'rayo vallecano':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'real madrid':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'real sociedad':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'sevilla':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'valencia':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'valladolid':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'villareal':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+// la liga 2
+    'albasete':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'almeria':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'burgos cf':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'cadiz cf':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'castellon':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'cordoba':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'deportivo la coruna':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'eibar':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'elche':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'eldense':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'fc cartagena':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'gijon':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'granada':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'huesca':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'levante':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'malaga':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'mirandes':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'racing club ferrol':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'racing santander':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'real oviedo':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'tenerife':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
+    },
+    'zaragoza':{
+        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
+        description:'',
+        trophies:''
     }
 }
