@@ -1863,74 +1863,74 @@ function showLigatHaalTeams() {
 }
 const teamData_13 = {
     'beitar jerusalem':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #1 Raz Karmi, #22 Amit Korenfine, #55 Miguel Silva; Defenders: #3 Raz Baruchian, #5 Gil Cohen, #20 Ori Dahan, #44 Liel Deri, #4 Jean Marcelin, #2 Zohar Zasno; Midfielders: #28 Sagi Israeli, #14 Abiezer Jeno, #16 Nadav Markovitch, #15 Dor Micha, #19 Li On Mizrahi, #6 Ismaila Soro, #8 Levi Yarin, #10 Adi Yona; Forwards: #77 Omer Atzili, #12 Nehoray Dabush, #23 Clayton Mayron George, #11 Timoyhy Muzie, #7 Yerden Shua, #26 Kani Silva, #27 Patrick Twumasi; Coach: Barak Itzhaki',
+        description:'Професіональний ізраїльський футбольний клуб з міста Єрусалим. Клуб має чи не найбільшу армію фанатів у країні.',
+        trophies:'Суперкубок Ізраїлю: 86/87, 76/77; Кубок Ізраїлю: 22/23, 08/09, 07/08, 88/89, 85/86, 84/85, 78/79, 75/76; Чемпіон Ізраїлю: 07/08, 06/07, 97/98, 96/97, 92/93, 86/87'
     },
     'hapoel beer sheva':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #55 Niv Eliasi, #36 Reem Golan, #45 Ben Gordin Anbary, #1 Ofir Marciano; Defenders: #11 Eylon Almog, #3 Matan Baltaxa, #5 Or Blorian, #30 Or Dadia, #23 Itay Hazut, #22 Helder Lopes, #4 Vitor Miguel, #18 Eitan Tibi; Midfielders: #35 Mariano Bareiro, #10 Dan Biton, #19 Shay Elias, #16 Amir Chaim Ganah, #8 Roei Gordana, #20 Kings Kangwa, #25 Ventura Lucas, #2 Guy Mizrahi, #26 Eliel Peretz, #26 Ofek Peretz, #27 Yoan Stoyanov; Forwards: #21 Zahi Ahmed, #70 Samir Farhud, #14 Arnold Garita, #77 Rotem Hatuel, #7 Antonio Sefer, #17 Alon Turgeman; Coach: Ran Kozuk',
+        description:'Ізраїльська футбольна команда з міста Беер-Шева, заснована у 1949. Нині виступає у Ізраїльській Прем`є́р-лі́зі. З 2015 року виступи проводить на міському стадіоні імені Якова Тернера. ',
+        trophies:'Суперкубок Ізраїлю: 22/23, 17/18, 16/17, 75/76; Кубок Ізраїлю: 21/22, 19/20, 96/97; Чемпіон Ізраїлю: 17/18, 16/17, 15/16, 75/76, 74/75'
     },
     'hapoel hadera':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #22 Ofek Antman, #55 Guy Herman, #21 Ohad Levita; Defenders: #16 Gilad Avramov, #6 Abdoulaye Cisse, #4 Lisav Eissat, #27 Diaa Lababidi, #5 Ido Levy, #24 Mamadou Mbodj, #26 Harel Shalom, #17 Itzik Sholmyster; Midfielders: #23 Tamir Adi, #23 Liam Aluk, #25 Reef Amsalem, #19 Dan Azaria, #7 Ruslan Barsky, #14 Ben Ezer Cohen, #18 Dan Einbinder, #99 Tomer Levi, #44 Yadis Lugasi, #3 Lior Rokach, #11 Raz Schwartz, #8 Ilay Trost; Forwards: #29 James Adeniyi, #91 Duvan Diby, #10 Godsway Donyoh, #12 Ibrahim Sangare, #20 Omer Senior, #9 Yali Shabo, #77 Raz Twizer, #15 Menashe Zalka; Coach: Asaf Nimni',
+        description:'Ізраїльський футбольний клуб з Хадери. Клуб був заснований на початку 1930-х рокі. І в останні роки британського мандата клуб увійшов у ІФА, проте через ізраїльську війну за Незалежність клуб був розформований. Після проголошення ізраїльської декларації Незалежності клуб був переформований і увійшов до другого ізраїльського дивізіону. Клуб вийшов у Лігу Алеф, вищий дивізіон країни, в 1954 році, однак вилетів з нього в кінці свого першого сезону у вищому дивізіоні. Клуб повинен був чекати до 1970 року, коли вдруге вийшли до елітного дивізіону. Вони ледве уникли вильоту в сезоні 1970/71 сезон, фінішувавши вище Маккабі (Петах-Тікви) за різницею м`ячів. Однак таки вилетіли на наступний сезон після закінчення чемпіонату на останньому місці. В цей раз вони повернулись одразу ж і фінішували 13-ми в сезоні 1973/74, на одну позицію  вище зони вильоту. Хоча у наступному сезоні 1974/75 клуб закінчив на найвищому місці в історії, сьомому, вони вилетіли в наступному сезоні. Цього разу клуб також з першої спроби повернувся у вищий дивізіон, де пограв кілька сезонів, але вилетів ще раз в 1979 році, ознаменувавши свій останній виступ у вищому дивізіоні.',
+        trophies:'Клуб не вигравав трофеї'
     },
     'hapoel haifa':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #13 Niv Antman, #1 Yoav Gerafi; Defenders: #3 Tamir Arbel, #2 Noam Ben Harush, #12 Oren Biton, #26 Orel Dgani, #25 George Diba, #22 Inon Eliyahu, #4 Dor Malul, #5 Fernand Mayembo; Midfielders: #32 Amit Ben-Yosef, #15 Yonatan Ferber, #30 Attia Harel, #25 George Libel, #19 Bar Lin, #14 Roy Nawi, #20 Itamar Noy, #55 Naor Sabag, #8 Dramane Salou, #77 Smay Samaein, #24 Liran Sardal, #31 Yarin Sardal, #28 Khalil Yohana; Forwards: #90 Dmitriy Antilevskiy, #7 Itay Buganim, #9 Thiemoko Diarra, #10 Dor Hugi, #18 Guy Melamed, #16 Agam Yehuda; Coach: Ronny Levy',
+        description:'Ізраїльський футбольний клуб із міста Хайфа. Клуб засновано у 1924 році. З 2014 року проводить домашні матчі на стадионі «Саммі Офер». До цього домашнім стадіоном команди був «Кір`ят-Еліезер».',
+        trophies:'Суперкубок Ізраїлю: 18/19; Кубок Ізраїлю: 17/18, 73/74, 65/66, 62/63; Чемпіон Ізраїлю: 98/99'
     },
     'hapoel jerusalem':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #1 Marko Alcevski, #18 Noam Shavit, #55 Nadav Zamir; Defenders: #16 Omer Agvadish, #4 Amit Glazer, #33 Maksim Grechkin, #24 Yonatah Laish, #20 Ofek Nadir, #5 Eloge Yao; Midfielders: #22 Samba Diallo, #17 Yanai Distalfeld, #6 Awaka Eshata, #21 Ayano Farada, #7 Matan Hozez, #8 Ilay Madmon, #3 Noam Malmud, #99 Avishay Tzuriel, #12 Raz Haim Yehezkel, #14 Liel Zana; Forwards: #77 Ohad Almagor, #24 Guy Badash, #10 Idan Dahan, #11 Franck Don Cedric, #9 Jelle Duin, #25 Andrew Idoko, #30 Ibeh Ransom, #19 Nadim Vrasana; Coach: Ziv Arie',
+        description:'Ізраїльський футбольний клуб, що належить до спортивного товариства «Хапоель» (Єрусалим). Грає на стадіоні «Тедді», що вміщує 34 000 глядачів. Найвищим досягненням для клубу є виграш Кубка Ізраїлю в 1973 році, і в тому ж році клуб став бронзовим призером чемпіонату Ізраїлю. Клуб був заснований в 1926 році і виступав у чемпіонаті підмандатної Палестини, а після створення Ізраїлю став виступати у другому дивізіоні країни. У 1957 році команда вперше в історії вийшла до вищого дивізіону країни і у 1960 році команда завершила сезон 4-м місцем у чемпіонаті. З цього періоду і аж до 1980-х років «Хапоель» був провідною командою міста Єрусалима. У 1973 році клуб виграв Кубок Ізраїлю після перемоги у фінальному матчі проти «Хакоаха» з міста Рамат-Ган, який наприкінці сезону став чемпіоном країни. У тому ж році «Хапоель» став бронзовим призером чемпіонату. У 1980-х роках команда втратила гегемонію у місті на користь «Бейтара», тому на початку 1990-х років клуб перейшов у приватні руки і в 1998 році став фіналістом Кубка Ізраїлю. У 2000 році клуб вилетів з Прем`єр-ліги і з тих пір не повертався до неї, натомість у команді почалось падіння, яке призвело до ряду понижень у класі. Після сезону 2006/07, в якому команда вдруге за нетривалий час вилетіла до третього дивізіону, розчаровані фанати, що були надзвичайно незадоволені керівництвом, вирішили створити власний клубу. Група, очолювана журналістом Урі Шерадським і за підтримки майбутнього мера Ніра Барката, створила власну команду «Хапоель Катамон», яка стала першим фанатським клубом Ізраїлю. Основна ж команда продовжила падіння і 2019 року вперше в історії вилетіла до четвертого дивізіону.',
+        trophies:'Клуб не вигравав трофеї'
     },
     'ironi tiberias':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #60 Tal Bomshtein, #19 Daniel Tenenbaum; Defenders: #37 Ondrej Baco, #15 Eli Balilti, #72 Shay Konstantini, #23 Ben Vahaba; Midfielders: #18 Gilad Abramov, #6 Fares Abu Akel, #13 Ron Apelbaum, #2 Neri Bar, #11 Noaf Bazea, #10 Yaniv Brik, #14 Wahib Habiballa, #12 Or Levi, #20 Franco Mazurek, #11 Michael Ohana, #4 Roee Shahar, #99 Haroun Shapso, #8 Matanel Tadesa, #17 Snir Talias, #5 Yonatan Teper, #8 Eithan Velblum, #16 Basam Zaarura; Forwards: #30 Mansour Badjie, #9 Stanislav Bilenkyi, #70 Rolly Botaka Jordan, #99 Peter Michael, #21 Basel Sha`aban, #18 Niv Tubul; Coach: Eiran Hudeda',
+        description:'Ізраїльський футбольний клуб з міста Тверія. Клуб не пов`язаний з «Хапоелем» (Тверія), колишнім клубом, який провів кілька сезонів у вищому дивізіоні ізраїльського футболу в 1960-х і 1980-х роках, востаннє виступивши у вищому дивізіоні в 1989 році. У футбол у Тверії грали ще до проголошення незалежності Ізраїлю. Перший клуб у місті, «Маккабі» (Тверія), був створений у 1925 році, а у футбол грали вже 1927 році. Через рік «Маккабі» (Тверія) брала участь у першому в історії розіграші Кубка Ізраїлю. Найвідомішим клубом із Тверії був «Хапоель» (Тверія), який грав у вищому дивізіоні ізраїльського футболу в 1960-х роках, з 1961–62 по 1964–65 роки, а також у 1988–89 роках. Третім клубом, який діяв у Тверії в ці роки, був «Бейтар» (Тверія), хоча він в основному грав на нижчих рівнях ізраїльської ліги, а його найкращим досягненням був вихід до третього рівня Ліги Бет наприкінці 1960-х і в 1970-х роках.',
+        trophies:'Клуб не вигравав трофеї'
     },
     'kiryat shmona':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #22 Assaf Tzur, #1 Matan Zalmanovich; Defenders: #6 Ofir Benbenishti, #2 Noam Cohen, #32 Shay David, #47 Ayad Habashi, #24 Denis Kulikov, #14 David Twito; Midfielders: #87 Mohamad Abu Rumi, #4 Sekou Bangoura, #20 Christian Bella, #10 David Dego, #70 Christian Martinez, #26 Nadav Niddam, #91 Bilal Shaheen, #15 Ariel Sharetzky, #34 Hamza Shibli, #19 Avichay Wodaje; Forwards: #9 Lidor Cohen, #11 Saleh Hussein, #17 Jardel, #7 Yair Mordechai, #18 Ori Shnaper, #16 Alfredo Stephens, #21 Roi Zikri; Coach: Shai Barda',
+        description:'Ізраїльський футбольний клуб з міста Кір`ят-Шмона. Заснований 2000 року.',
+        trophies:'Суперкубок Ізраїлю: 15/16; Кубок Ізраїлю: 13/14; Чемпіон Ізраїлю: 11/12'
     },
     'maccabi bnei raina':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #1 Gad Amos, #22 Maharan Gadir, #30 Omar Nahfaoui; Defenders: #66 Evyatar Barak, #2 Karlo Brucic, #3 Mamadu Samba Cande, #29 Iyad Hutba, #14 Abdallah Jaber, #26 Nemanja Ljubisavljevic, #17 Ron Unger, #20 Fadel Zbedat; Midfielders: #5 Mor Brami, #12 Meir Buhbut, #8 Saar Fadida, #6 Ihab Ganayim, #6 Ehab Ghnayem, #15 Guy Hadida, #29 Iyad Khutaba, #16 Muhamed Shaker, #55 Roei Shukrani; Forwards: #7 Sayd Abu Farhi, #9 Qays Ghanem, #11 Ezekiel Henty, #10 Usman Mohammed, #18 Chance Mondzenga; Coach: Sharon Mimer',
+        description:'Ізраїльський футбольний клуб з міста Рейне, заснований 2005 року. У 1990-х і 2000-х роках «Маккабі Бней Рейне» виступав у Лізі Гімель і не досяг значних досягнень. У 2008 році клуб було розформовано. У 2016 році клуб перезаснував місцевий бізнесмен Саїд Басул, і наприкінці сезону 2016–17 команда посіла перше місце в Лізі Гімель і підвищилась до Ліги Бет (четвертий дивізіон). У Кубку Ізраїлю 2019–20 років кваліфікувався до 1/8 фіналу, де програв єрусалимському «Бейтару» з рахунком 1–3. Наприкінці сезону піднявся до Ліги Алеф. 23 вересня 2020 року клубний трибунал ІФА постановив, що «Рейне» зіграє в наступному сезоні в Лізі Алеф після того, як попередній турнір був припинений через епідемію COVID-19. 6 травня 2022 року клуб вперше в історії піднявся до ізраїльської Прем`єр-ліги після перемоги з рахунком 1–0 над «Хапоелем» (Умм-аль-Фахм). Таким чином, команда за три роки пройшла шлях від третього дивізіону до Прем`єр-ліги.',
+        trophies:'Клуб не вигравав трофеї'
     },
     'maccabi haifa':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #77 Royie Fucs, #40 Sharif Kaiuf, #13 Tomas Sultani; Defenders: #42 Roey Elimelech, #22 Ilay Feingold, #55 Rami Gershon, #3 Shon Goldberg, #23 Maor Kandil, #14 Vital Nsimba, #44 Pedrao, #30 Abdoulaye Seck, #34 Oleksandr Syrota; Midfielders: #24 Ethane Azoulay, #28 Ilay Hajaj, #33 Liam Hermesh, #26 Mahmoud Jaber, #6 Gadi Kinda, #4 Ali Mahomed, #11 Lior Refaelov, #10 Dia Saba; Forwards: #38 Omer Dahan, #21 Dean David, #8 Dolev Haziza, #36 Lyad Khalaili, #9 Matias Nahuel, #16 Kenny Saief, #7 Xander Severina, #19 Eric Shuranov; Coach: Barak Bakhar',
+        description:'Ізраїльський футбольний клуб з міста Хайфа. Футбольний клуб «Маккабі» Хайфа був заснований в 1913 році. До початку 60-х клуб не мав суттєвих успіхів. Клуб декілька разів вилітав з ізраїльської вищої ліги і повертався в неї знову. В 1962 році «Маккабі» Хайфа вперше виграв Кубок Ізраїлю. Однак, до початку 80-х виступи команди були нестабільними, і вона не перебувала на головних ролях в ізраїльському футболі. З середини 80-х «Маккабі» Хайфа поступово став провідним клубом ізраїльського футболу.',
+        trophies:'Суперкубок Ізраїлю: 23/24, 21/22, 89/90, 85/86; Кубок Ізраїлю: 15/16, 97/98, 94/95, 92/93, 90/91, 61/62; Чемпіон Ізраїлю: 22/23, 21/22, 20/21, 10/11, 08/09, 05/06, 04/05, 03/04, 01/02, 00/01, 93/94, 90/91, 88/ 89 , 84/85 , 83/84'
     },
     'maccabi petah tikva':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #98 Tomer Litvinov, #34 Marco Wolff; Defenders: #12 Alon Azugi, #10 Arad Bar, #16 Yarden Cohen, #26 Guy Deznet, #25 Plamen Galabov, #5 Renato Gojkovic, #32 Mohamad Hindi, #2 Andreas Karo, #19 Gabi Maatuk, #17 Aviv Salem; Midfielders: #24 Rally Bwalya, #20 Ido Cohen, #14 Tamir Glazer, #14 Tamir Glezer, #72 Eyal Golasa, #9 Liran Hazan, #18 Eden Shamir, #15 Idan Vered, #28 Niv Yehoshua; Forwards: #77 Amir Altoury, #23 Vitalie Damascan, #14 Wilson Harris, #42 Yuval Kretzo, #8 Anas Mahamid, #11 Or Roizman, #7 Luka Stor, #45 Ilay Tzairi; Coach: Tamir Luzon',
+        description:'Професіональний ізраїльський футбольний клуб з міста Петах-Тіква. Частина спортивного Світового об`єднання Маккабі, зараз команда виступає в Ізраїльській Прем`єр-лізі. Клуб було засновано в 1912 році групою єврейських студентів з Петах-Тікви, які навчалися в османському місті Константинополь (багато з цих юнаків пізніше служили в османській армії під час Першої світової війни), таким чином «Маккабі» став другим найстаршим футбольним клубом Ізраїлю, після «Маккабі» (Тель-Авів), який було засновано в 1906 році. В 1921 році, після смерті одного із засновників клубу Авшалома Гісіна під час заворушень в Яффі (1921), клуб додав його ім`я до офіційної назви клубу, і, таким чином, клуб отримав назву, «Маккабі Авшалон Петах-Тіква». У 1927 році клуб переїхав на стадіон «Маккабі Петах-Тіква», на якому вони виступали до 1970-их років. У 1935 році «Маккабі» виграв свій перший трофей, перемігши «Хакоах» (Тель-Авів) з рахунком 1:0 у фіналі кубку Палестини. 1939 року команда знову дійшла до фіналу кубку, але цього разу поступилася «Хакоаху» (Тель-Авів) з рахунком 1:2. Проте наступного року «Маккабі» став переможцем турніру на призи газету Гаарец.',
+        trophies:'Кубок Ізраїлю: 23/24, 51/52, 34/35'
     },
     'maccabi tel aviv':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #50 Roel Amedi, #22 Ofek Melika, #90 Roi Mishpati, #51 Shalev Saadia, #23 Simon Sluga; Defenders: #6 Tyrese Asante, #27 Ofir Davidzada, #11 Sagiv Jehezkel, #4 Stav Lemkin, #5 Idan Nachmias, #3 Roy Revivo, #13 Raz Shlomo, #18 Nemanja Stojic, #73 Daniel Tishler, #38 Idan Weinberg; Midfielders: #16 Gabi Kanichowsky, #19 Bar Lin, #19 Elad Madmon, #41 Roee Magor, #48 Ido Oli, #42 Dor Peretz, #36 Ido Shahar, #28 Isssouf Sissokho, #14 Joris van Overeem; Forwards: #20 Henry Addo, #2 Avishay Cohen, #77 Osher Davida, #33 Hisham Layous, #15 Yonas Malede, #9 Dor Turgeman, #17 Patati Weslley, #7 Eran Zahavi; Coach: Zarko Lazetic',
+        description:'Ізраїльський спортивний клуб із Тель-Авіва, заснований 1906 року. У клубі є команди з різних видів спорту, найсильнішими з яких є футбол, баскетбол, дзюдо, плавання, гандбол і інші. ФК «Маккабі» є найтитулованішим клубом в ізраїльському футболі і найуспішнішим ізраїльським футбольним клубом за межами країни, вигравши двічі Лігу чемпіонів АФК. Його дербі з «Хапоелем» (Тель-Авів) вважається одним з найспекотніших дербі в ізраїльському спорті. «Маккабі» є другим ізраїльським клубом, щоб потрапляв до групового етапу Ліга Чемпіонів УЄФА, і єдиною командою в Ізраїлі, яка ніколи не вилетіла',
+        trophies:'Суперкубок Ізраїлю: 24/25, 20/21, 19/20, 88/89, 79/80, 77/78, 67/68, 65/66; Кубок Ізраїлю: 20/21, 14/15, 04/05, 01/02, 00/01, 95/96, 93/94, 87/88, 86/87, 76/77, 69/70, 66/67, 64/ 65, 63/64, 58/59, 57/58, 54/55, 53/54, 46/47,45/46, 40/41, 32/33, 1929/30, 1928/29; Чемпіон Ізраїлю: 23/24, 19/20, 18/19, 14/15, 13/14, 12/13, 02/03, 95/96, 94/95, 91/92, 78/79, 76/77, 71/ 72, 69/70, 67/68, 57/58, 55/56, 53/54, 51/52,49/50, 46/47, 41/42, 38/39, 36/37, 35/36: Клубний Чемпіонат Азії: 1971, 1969 роки'
     },
     'netanya':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #22 Omer Yaacov Nir On, #75 Adi Adi Tabchnik, #1 Tomer Tzarfati; Defenders: #4 Itay Ben Shabat, #21 Mohamed Djetei, #26 Karem Jaber, #72 Rotem Keller, #40 Obeida Khattab, #2 Raz Meir, #25 Nikita Stoioanov; Midfielders: #20 Janio Bikel, #10 Oz Bilu, #14 Bar Cohen, #3 Aviv Kanarik, #15 Maor Levi, #7 Maxim Plakushchenko, #8 Yuval Sade, #19 Saher Taji; Forwards: #11 Idan Baranes, #44 Daniel Dapaah, #36 Osher Eliyahu, #17 Loai Halaf, #91 Tavares Heriberto, #9 Itamar Shviro, #70 Freddy Enrique Vargas Pinero, #66 Igor Zlatanovic; Coach: Yossi Abukasis',
+        description:'Ізраїльський футбольний клуб з Нетаньї. Заснований 1934 року. Один з найстаріших ізраїльських клубів, провів 49 сезонів (включно з поточним) у вищих дивізіонах чемпіонату Ізраїлю з футболу.',
+        trophies:'Суперкубок Ізраїлю: 83/84, 80/81, 78/79, 74/75, 71/72; Кубок Ізраїлю: 77/78; Чемпіон Ізраїлю: 82/83 , 79/80 , 77/78 , 73/74 , 70/71'
     },
     'sakhnin':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #22 Muhamed Abu Nil, #32 Majed Suleiman, #30 Abed Yassin; Defenders: #44 Hatem Abd Elhamed, #5 Iyad Abu Abaid, #14 Itai Ben Hamo, #28 Ovadia Darwish, #2 Maroun Gantus, #4 Konstantinos Sotiriou; Midfielders: #18 Omer Abuhav, #16 Naftali Belay, #11 Matthew Cudjoe, #6 Ilay Eliyau Elmkies, #42 Jeando Fuchs, #32 Mohamad Hibi, #5 Gaby Joury, #33 Stephane Omeonga, #37 Ahmed Taha; Forwards: #77 Mohammad Bdarney, #26 Jubayer Bushnaq, #12 Ayias Anis Forat, #20 Mohamad Ganame, #47 Daniel Joulani, #99 Abdallah Khalaihal, #24 Basil Khuri, #12 Olakunle Taiwo Quadri, #9 Alexandre Ramalingom, #29 Ahmad Salman, #10 Kevin Soni; Coach: Slobodan Drapic',
+        description:'Ізраїльський футбольний клуб з міста Сахнін, який виступає у Прем`єр-лізі. Заснований в 1991 році. Футбольна команда була створена в кінці 70-х років, стартувавши в шостому дивізіоні чемпіонату Ізраїлю. У 2003 році дебютувала в ізраїльській Прем`єр-лізі і в перший же рік стала володарем Кубка Ізраїлю після перемоги над хайфським «Хапоелем», тим самим ставши першим в історії Ізраїлю арабським клубом, який завоював який-небудь титул. На наступний сезон клуб успішно подолав відбірковий етап Кубка УЄФА, програвши після цього в першому колі англійському «Ньюкаслу». Незважаючи на велику симпатію до команди з боку єврейської громадськості, в сезоні 2004/05 клуб часто піддавався критиці з огляду брутального стилю гри, що диктувався тодішнім тренером Еялем Лахманом. У підсумку після низки поразок Лахмана було звільнено, стиль гри дещо пом`якшав і команда все-таки зберегла місце в Прем`єр-лізі. До сезону 2005/06 у клубу не було власного поля, однак потім домашньою ареною став побудований стадіон «Доха», частково профінансований урядом Катару і названий на честь столиці цієї держави. За підсумками чемпіонату 2007/08 Сахнін завершив сезон на четвертому місці; після цього досягнення перед початком наступного сезону клуб покинули провідні гравці Маор Бузагло і Егія Явруян заради «Маккабі» з Тель-Авіва, і тренер Еліша Леві — у «Маккабі» (Хайфа).',
+        trophies:'Кубок Ізраїлю: 03/04'
     },
     'sc ashdod':{
-        players:'Goalkeepers: ; Defenders: ; Midfielders: ; Forwards: ; Coach: ',
-        description:'',
-        trophies:''
+        players:'Goalkeepers: #55 Tom Carmeli, #1 Ariel Harush, #41 Sahar Hasson; Defenders: #4 Dennis Awany Timothy, #52 Abdoul Belem, #20 Omri Ben Harush, #15 Tom Ben Zaken, #13 Montari Kamaheni, #3 Shahar Rosen, #16 Maor Yashilirmak, #70 Omar Yifarah, #23 Luiyi de Lucas; Midfielders: #29 Emmanuel Agyei, #6 Martin Atemengue, #5 Nir Bitton, #9 Shalev Harush, #10 Mohamad Kanaan, #80 Ben Levy, #14 Abu Ahmed Mokh, #14 Noam Muche, #5 Jordan Sebban, #36 Elad Shahaf, #18 Ilay Tamam, #36 Raz Tamar; Forwards: #30 Ravid Abergel, #? Amer, #7 Shlomi Azulay, #21 Elia Gethon, #77 Asil Knani, #19 Adir Levi, #11 Roy Levy, #28 Ebenezer Mamatah, #8 Stav Nachmani, #17 Liav Prada; Coach: Eliyahu Levi',
+        description:'Ізраїльський футбольний клуб з однойменного міста, заснований 1999 року. Клуб був створений 1999 року шляхом об`єднання двох міських футбольних клубів — «Хапоель» (Ашдод) і «Маккабі Іроні» (Ашдод). У перші роки після об`єднання клубів колір форми був повністю синій, але коли Хаїм Ревіво зайняв в клубі одну з провідних ролей, кольори клубу помінялися на червоний і жовтий. Деякі скептики вважають, що це пов`язано з його кар`єрою в турецькому клубі «Галатасарай», проте офіційна версія полягає в тому, що кольори відповідають основним кольором колишнього «Хапоеля» (червоний) і колишнього «Маккабі» (жовтий і синій). Об`єднання клубів не принесло одразу позитивних результатів. Перший час вболівальники були розчаровані. У сезоні 2004/05 клуб досяг найвищого успіху — третього місця в чемпіонаті, і завдяки цьому отримав право представляти Ізраїль в розіграші Кубка УЄФА. Не менш важливим для команди виявився і вихід у фінал місцевого Кубка Тото, де вона зазнала поразки в серії післяматчевих пенальті. Перший досвід клубу в європейському континентальному кубку виявився невдалим, оскільки у другому кваліфай-раунді кубка УЄФА 2005/06 команда поступилася срібному призеру чемпіонату Словенії «Домжале». За підсумками сезону 2014/15 клуб покинув вищу лігу, але за один сезон зумів повернутися у вищий дивізіон, ставши переможцем Національної ліги у 2015/16 роках.',
+        trophies:'Клуб не вигравав трофеї'
     }
 } 
 
