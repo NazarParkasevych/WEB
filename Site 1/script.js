@@ -28,6 +28,11 @@ function showClubs() {
     document.getElementById('iceland-button').style.display = 'block';
     document.getElementById('italy-button').style.display = 'block';
     document.getElementById('spain-button').style.display = 'block';
+    document.getElementById('kazakhstan-button').style.display = 'block';
+    document.getElementById('cypr-button').style.display = 'block';
+    document.getElementById('kosovo-button').style.display = 'block';
+    document.getElementById('latvia-button').style.display = 'block';
+    document.getElementById('lithuania-button').style.display = 'block';
 
 
 
@@ -84,11 +89,16 @@ function showTeamDetails(detailType) {
     const team16 = teamData_15[window.currentTeam] || {};
     const team17 = teamData_16[window.currentTeam] || {};
     const team18 = teamData_17[window.currentTeam] || {};
+    const team19 = teamdata_18[window.currentTeam] || {};
+    const team20 = teamdata_19[window.currentTeam] || {};
+    const team21 = teamdata_20[window.currentTeam] || {};
+    const team22 = teamdata_21[window.currentTeam] || {};
+    const team23 = teamdata_22[window.currentTeam] || {};
     // Об'єднати дані з обох джерел
     const combinedTeam = {
-        players: `${team1.players || ''} ${team2.players || ''} ${team3.players || ''} ${team4.players || ''} ${team5.players || ''} ${team6.players || ''} ${team7.players || ''} ${team8.players || ''} ${team9.players || ''} ${team10.players || ''} ${team11.players || ''} ${team12.players || ''} ${team13.players || ''} ${team14.players || ''} ${team15.players || ''} ${team16.players || ''} ${team17.players || ''} ${team18.players}`.trim(),
-        description: `${team1.description || ''} ${team2.description || ''} ${team3.description || ''} ${team4.description || ''} ${team5.description || ''} ${team6.description || ''} ${team7.description || ''} ${team8.description || ''} ${team9.description|| ''} ${team10.description || ''} ${team11.description || ''} ${team12.description || ''} ${team13.description || ''} ${team14.description || ''} ${team15.description || ''} ${team16.description || ''} ${team17.description || ''} ${team18.description}`.trim(),
-        trophies: `${team1.trophies || ''} ${team2.trophies || ''} ${team3.trophies || ''} ${team4.players || ''} ${team5.trophies || ''} ${team6.trophies || ''} ${team7.trophies || ''} ${team8.trophies || ''} ${team9.trophies || ''} ${team10.trophies || ''} ${team11.trophies || ''} ${team12.trophies || ''} ${team13.trophies || ''} ${team14.trophies || ''} ${team15.trophies || ''} ${team16.trophies || ''} ${team17.trophies || ''} ${team18.trophies}`.trim()
+        players: `${team1.players || ''} ${team2.players || ''} ${team3.players || ''} ${team4.players || ''} ${team5.players || ''} ${team6.players || ''} ${team7.players || ''} ${team8.players || ''} ${team9.players || ''} ${team10.players || ''} ${team11.players || ''} ${team12.players || ''} ${team13.players || ''} ${team14.players || ''} ${team15.players || ''} ${team16.players || ''} ${team17.players || ''} ${team18.players || ''} ${team19.players || ''} ${team20.players || ''} ${team21.players || ''} ${team22.players ||''} ${team23.players}`.trim(),
+        description: `${team1.description || ''} ${team2.description || ''} ${team3.description || ''} ${team4.description || ''} ${team5.description || ''} ${team6.description || ''} ${team7.description || ''} ${team8.description || ''} ${team9.description|| ''} ${team10.description || ''} ${team11.description || ''} ${team12.description || ''} ${team13.description || ''} ${team14.description || ''} ${team15.description || ''} ${team16.description || ''} ${team17.description || ''} ${team18.description || ''} ${team19.description || ''} ${team20.description || ''} ${team21.description || ''} ${team22.description || ''} ${team23.description}`.trim(),
+        trophies: `${team1.trophies || ''} ${team2.trophies || ''} ${team3.trophies || ''} ${team4.players || ''} ${team5.trophies || ''} ${team6.trophies || ''} ${team7.trophies || ''} ${team8.trophies || ''} ${team9.trophies || ''} ${team10.trophies || ''} ${team11.trophies || ''} ${team12.trophies || ''} ${team13.trophies || ''} ${team14.trophies || ''} ${team15.trophies || ''} ${team16.trophies || ''} ${team17.trophies || ''} ${team18.trophies || ''} ${team19.trophies || ''} ${team20.trophies || ''} ${team21.trophies || ''} ${team22.trophies || ''} ${team23.trophies}`.trim()
     };
 
     // Відобразити інформацію залежно від типу деталей
@@ -129,6 +139,12 @@ function showEngland() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
+
 }
 
 function showAplTeams() {
@@ -663,6 +679,11 @@ function showAlbania() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
 }
 function showSuperLigTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -744,6 +765,11 @@ function showAustria() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
 }
 function showBundesligaTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -835,6 +861,11 @@ function showAndorra() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
 
 }
 function showFirstDivisionTeams() {
@@ -917,6 +948,11 @@ function showAzerbaijan() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';  
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
 }
 function showPremierLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -999,6 +1035,11 @@ function showBelgium() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
 }
 function showJupilerProLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1200,6 +1241,11 @@ function showBolgaria() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
 }
 function showFirstLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1312,6 +1358,11 @@ function showBosniaandHerzegovina() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
     
 }
 function showWWINligaBIHTeams() {
@@ -1404,6 +1455,11 @@ function showArmenia() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
 }
 function showPremierLigaTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1490,6 +1546,11 @@ function showGibraltar() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
 }
 function showNationalLeagueTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -1576,6 +1637,11 @@ function showGreece() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
     
 }
 function showSuperLeagueTeams() {
@@ -1679,6 +1745,11 @@ function showGeorgia() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
     
 }
 function showCrystalbetErovnuliLigaTeams() {
@@ -1761,6 +1832,11 @@ function showDenmark() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
     
 }
 function showSuperLigaTeams() {
@@ -1853,6 +1929,11 @@ function showIsrael() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
     
 }
 function showLigatHaalTeams() {
@@ -1955,6 +2036,11 @@ function showIreland() {
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
     
 }
 function showPremierDivisionTeams() {
@@ -2037,6 +2123,11 @@ function showIceland() {
     document.getElementById('ireland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
     
 }
 function showBestaDeildKarlaTeams() {
@@ -2130,6 +2221,11 @@ function showItaly() {
     document.getElementById('ireland-button').style.display = 'none';
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
 }
 function showSeriaATeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -2373,6 +2469,11 @@ function showSpain() {
     document.getElementById('ireland-button').style.display = 'none';
     document.getElementById('iceland-button').style.display = 'none';
     document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
 }
 function showLaLigaTeams() {
     document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
@@ -2600,5 +2701,480 @@ const teamData_17 = {
         players:'Goalkeepers: #1 Guillermo Acin, #1 Cristian Alvarez, #40 Carlos Calavia, #25 Joan Femenias, #13 Gaetan Poussin; Defenders: #36 Hugo Barrachina, #19 Ivan Calero, #5 Enrique Clemente, #3 Jair, #12 Sebastian Kosa, #24 Lluis Lopez, #2 Marcos Luna, #17 Carlos Nieto, #31 Juan Sabater, #4 Dani Tasende, #15 Bernardo Vital; Midfielders: #8 Marc Aguado, #16 Kervin Arriaga, #6 Keidi Bare, #14 Francho, #21 Toni Moya, #34 Lucas Terrer; Forwards: #23 Ager Aketxe, #32 Chema Aragues, #20 Adu Ares, #9 Monzon Ivan Azon, #11 Samed Bazdar, #10 Bermejo, #34 Marcos Aranda Cuenca, #33 Adrian Liso, #39 Aitor Manas, #22 Alberto Mari, #29 Pau Sans, #7 Mario Soberon; Coach: Miguel Ramirez',
         description:'Професійний іспанський футбольний клуб з міста Сарагоса. Заснований 18 березня 1932 року. Грає в іспанській Сегунді. Клуб має у своєму активі Кубок Кубків УЄФА.',
         trophies:'Ла Ліга 2: 77/78; Кубок міжміських ярмарків: 63/64; Суперкубок Іспанії: 04/05; Кубок Іспанії: 03/04, 00/01, 93/94, 85/86, 65/66, 63/64; Кубок володарів кубків: 94/95'
+    }
+}
+
+// Казахстан
+function showKazakhstan() {
+    document.getElementById('prime-league-button').style.display = 'block';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
+}
+function showPrimeLeagueTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#prime-league-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('prime-league-button').style.display = 'none';
+    document.getElementById('prime-league-dropdown').style.display = 'block';
+}
+const teamdata_18 = {
+    'aksu': {
+        players:'Goalkeepers: #16 Zhanibek Kabdyrken; Defenders: #3 Darkhan Bazilov, #88 Muslim Zakariya, #44 Danil Denisov; Midfielders: #18 Erasyl Baydrakhmanov; Forwards: #9 Aleksandr Bovkun, #23 Amir Muralinov; Coach: ',
+        description:'Казахстанський футбольний клуб з однойменного міста Павлодарської області, базується в Павлодарі. Заснований у 2018 році. Переможець Першої ліги Казахстану 2021 року. Вперше було допущено до участі у Другій лізі Казахстану у 2018 році. 2020 року став переможцем групи 4 Другої ліги. У 2021 році став переможцем Першої ліги і вперше у своїй історії вийшов до елітного дивізіону країни. Перед початком дебютного сезону у Прем`єр-лізі клуб призначив нового тренера, українця Руслана Костишина, який став першим іноземним тренером в історії команди. За підсумками сезону 2023 року вибув до першої ліги.',
+        trophies:'Чемпіон Казахстану: 2021'
+    },
+    'aktobe': {
+        players:'Goalkeepers: #1 Igor Trofimets, #99 Vlad Andrei Daniel; Defenders: #26 Nemanja Andjelkovic, #24 Bagdat Kairov, #6 Alibek Kasym, #15 Gaby Kiki, #91 Lev Skvortsov, #31 Adilkhan Tanzharikov, #88 Bogdan Vatajelu; Midfielders: #4 Uche Agbo, #42 Ayan Baydavletov, #67 Darkhan Berdibek, #99 Freddy Gondola, #80 Arman Kenesov, #48 Alisher Kenzhegulov, #57 Miras Umaniyazov; Forwards: #12 Amadou Doumbouya, #19 Oralkhan Omirtaev, #17 Dorny Romero; Coach: Ihor Leonov',
+        description:'Казахстанський футбольний клуб з однойменного міста. Клуб 5-разовий чемпіон Казахстану, володар Кубку Казахстану та тричі вигравав Суперкубок країни. Домашня арена — Центральний стадіон імені Кобланди-Батира, було відкрито 1975 року, вміщує 12 800 глядачів. Основним фанатським рухом є організація «13-й сектор».',
+        trophies:'Друга ліга: 2020, 99/00; Суперкубок Казахстану: 2014, 2010, 2008; Кубок Казахстану: 2024, 2008; Чемпіон Казахстану: 2013, 2009, 2008, 2007, 2005'
+    },
+    'astana': {
+        players:'Goalkeepers: #91 Tamerlan Abuov, #93 Josip Condric, #74 Mukhammedzhan Seysen; Defenders: #45 Aleksa Amanovic, #71 Sanzhar Anuarov, #2 Karlo Bartolec, #15 Abzal Beysebekov, #4 Marat Bystrov, #3 Branimir Kalaica, #5 Kipras Kazukolovas, #47 Maxim Mamontov, #22 Aleksandr Marochkin, #52 Timur Tokenov, #6 Yan Vorogovskiy; Midfielders: #7 Maks Ebong, #77 Nazmi Gripshi; Forwards: #11 Nmandi Frankllin Ahanonu, #21 Elkhan Astanov, #72 Stanislav Basmanov, #53 Andrey Berezutskiy, #28 Ousmane Camara, #9 Chinedu Geoffrey, #81 Ramazan Karimov, #96 Batyrkhan Mustafin, #10 Marin Tomasov, #87 Arman Vardanyan, #97 Nurali Zhaksylykov; Coach: Grigori Babayan',
+        description:'Футбольний клуб «Астана» (каз. «Астана футбол клубы») — професійний футбольний клуб з міста Астана, Казахстан. Заснований у 2009 році шляхом об`єднання клубів «Мегаспорт» та «Алма-Ата». Спочатку команда носила назву «Локомотив», а у 2011 році була перейменована на «Астана». Перші роки (2009–2013): У дебютному сезоні 2009 року клуб здобув срібні медалі чемпіонату Казахстану. У 2010 році «Астана» виграла свій перший Кубок Казахстану, а в 2011 році — Суперкубок Казахстану. У 2012 році команда вдруге завоювала Кубок Казахстану. Європейські досягнення (2014–2018): У 2014 році під керівництвом тренера Станіміра Стойлова «Астана» вперше стала чемпіоном Казахстану. У 2015 році клуб став першим в історії казахстанським клубом, який вийшов до групового етапу Ліги чемпіонів УЄФА. У 2017 році «Астана» досягла 1/16 фіналу Ліги Європи УЄФА. Подальші успіхи (2019–2024): Клуб продовжував домінувати на національному рівні, здобувши чемпіонські титули у 2019 та 2022 роках. У 2024 році «Астана» стала першим переможцем новоствореного Кубка ліги Казахстану, обігравши у фіналі «Женіс» з рахунком 2:0. Міжнародні досягнення: «Астана» є єдиним казахстанським клубом, який брав участь у груповому етапі Ліги чемпіонів УЄФА та досягав стадії плей-оф Ліги Європи УЄФА. Домашній стадіон: «Астана Арена» — сучасний стадіон з розсувним дахом, вміщує 30 254 глядачів. Відкритий у 2009 році, він є одним із шести стадіонів у світі з подібною конструкцією даху. Відомі гравці: У різні роки за клуб виступали такі відомі футболісти, як Андрій Тихонов, Єгор Титов та Максим Шацьких.  Рекордні досягнення: «Астана» є рекордсменом за кількістю виграних чемпіонатів Казахстану — 7 титулів станом на 2024 рік. ФК «Астана» продовжує бути провідним клубом Казахстану, демонструючи стабільні результати як на національній, так і на міжнародній аренах.',
+        trophies:'Кубок Казахської ліги: 2024; Суперкубок Казахстану: 2023, 2020, 2019, 2018, 2015, 2011; Кубок Казахстану: 2016, 2012, 2010; Чемпіон Казахстану: 2022, 2019, 2018, 2017, 2016, 2015, 2014'
+    },
+    'atyrau': {
+        players:'Goalkeepers: #1 Egor Khatkevich, #35 Nurasyl Tokhtarov; Defenders: #? Amandyk Nabikhanov, #16 Mateus Barbosa, #? Fakhriddin Akhtamov, #? Miram Sapanov, #19 Gevorg Nadzharyan, #? Eskendir Kybyray; Midfielders: #? Guilherme Morais, #? Nikita Kaplenko, #10 Rinat Dzhumatov, #20 Ersultan Kaldybekov, #63 Fatkhullo Olimzoda; Forwards: #? Ravil Atykhanov, #22 Igor Stasevich, #11 aslan adil, #17 Joel Kayamba, #77 Karim Smykov, #15 Edige Oralbay, #? Giorgi Nikabadze, #? Shokhan Abzalov, #? Bakdaulet Zulfikarov; Coach: ',
+        description:'Казахстанський футбольний клуб із міста Атирау, заснований 1980 року. Виступає у Прем`єр-лізі Казахстану.',
+        trophies:'Кубок Казахстану: 2009; Чемпіон Казахстану: 2020'
+    },
+    'kairat almaty': {
+        players:'Goalkeepers: #52 Efim Aitov, #41 Temirlan Anarbekov, #49 Ildar Mendygaliev, #55 Aleksandr Zarutskiy; Defenders: #15 Ofri Arad, #29 Sultan Askarov, #94 Askar Bizhan, #44 Luka Gadrani, #4 Damir Kasabulat, #13 Lev Kurgin, #14 Aleksandr Martynovich, #24 Alexander Mrynskiy, #25 Alexandr Shirobokov; Midfielders: #96 Olzhas Baybek, #18 Dan Glazer, #55 Valeriy Gromyko, #26 Miras Omatay, #33 Jug Stanojev, #16 Erkin Tapalov, #7 Giorgi Zaria; Forwards: #19 Elder Santana, #28 Jorginho, #76 Dastan Satpaev, #11 Joao Paulo da Silva Araujo; Coach: Zhora Arutyunyan',
+        description:'Казахський футбольний клуб з Алмати, заснований у 1954 році на базі алматинського «Динамо». Згідно з постановою президії ВЦРПС СРСР та Ради Міністрів КазРСР, були об`єднані ДСТ «Урожай» та «Колхозши». 18 червня 1956 було засноване нове Добровільне Сільське Спортивне Товариство (ДССТ) Казахської РСР під назвою «Кайрат». Починаючи з 1960 року з невеликими перервами виступав у Вищій лізі чемпіонату СРСР з футболу під назвою «Кайрат» Алма-Ата (найкращий результат — 7-ме місце у 1986 році). Найсильніший казахський клуб у радянський період. З 1992 виступає в Прем`єр-лізі Казахстану. У 1954 році клуб називався «Локомотив» Алма-Ата, а в 1955 «Урожай» Алма-Ата. Один з провідних клубів Казахстану радянського періоду. Основні кольори клубу — біло-сині. Домашні матчі проводить на стадіоні Центральному, який вміщує 23 804 глядацьких місць.',
+        trophies:'Друга ліга СРСР: 1983, 1976; Друга ліга: 08/09; Суперкубок Казахстану: 2017, 2016; Кубок Казахстану: 2021, 2018, 2017, 2015, 2014, 2003, 2001, 99/00, 96/97, 1992; Чемпіон Казахстану: 2024, 2020, 2004, 1992'
+    },
+    'kaisar kyzylorda': {
+        players:'Goalkeepers: #? Aikyn Azhikhan, #55 Aram Hayrapetyan, #34 Nurimzhan Salaydin, #1 Nurmat Sarsenov; Defenders: #6 Aybol Abiken, #17 Kuanysh Kalmuratov, #5 Adilet Kenesbek, #2 Temirlan Murzagaliev, #10 Duman Narzildaev, #90 Tair Nurseitov; Midfielders: #14 Nurdaulet Amirbek, #23 Magzhan Baurzhan, #8 Bekzat Kurmanbekuly, #18 Vitalij Pryndeta, #3 Abylaykhan Tolegenov; Forwards: #7 Elzhas Altynbekov, #99 Marlen Aymanov, #28 Sayat Baktybay, #29 Orken Makhan, #79 Ersultan Torekul, #6 Aybar Zhaksylykov, #73 Didar Zhalmukan; Coach: ',
+        description:'Казахстанський футбольний клуб з міста Кизилорда. Домашній стадіон - Стадіон імені Гані Муратбаєва.',
+        trophies:'Кубок Казахстану: 2019, 98/99; Чемпіон Казахстану: 15/16, 12/13, 04/05, 94/95'
+    },
+    'kyzylzhar': {
+        players:'Goalkeepers: #1 Dzhurakhon Babakhanov, #32 Vadim Petrov; Defenders: #17 Miras Eleukin, #23 Elisey Gorshunv, #14 Anatoliy Kozlenko, #71 Aleksandr Lebedev, #55 Artyom Litviakov, #55 Oleksiy Lobov, #7 Dmitriy Miroshnichenko, #12 Bekzat Shadmanov; Midfielders: #21 Arsen Buranchiev, #10 Yuri Bushman, #17 Artem Cheredinov, #18 Zhantore Moldabayev, #55 Oleksandr Noyok, #5 Rafael Sabino, #23 Andrey Ulshin, #11 Madi Zhakipbayev, #17 Miras Zhenis; Forwards: #7 Timur Muldinov, #15 Senin Sebai, #79 Gleb Valgushev, #12 Tokhtar Zhangylyshbay; Coach: Ali Aliyev',
+        description:'Професіональний казахський футбольний клуб з міста Петропавловськ.',
+        trophies:'Чемпіон Казахстану: 18/19'
+    },
+    'ordabasy': {
+        players:'Goalkeepers: #34 Dumitru Celeadnic, #1 Bekkhan Shaizada, #35 Azamat Zhomartov; Defenders: #14 Sherif Jimoh, #25 Sergey Maliy, #4 Victor Mudrac; Midfielders: #8 Rashid Abubakar, #9 Bauyrzhan Islamkhan, #19 Evgen Makarenko, #8 Askhat Tagybergen, #2 Ular Zhaksybaev, #14 Samat Zharynbetov; Forwards: #22 Sultanbek Astanov, #11 Maxim Fedin, #19 Luka Imnadze, #30 Usevalad Sadovski, #9 Vyacheslav Shvyrev, #21 Yerkebulan Tungyshbayev, #10 Jasur Yakhshiboev; Coach: Kirill Keker',
+        description:'Казахський футбольний клуб з Шимкента. Заснований 1998 року.',
+        trophies:'Друга ліга: 00/01, 97/98; Суперкубок Казахстану: 2012; Кубок Казахстану: 2022, 2011; Чемпіон Казахстану: 2023'
+    },
+    'shakhter karagandy': {
+        players:'Goalkeepers: #95 Danila Karpikov, #76 Vladislav Loshkarev, #1 Andrey Shabanov, #30 Igor Shatskiy; Defenders: #18 Ansar Altynkhan, #19 Mikhail Gabyshev, #26 Olzhas Kerimzhanov, #68 Alexandr Migunov, #4 Dmytro Ryzhuk, #15 Bogdan Savkiv, #5 Filip Stamenkovic, #27 Shakhsultan Zubaydilda; Midfielders: #11 Aybar Abdulla, #20 Dmitriy Bachek, #88 Roger Canas, #7 Maksym Drachenko, #17 Dmitriy Lisakovich, #8 Rafail Ospanov, #8 YUri Pertsukh, #23 Ruslan Tutkyshev; Forwards: #97 Milan Djokic, #49 Maxim Komikov, #23 Rifat Nurmugamet, #29 Daniyal Takhanov, #9 Aydos Tattybaev; Coach: Andrey Finonchenko',
+        description:'Професійний футбольний клуб з міста Караганда, Казахстан. Заснований у 1958 році, клуб має багату історію та досягнення. Чемпіонати та кубки: «Шахтар» двічі ставав чемпіоном Казахстану у 2011 та 2012 роках, а також виграв Кубок Казахстану у 2013 році. У сезоні 2013–2014 років «Шахтар» став першою казахстанською командою, яка вийшла до групового етапу Ліги Європи УЄФА, обігравши шотландський «Селтік» з рахунком 2:0 у першому матчі плей-оф раунду. Хоча у матчі-відповіді «Селтік» переміг 3:0, цей успіх став історичним для казахстанського футболу. Домашні матчі клуб проводить на стадіоні «Шахтар» у Караганді, який вміщує 19 000 глядачів. Команду називають «Гірники», що відображає історію регіону, відомого своїми вугільними шахтами. Міжнародні гравці: За клуб виступали такі відомі гравці, як бразильський нападник Нілтон Перейра Мендес, який, на жаль, помер під час тренування у 2006 році. Станом на 2024 рік, «Шахтар» продовжує брати участь у національних та міжнародних змаганнях, прагнучи до нових досягнень та перемог.',
+        trophies:'Суперкубок Казахстану: 2013; Кубок Казахстану: 2013; Чемпіон Казахстану: 2012, 2011'
+    },
+    'tobol': {
+        players:'Goalkeepers: #12 Sultan Busurmanov, #35 Yuri Melikhov, #27 David Mukhin, #1 Danil Ustimenko; Defenders: #4 Ermek Abdulla, #3 Roman Asrankulov, #25 Roman Bozhko, #55 Ivan Miladinovic, #5 Pape-Alioune Ndiaye, #93 Marko Vukcevic; Midfielders: #26 Victor Braga, #? Nurgaini Buribaev, #11 Islam Chesnokov, #8 Ahmed El Messaoudi, #6 Ededem Edem Essien, #51 Beybit Galym, #6 Meyrambak Kalmyrza, #13 Tsotne Mosiashvili, #21 Radoslav Tsonev, #11 Danijar Usenov, #7 Zhaslan Zhumashev; Forwards: #77 David Henen, #58 Elaman Ospangali, #13 Nikolay Signevich, #21 Nauryzbek Zhagorov, #18 Aleksandr Zuev#; Coach: Milic Curcic',
+        description:'Казахстанський футбольний клуб із Костаная, заснований 1967 року. Виступає у Прем`єр-лізі Казахстану. Чемпіон Казахстану 2010 та 2021 років. Володар Кубка Казахстану 2007 року. Володар Суперкубка Казахстану 2021 та 2022 років. Переможець Кубка Інтертото 2007 року.',
+        trophies:'Суперкубок Казахстану: 2024, 2021; Кубок Казахстану: 2023, 2007; Чемпіон Казахстану: 2021, 2010'
+    },
+    'turan': {
+        players:'Goalkeepers: #1 Miras Mukhammetzhanuly, #78 Timurbek Zakirov; Defenders: #? Daniyal Dzhanbaev, #? Yerasyl Temirshi; Midfielders: #? Asanbek, #24 Nikola Cuckic, #8 Artjom Dmitrijev, #6 Kuanysh Duysenbekuly, #7 Plarent Fejzaj, #28 Asludin Khadzhiev, #44 Batyr Mukashev, #? Nurdaulet, #77 Erasyl Sarsenbay, #21 Berik Shaykhov, #19 Rakhat Usipkhanov; Forwards: #17 Antonio Jakolis, #77 Alisher Suley, #9 Leonardo Vaca, #11 Maksim Vaganov; Coach: Rinat Alyuetov',
+        description:'Казахський футбольний клуб із міста Туркестана, заснований 2003 року. Виступає у Прем`єр-лізі Казахстану.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'yelimay semey': {
+        players:'Goalkeepers: #35 Maksym Koval, #1 Rakhat Mavlikeev, #2 Nikita Pivkin, #40 Egor Tsuprikov; Defenders: #2 Adi Adambaev, #15 Nemanja Calasan, #98 Danil Danilenko, #? Enzo, #5 Sergey Keiler, #23 David Maicom, #3 Sammuel Odeoyibo, #15 Dmitriy Schmidt, #50 Adlet Selikhanov, #77 Dmitrij Shomko, #24 Yegor Tkachenko, #4 Adibek Zhumakhanov; Midfielders: #96 Asan Baigaliev, #27 Evgeni Berezkin, #12 Aslan Darabayev, #81 Nikita Korzun, #7 Roman Murtazarv, #8 Abylaykhan Nazymkhanov, #44 Almas Tyulyubay; Forwards: #92 Quentin Cornette, #9 Fejsal Mulic, #22 Zhan-Ali Payruz, #11 Ivan Sviridov; Coach: Andrey Karpovich',
+        description:'Казахський професійний футбольний клуб з міста Семей, який грає у Прем`єр-лізі Казахстану. Клуб проводить домашні матчі на стадіоні «Спартак». Клуб був заснований у 2022 році, та названий тим іменем, під яким розформований у 2016 році футбольний клуб «Спартак» із Семея став трикратним чемпіоном Казахстану в 1990-их роках. У першому ж сезоні «Єлімай» став переможцем Першої ліги Казахстану, та вийшов до найвищого дивізіону казахського футболу. 3 травня 2022 року указом президенту Казахстану Касим-Жомарта Токаєва повідомлено про створення Абайської області з центром у місті Семей. Після цього вболівальники та громадські діячі Семея підняли питання про відродження футбольного клубу. У липні ініціативною групою було створено громадський фонд "Футбольний клуб «Єлімай», засновниками якого виступили вихованець семейського футболу Самат Смаков і депутат масліхату Абайської області Серік Байгалієв, а в серпні пройшла презентація фонду за участю акіма області Нурлана Уранхаєва. У грудні 2022 року на зустрічі з уболівальниками в Семеї один із співзасновників Серік Байгалієв заявив про те, що новостворений «Єлімай» не є правонаступником старої команди, а створений як нова юридична особа. 26 жовтня 2022 року згідно рішення комітету Казахстанської федерації футболу «Єлімай» був допущений до етапу ліцензування для участі в першості Казахстану серед команд першої ліги на сезон 2023 року. Паралельно з основною командою, молодіжна команда «Єлімая» була заявлена у другу лігу на сезон 2023 року. 17 березня 2023 року «Єлімай» провів у місті Шимкент свій перший офіційний матч з моменту створення. Клуб програв «Женісу» з Астани з рахунком 0-1 у рамках попереднього етапу Кубка Казахстану 2023 року. Дебютний сезон у першій лізі команда завершила без поразок (24 перемоги і 4 нічиї). 20 жовтня після перемоги над клубом «Арис» з рахунком 3-0 «Єлімай» достроково (за 2 тури до завершення) став переможцем першої ліги Казахстану, та вийшов до найвищого дивізіону казахського футболу.',
+        trophies:'Друга ліга: 2023; Суперкубок Казахстану: 94/95; Кубок Казахстану: 1995; Чемпіон Казахстану: 1998, 1995, 1994'
+    },
+    'zhenis': {
+        players:'Goalkeepers: #31 Alisher Suleymen, #1 Dinmukhammed Zhomark; Defenders: #? Krystian Nowak, #3 Zurab Tevzadze, #6 Berik Aytbaev, #32 Askhat Baltabekov, #4 Sagi Sovet, #? Matija Rom, #5 Sayan Mukanov, #17 Aldair Adilov; Midfielders: #22 Madi Khaseyn, #8 Abay Zhunusov, #32 Lukas Budinsky; Forwards: #19 Ardak Saulet, #19 Adilio Santos, #9 Dinmukhamed Karaman, #? Timur Zhamaletdinov, #15 Nurbol Anuarbekov, #? Raul Allakhverdiev, #21 Khamza Yakudi; Coach: ',
+        description:'Казахстанський футбольний клуб з міста Астана. Виступав в еліті футболу своєї країни до 2008 року.',
+        trophies:'Кубок Казахстану: 2005, 2002, 2001; Чемпіон Казахстану: 2006, 2001, 2000'
+    },
+    'zhetysu taldykorgan': {
+        players:'Goalkeepers: #12 Orest Kostyk, #1 Sanzhar Erniyazov; Defenders: #96 Charleston, #4 Gia Chaduneli; Midfielders: #55 Meik Karwot, #28 Kirill Ovchinnikov, #7 Serikzhan Muzhikov; Forwards: #17 Nurbergen Nurbol, #19 Abylaykhan Zhumabek; Coach: ',
+        description:'Казахський футбольний клуб із Талдикоргана, заснований 1981 року. Виступає у Прем`єр-лізі Казахстану.',
+        trophies:'Друга ліга: 16/17, 05/06'
+    }
+
+}
+
+// Кіпр
+function showCypr() {
+    document.getElementById('cyprus-league-button').style.display = 'block';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
+}
+function showCyprusLeagueTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#cyprus-league-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('cyprus-league-button').style.display = 'none';
+    document.getElementById('cyprus-league-dropdown').style.display = 'block';
+}
+const teamdata_19 = {
+    'achnas': {
+        players:'Goalkeepers: #1 Martin Bogatinov, #40 Lucas Flores, #45 Michalis Papastylianou; Defenders: #29 Patrick Bahanack, #93 Yohan Baret, #22 Petros Ioannou, #112 Emmanuel Lomotey, #37 Richard Ofori, #16 Panagiotis Panagiotou, #24 Paris Psaltis, #25 Jalil Saadi, #? Ramzi Said, #2 Andreas Soulis, #28 Marios Stylianou, #23 Konstantinos Venizelou; Midfielders: #5 Manuel De Iriondo, #17 Pablo Gonzalez, #7 Konstantinos Ilia, #8 Patryk Lipski, #94 Daniel Tetour, #50 Dimitrianos Tzouliou; Forwards: #33 Nicolas Andereggen, #80 Georgios Nikolas Angelopoulos, #3 Stefan Ashkovski, #11 Julian Bonetto, #98 Almeida Breno, #77 Dimitrios Christofi, #18 Nikita Roman Dubov, #19 Ruben Hernandez, #20 Nicolae Milinceanu, #10 Marios Pechlivanis, #47 Nikolas Perdios, #9 Artur Sobiech; Coach: David Badia Cequier',
+        description:'Професіональний кіпрський футбольний клуб з селища Ахна в районі Фамагуста.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'aek larnaka': {
+        players:'Goalkeepers: #1 Zlatan Alomerovic, #31 Georgios Athanasiadis, #51 Antreas Paraskevas, #38 Ioakim Toumpas; Defenders: #24 Henriques Danny, #23 Marios Dimitriou, #22 Godswill Ekpolo, #93 Jeremie Gnali, #89 Miramon, #27 Valentin Roberge; Midfielders: #20 Aitor Cantalapiedra, #44 Konstantinos Evripidou, #14 Angel Garcia, #6 Suarez Jimmy, #91 Fanos Katelaris, #7 Gustavo Ledes, #15 Hrvoje Milicevic, #29 Giorgos Naoum, #17 Pere Pons, #8 Marcus Rohden; Forwards: #19 Karol Angielski, #30 Enzo Cabrera, #18 Yerson Chacon, #11 Imad Faraj, #16 Bruno Gama, #41 Gonzalez Mathias, #9 Fran Sol; Coach: Henning Berg',
+        description:'Кіпріотський футбольний клуб із Ларнаки, що виник 1994 року після злиття клубів «ЕПА» та «Пезопорікос». Виступає у найвищому дивізіоні Кіпру. Крім футбольної команди, клуб має також баскетбольну чоловічу та жіночу волейбольну команди. На емблемі клубу зображено адмірала Кімона, що загинув, захищаючи Кітіон (тепер Ларнака) у великій битві за Кіпр проти персів бл. 450 року до н. е. Він наказав своїм офіцерам, у випадку його смерті, зберігати цей факт у таємниці. Вислів «Και Νεκρος Ενικα» («Навіть мертвий він переміг») стосується Кімона.',
+        trophies:'Суперкубок Кіпру: 18/19; Кубок Кіпру: 17/18, 03/04'
+    },
+    'ael limassol': {
+        players:'Goalkeepers: #99 Yigal Becker, #1 Victor Braga, #98 Panagiotis Kyriakou, #95 Christakis Neofytidis, #93 Andreas Panagi; Defenders: #81 Adamos Adamou, #4 Facundo Costantini, #2 Christoforos Frantzis, #24 Emmanuel Imanishimwe, #37 Andreas Ioannou, #34 Akos Kecskes, #76 Kyriakos Kyriakou, #42 Kypros Neofytou, #5 Dylan Ouedraogo, #25 Filiotis Andreas Panagiotou, #6 Marko Stolnik; Midfielders: #74 Savvas Christodoulou, #71 Giannis Gerolemou, #66 Rafail Mamas, #90 Panagiotis Panagi, #8 Vasilios Papafotis, #21 Emmanuel Toku; Forwards: #92 Alexandros Efstathiou, #33 Andreas Makris, #16 Stelios Panagiotou, #17 Luther Singh, #20 Leonel Strumia, #77 Themistoklis Themistokleous, #7 Denis Thomalla, #10 Ivan Trickovski, #11 Panagiotis Zachariou, #80 Ze Turbo; Coach: Marios Nikolaou',
+        description:'Кіпріотський футбольний клуб з Лімасола. Заснований 1930 року.',
+        trophies:'Суперкубок Кіпру: 14/15, 84/85, 67/68, 52/53; Кубок Кіпру: 18/19, 88/89, 86/87, 84/85, 47/48, 39/40, 38/39; Чемпіон Кіпру: 11/12, 67/68, 55/56, 54/55, 52/53, 40/41'
+    },
+    'anorthosis': {
+        players:'Goalkeepers: #99 Andreas Keravnos, #51 Stavros Panagi, #12 Zivko Zivkovic; Defenders: #16 Konstantinos Chrysopoulos, #3 Fran Garcia, #6 Giannis Kargas, #30 Bojan Mladjovic, #15 Bevis Mugabi, #35 Sergio Conceicao #22 Konstantinos Stamoulis, #42 Andre Teixeira; Midfielders: #4 Kostakis Artymatas, #18 Stefanos Charalampous, #88 Andreas Chrysostomou, #48 Michalis Ioannou, #5 Kiko, #20 Grzegorz Krychowiak, #56 Panagiotis Markou, #54 Charalampos Michalas, #10 Ante Roguljic, #8 Matija Spoljaric, #7 Dimitris Theodorou, #11 Kaiyne Woolery; Forwards: #57 Evagoras Charalampous, #25 Adam Gyurcso, #9 Atanas Iliev, #55 Giorgos Ioannou, #17 Daniil Paroutis, #52 Petros Paschali, #21 Rafa Lopes; Coach: Mauro Camoranesi',
+        description:'Професіональний кіпріотський футбольний клуб, який офіціально базується у місті Фамагуста, проте через турецьке вторгнення до Кіпру зараз знаходиться у Ларнаці. «Анортосіс» здобув 13 національних титулів, 10 Кубків та 7 Суперкубків. Перемігши «Олімпіакос» у третьому кваліфікаційному раунді Ліги чемпіонів УЄФА 2008—2009, «Анортосіс» став першим кіпріотським клубом, який вийшов до групового етапу цього турніру. Нинішній тренер клубу, Темурі Кецбая у минулом був гравцем «Анортосіса».',
+        trophies:'Суперкубок Кіпру: 07/06, 99/00, 98/99, 97/98, 94/95, 61/62; Кубок Кіпру: 20/21, 06/07, 02/03, 01/02, 97/98, 74/75, 70/71, 63/64, 61/62, 58/59, 48/49; Чемпіон Кіпру: 07/08, 04/05, 99/00, 98/99, 97/98, 96/97, 94/95, 62/63, 61/62, 59/60, 57/58, 56/57, 49/50'
+    },
+    'apoel': {
+        players:'Goalkeepers: #27 Vid Belec, #22 Andreas Christodoulou, #1 Gabriel Pereira, #78 Savvas Michos; Defenders: #33 Evagoras Antoniou, #43 Ezequiel Cano Lautaro, #29 Issam Chebake, #5 Lasha Dvali, #34 Konstantinos Laifis, #19 Xavier Quintilla, #16 Mateo Susic; Midfielders: #17 David Abagna, #30 Marius Corbu, #28 Konstantinos Galanopoulos, #? Panagiotis Kattirtzis, #7 Max Meyer, #3 Radosav Petrovic, #21 Pizzi, #44 Kingsley Sarfo, #18 Giannis Satsias, #8 Sergio Tejera, #6 Vitor Meer; Forwards: #99 Ivan Alejo, #36 Charles Appiah, #12 Algassime Bah, #11 Anastasios Donis, #20 Stefan Drazic, #9 Youssef El Arabi, #14 Maioli Gabriel, #10 Marquinhos, #79 Pieros Sotiriou; Coach: Manuel Jimenez',
+        description:'Професіональний кіпрський футбольний клуб із міста Нікосія. Заснований у Нікосії 8 листопада 1926 року. АПОЕЛ — один із найуспішніших клубів кіпрського футболу, вигравши понад 40 національних титулів (включаючи 23 перемоги у чемпіонаті Кіпру, 20 Кубків Кіпру і 13 Суперкубків). На європейській арені найвищими досягненнями в історії клубу є вихід в чвертьфінал Ліги чемпіонів у сезоні 2011—12.',
+        trophies:'Суперкубок Кіпру: 24/25, 18/19, 12/13, 10/11, 08/09, 07/08, 03/04, 01/02, 96/97, 95/96, 92/93, 91/92, 85/86, 83/84, 62/63; Кубок Кіпру: 14/15, 13/14, 07/08, 05/06, 98/99, 96/97, 95/96, 94/95, 92/93, 83/84, 78/79, 77/78, 75/76, 72/73, 68/69, 67/68, 62/63, 50/51, 46/47, 40/41, 36/37; Чемпіон Кіпру: 23/24, 18/19, 17/18, 16/17, 15/16, 14/15, 13/14, 12/13, 10/11, 08/09, 06/07, 03/04, 01/02, 95/96, 91/92, 89/90, 85/86, 79/80, 72/73, 64/65, 51/52, 48/49, 47/48, 46/47, 39/40, 38/39, 37/38, 36/37, 35/36'
+    },
+    'apollon': {
+        players:'Goalkeepers: #89 Chrysanthos Christodoulou, #99 Demetris Demetriou, #87 Lefteris Eleftheriou, #22 Phillipp Kuhn, #41 Peter Leeuwenburgh, #88 Leonidas Leonidou, #78 Giorgos Loizou; Defenders: #21 Carlos Barahona, #13 Bruno Santos, #5 Julien Celestine, #81 Vernon De Marco, #0 Kosmas Ioannou, #4 Josef Kvida, #3 Thomas Lam, #14 Giorgos Malekkidis, #2 Praxitelis Vouros; Midfielders: #10 Quentin Boisgard, #33 Panagiotis Charalambous, #84 Christos Charalampous, #6 Sessi D`Almeida, #25 Charalampos Kyriakou, #20 Danilo Spoljaric, #27 Gaetan Weissbeck, #8 Jaromir Zmrhal; Forwards: #11 Dione Babacar, #70 Charles Boli, #9 Diego Dorregaray, #17 Clinton Duodu, #43 Pedro David Rosendo Marques, #18 Angelo Sagal, #37 Tayrell Wouter, #80 Ali Youssef; Coach: Sofronis Avgousti',
+        description:'Кіпрський футбольний клуб із Лімасола, заснований 1954 року. Виступає у Першому дивізіоні Кіпру.',
+        trophies:'Суперкубок Кіпру: 22/23, 16/17, 15/16, 05/06; Кубок Кіпру: 16/17, 15/16, 12/13, 09/10, 00/01, 91/92, 85/86, 66/67, 65/66; Чемпіон Кіпру: 21/22, 05/06, 93/94, 90/91'
+    },
+    'aris': {
+        players:'Goalkeepers: #26 Anastasios Pishias, #90 Ellinas Sofroniou, #1 Vana Alves, #91 Mislav Zadro; Defenders: #77 Correia Anderson, #6 Eric Boakye, #3 Caju, #18 Connor Goldson, #15 Aboubacar Loucoubar, #17 Milosz Matysik, #19 Mamadou Sane, #72 Slobodan Urosevic, #35 Giorgos Weller, #20 Steeve Yago; Midfielders: #8 Morgan Brown, #29 Dennis Gaustad, #88 Adam Markhiev, #22 Veljko Nikolic, #24 Alex Sarfo, #23 Karol Struski, #30 Marios Theocharous; Forwards: #7 Leo Bengtsson, #14 Yannick Gomis, #11 Giorgi Kvilitaia, #? Armend Maroshi, #21 Mihlali Mayambela, #66 Jaden Montnor, #27 Zakaria Sawo, #70 Edi Semedo; Coach: Aleksey Shpilevski',
+        description:'Кіпрський футбольний клуб з міста Лімасол. Заснований в 1930 році. Кольори клубу — біло-зелені. Клуб є одним із членів-засновників Футбольної асоціації Кіпру, і займав місця між 5 і 7 в 1930-ті роки. У 1940-ві роки команда не виступала в Кіпрському першому дивізіоні і повернулася до неї лише в 1954 році, проте відразу зайняли останнє місце в елітному дивізіоні і вилетіли назад. У наступному сезоні вони стали чемпіонами у Другому дивізіоні і знову повернулися в Перший дивізіон. Будучи однією з найслабших команд у першому дивізіоні протягом 1960-х, вони знову вилетіли в Другий дивізіон у сезоні 1969/70, де і залишалися протягом двох сезонів. Ситуація змінилася для «Аріса» в період між 1975 і 1980 роками, коли команда займала четверту позицію в чемпіонаті в сезонах 1976/77 і 1978/79. Проте вже через два роки, в 1981 році, команда знову була понижена в класі, зайнявши останнє 14 місце. Але вже наступного сезону команди повернулася в еліту і зайняла 5 місце в сезоні 1985-86. Найбільший успіх клубу був в 1989 році, коли команда вийшла у фінал Кубка Кіпру, де вони програли АЕЛу з рахунком 2-3. У наступному сезоні 1989-90 років клуб підписав українця Олега Блохіна, володаря «Золотого м`яча» 1975 року, який допоміг клубу знову здобути 4 місце в чемпіонаті. Після закінчення сезону Блохін завершив свою кар`єру, а в сезоні 1992/93 команда знову вилетіла в Другий дивізіон. У сезоні 2009/10 клуб дійшов до півфіналу Кубка.',
+        trophies:'Суперкубок Кіпру: 23/24; Чемпіон Кіпру: 22/23'
+    },
+    'karmiotissa': {
+        players:'Goalkeepers: #93 Devis Epassy, #1 Alexander Spoljaric, #22 Sadok Yeddes; Defenders: #2 Minas Antoniou, #20 Panagiotis Artymatas, #26 Kypros Christoforou, #13 Delmiro, #? Rafail Dimosthenous, #33 Nikos Englezou, #12 Arthur Gribakin, #11 Bojan Kovacevic, #4 Dion Malone, #15 Stylianos Panteli; Midfielders: #29 Panagiotis Andreou, #24 Razvan Gradinaru, #6 Deni Hocko, #9 Mate Kvirkvia, #8 Andreas Neofytou, #10 Luka Stojanovic, #16 Stavros Tsoukalas, #77 Agapios Vrikkis; Forwards: #99 Imrane Daouda Bamba, #17 Boris Cmiljanic, #45 Luka Djordjevic, #29 Franchu, #80 Christos Giousis, #90 Argyris Kampetsis, #75 Nikolas Mattheou; Coach: Alexandros Garpozis',
+        description:'Кіпрський футбольний клуб із Пафоса, що виник 1979 року. Виступає у першому дивізіоні Кіпру. Команда, яка заснована в 1979 році здебільшого виступала на аматорському рівні.[1] Назва клубу походить від каплиці Діви Марії Карміотісси, що знаходиться в Пано-Полемідії. У 2009 році «Карміотісса» підвищилась до четвертого дивізіону. У сезоні 2010–11 команда посіла четверте місце, а наступного сезону друге та отримує право виступати в третьому дивізіоні. З сезону 2013–14 лігу С поділіли на дві групи, «Карміотісса» фінішувала першою та отримала право виступати в першому дивізіоні. З сезону 2014–15 клуб виступає в другому дивізіоні Кіпру. Роком раніше «Карміотісса» стає постійним учасником Кубку Кіпру. У сезоні 2016–17 клуб дебютував у найвищому дивізіоні але за підсумками першості вибув. Через два сезони «Карміотісса» повернулась до найвищого дивізіону, де за підсумками сезону посіла останнє місце та вибула до другого дивізіону. За підсумками сезону 2021-22 клуб зайняв перше місце у другому дивізіоні та знову повернувся до першого дивізіону. У грудні 2021 року клуб очолив білоруський спеціаліст, відомий в минулому футболіст київського «Динамо» Олександр Хацкевич. У лютому 2023 року його змінив росіянин Олександр Кержаков.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'nea salamis': {
+        players:'Goalkeepers: #31 Daniel Antosch, #98 Giannis Kalanides, #1 Nikolaos Melissas, #70 Rafael Sotiriou; Defenders: #22 Riza Durmisi, #17 Efthymios Efthymiou, #26 Jan Lecjaks, #24 Serge Leuko, #5 Alexandros Michail, #2 Konstantinos Sergiou, #4 Nenad Tomovic, #44 Giorgos Viktoros, #3 Luiyi de Lucas; Midfielders: #16 Danny Bejarano, #78 Abdelaye Diakite, #18 Norberto Carlos Costa Dos Santos, #23 Andreas Frangos, #12 Garland Gbelle, #80 Antonis Katsiaris, #66 Konstantinos Koumpari, #30 Andreas Mavroudis, #8 Miguelito, #20 Giorgios Papageorgiou; Forwards: #28 Yassine Bahassa, #9 Fiorin Durmishaj, #10 Victor Fernandez Satue, #33 Savvas Kontopoulos, #7 Luciano Narsingh, #45 Ange-Freddy Plumain, #25 Titos Prokopiou, #21 Dimitrios Spyridakis, #11 Serge Tabekou, #14 Apostolos Vellios; Coach: Christodoulos Christodoulou',
+        description:'Кіпрський професійний футбольний клуб, заснований 1948 року. До 1974 року розташовувався у Фамагусті. Після Турецького вторгнення на Кіпр, в результаті якого це місто було окуповане турецькими військами, клуб перебазувався до Ларнаки. Названий на честь стародавнього грецького міста Саламіс (грец. Σαλαμίς) поблизу сучасної Фамагусти. Найбільшими турнірними досягненнями «Неа Саламіна» були перемоги в розіграшах Кубку Кіпру та Суперкубку Кіпру у 1990 році. Найвищим досягненням у чемпіонаті Кіпру було третє місце. Протягом перших років існування (1948–1953) команда змагалась у аматорському чемпіонаті Кіпру. 1953 року клуб приєднався до Кіпрської федерації футболу та розпочав виступи у чемпіонатах та розіграшах кубків, що проводяться під її егідою. Клуб брав участь у понад 50 чемпіонатах Кіпру, займаючи за цим показником сьоме місце серед клубів країни. Команда дебютувала у єврокубках 1990 року (Кубок володарів кубків). Згодом брала участь у трьох розіграшах Кубка Інтертото — 1995, 1997 та 2000 років. Футбольна команда є частиною спортивного клубу «Неа Саламіна Фамагуста», в структурі якого також є чоловіча волейбольна команда.',
+        trophies:'Суперкубок Кіпру: 89/90; Кубок Кіпру: 89/90'
+    },
+    'omonia 29th may': {
+        players:'Goalkeepers: #23 Kevin Broll, #1 Giorgos Strezos; Defenders: #4 Sylvain Deslandes, #14 Christos Gavrilidis, #13 Michael Heylen, #67 Jordan Ikoko, #3 Pantelis Konomis, #2 Carlos Moros Gracia, #70 Timotheus Pavlou, #42 Christos Wheeler; Midfielders: #15 Facu, #20 Sotiris Fiakas, #60 Darly N`Landu, #16 Konstantinos Pattichis, #44 Anel Sabanadzovic; Forwards: #7 Lefteris Alampritis, #5 Adamos Andreou, #98 Ismail Azzaoui, #91 Jeremie Bela, #47 Jay Enem, #77 Rashaan Fernandes, #6 Alberto Fernandez, #21 Giorgos Pontikou, #92 Nikola Trujic, #28 Angelos Zefki; Coach: Giorgos Petrakis',
+        description:'Професійний кіпрський футбольний клуб з Нікосії. Клуб був створений групою фанатів, відомою як «Ворота 9», клубу «Омонія», через розбіжності щодо права власності на клуб. «Омонія 29-го травня» з 2024 року грає в Дивізіоні А чемпіонату Кіпру. 29 травня 2018 року внаслідок тривалих фінансових труднощів право власності на футбольний відділ клубу «Омонія» офіційно перейшло з повної власності вболівальників у приватну власність американо-кіпрського бізнесмена Ставроса Папаставру. Група вболівальників клубу під назвою «Ворота 9» була незадоволена цим рішенням, і в той же день вирішила створити новий клуб, не пов`язаний з «Омонією». Клуб був офіційно заснований 23 липня 2018 року під назвою «Омонія 1948». У 2020 році з юридичних причин клуб було перейменовано на «Омонія 29-го травня». У серпні 2018 року «Омонія 29-го травня» стала членом спортивної федерації «Пансолейо», яка проводить аматорську лігу п`ятого рівня кіпрського футболу. У своєму першому сезоні виступів клуб виграв лігу і Кубок Пансолейо, й отримав право брати участь у плей-оф, у якому виграв право на підвищення до четвертого дивізіону. «Омонія 29-го травня» лідирувала в четвертому дивізіоні в сезоні 2019—2020 років, проте чемпіонат було припинено через епідемію COVID-19. Команда не отримала титул чемпіона, проте отримала підвищення до третього дивізіону. Стрімке підвищення клубу по рівнях кіпрського футболу продовжилося й наступного року, коли клуб виграв третій кіпрський дивізіон сезону 2020—2021 років, і отримав підвищення до другого дивізіону. Це також дозволило команді взяти участь у Кубку Кіпру, де наступного сезону «Омонія 29-го травня» вибула після гри з клубом «Пафос» у першому раунді. Вболівальники команди не зайшли на стадіон на знак протесту проти «картки вболівальника», яку вони повинні були пред`явити на вході, оскільки в грі брав участь клуб з найвищого дивізіону. Після трьох років у другому дивізіоні «Омонія 29-го травня» посіла друге місце в лізі, та змогла вийти до найвищого дивізіону. До цього успіху команду привів колишній гравець та тренер клубу «Омонія» Недим Тутич. Також у другій половині сезону 2022—2023 років за клуб грав колишній володар Кубка Англії та капітан клубу «Омонія» Жорді Гомес. У нижчих дивізіонах «Омонія 29-го травня» грала на стадіоні «Дімітріс Хамацос», де грала зокрема з клубом «Халканорас Ідаліу». Цей стадіон має місткість 3500 місць. Після підвищення до першого дивізіону клуб грає на стадіоні «Катокопія» в Перістероні.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'omonia aradippou': {
+        players:'Goalkeepers: #1 Giorgi Loria, #88 Giorgos Papacharalampous, #70 Carlos Peixoto; Defenders: #23 Andreas Dimitriou, #62 Bourama Fomba, #16 Hristian Foti, #43 Sidonio Joao, #12 Junior Tavares, #92 Sana, #15 Omar Shatla, #17 Antreas Shikkis, #33 Alexandros Theocharous; Midfielders: #18 Georgios Christodoulou, #77 Stavros Giallouridis, #8 Niko Havelka, #4 Christos Kallis, #77 Jose Mendes, #35 Paris Polykarpou, #6 Stylianos Vrontis; Forwards: #27 Mika Borges, #30 Morgan Ferrier, #73 Jorginho, #29 Charalampos Kattirtzis, #89 Nicolas Koutsakos, #37 Antonis Loizou, #11 Karim Mekkaoui, #90 Rafael Moreira, #21 Mozino, #7 Giorgos Pontikos, #19 Eleftherios Sikkis; Coach: Hugo Martins',
+        description:'Професіональний кіпрський футбольний клуб з поселення на околиці Ларнаки Арадіпу. Клуб був заснований 4 квітня 1929, і в сезоні 2023—2024 років став чемпіоном другого дивізіону Кіпру. У сезоні 2024—2025 років клуб грає в Дивізіоні А чемпіонату Кіпру. Раніше «Омонія» (Арадіпу) кілька разів грала в найвищому кіпрському дивізіоні, перед цим останнім сезоном у вищому дивізіоні для команди був сезон 1995—1996 років. «Омонія» (Арадіпу) проводить свої домашні ігри на муніципальному стадіоні Арадіпу, але в сезоні 2024—2025 років команда приймає суперників на стадіоні «Антоніс Пападопулос» у Ларнаці. «Омонія» (Арадіпу) має давнє суперництво із клубом з цього ж населеного пункту «Ерміс» (Арадіпу). Протягом багатьох років і десятиліть було кілька спроб і випадків, коли обидві сторони домовлялися про своє об`єднання в один клуб. Переговори завжди зривалися через різні економічні та політичні проблеми, які піднімали обидві сторони. Проте жителі Арадіпу погоджуються, що муніципалітет Арадіпу повинен був мати єдину футбольну команду, а не розділяти цим жителів через економічні та політичні проблеми. Проте об`єднання досі не відбулося. У той же час «Омоноя» в сезоні 2024—2025 років грає в Дивізіоні А чемпіонату Кіпру, а «Ерміс» перед сезоном 2024—2025 років вилетів у третій дивізіон Кіпру. Клуб з 1981 року також пов`язаний з культурно-фольклорною асоціацією на постійній основі. Культурно-фольклорна асоціація займається різноманітними проблемами (національними, економічними, соціальними, культурними), та проводить мистецькі заходи, лекції, демонстрації, вуличні ринки, та інші заходи.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'omonia': {
+        players:'Goalkeepers: #40 Fabiano Freitas, #98 Charalampos Kyriakidis, #23 Francis Uzoho; Defenders: #5 Senou Coulibaly, #2 Alpha Dionkou, #4 Filip Helander, #24 Amine Khammas, #3 Fotis Kitsos, #17 Giannis Masouras, #81 Andreas Nikolaou, #30 Nikolas Panagiotou, #27 Stefan Simic; Midfielders: #90 Roman Bezus, #76 Charalampos Charalampous, #80 Novica Erakovic, #11 Ewandro, #31 Ioannis Kousoulos, #20 Mateo Maric, #33 Mateusz Musialowski; Forwards: #99 Saidou Alioum, #48 Andreas Chatzievangelou, #19 Mikael Ingebrigtsen, #8 Stevan Jovetic, #9 Andronikos Kakoullis, #75 Loizos Loizou, #85 Angelos Neophytou, #7 Willy Semedo, #14 Mariusz Stepinski; Coach: Giannis Anastasiou',
+        description:'Кіпрський футбольний клуб з міста Нікосія.',
+        trophies:'Суперкубок Кіпру: 21/22, 12/13, 10/11, 05/06, 03/04, 01/02, 94/95, 91/92, 89/90, 88/89, 87/88, 83/84, 82/83, 81/82, 80/81, 79/80, 66/67; Кубок Кіпру: 22/23, 21/22, 11/12, 10/11, 04/05, 99/00, 93/94, 90/91, 87/88, 82/83, 81/82, 80/81, 79/80, 73/74, 71/72, 64/65; Чемпіон Кіпру: 20/21, 09/10, 02/03, 00/01, 92/93, 88/89, 86/87, 84/85, 83/84, 82/83, 81/82, 80/81, 78/79, 77/78, 76/77, 75/76, 74/75, 73/74, 71/72, 65/66, 60/61'
+    },
+    'pafos': {
+        players:'Goalkeepers: #1 Ivica Ivusic, #93 Neofytos Michail, #99 Athanasios-Theologos Papadoudis, #83 Panagiotis Theodoulou; Defenders: #32 Mehdi Boukamir, #77 Joao Correia, #5 David Goldar, #23 Derrick Luckassen, #2 Kostas Pileas, #45 Pontelo Rafael, #21 Zvonimir Sarlija, #19 Jonathan Silva; Midfielders: #30 Vlad Dragomir, #88 Pepe, #8 Quina Domingos, #12 Ken Sema, #26 Ivan Sunjic, #16 Mateo Tanlongo; Forwards: #33 Anderson Silva, #7 Bruno, #70 Marios Ilia, #10 Jairo, #11 Jaja, #84 Kevin Monteiro, #17 Mislav Orsic, #22 Muamer Tankovic; Coach: Juan Carcedo',
+        description:'Кіпрський футбольний клуб з однойменного міста, утворений в 2014 році шляхом злиття клубів АЕП і «АЕК Куклія». Домашні матчі грає на стадіоні імені Стеліоса Кириакидеса. Футбольний клуб «Пафос» був заснований 10 червня 2014 року після злиття клубів АЕП і «АЕК Куклія». У попередньому сезоні 2013/14 «АЕК Куклія» вперше зіграла в вищому дивізіоні Кіпру, але не змогла зберегти прописку. У цьому ж сезоні АЕП виступав у Другому дивізіоні Кіпру, але зіткнувся з економічними проблемами, через які з команди було знято 30 очок і вона також понизилась у класі. Тому після завершення сезону 2013/14 років між двома клубами розпочалися дискусії щодо створення нового клубу для району Пафос, щоб мати сильну та економічно конкурентну команду.9 червня 2014 року два клуби на окремому загальному засіданні схвалили створення нової команди «Пафос». Першим головою нової команди був Хрістакіс Кайзер, який був президентом «АЕК Куклії» та одним з головних дійових осіб у справі створення нового клубу. У дебютному для нової команди сезоні 2014/15 років у першому сезоні в клубі вона стала другою і з першої спроби вийшла в елітний дивізіон. У дебютному для себе сезоні у вищому дивізіоні клуб став лише 12 і повернувся в Другу лігу, де знову провів лише один сезон і зайнявши 2 місце знову здобув путівку у Перший дивізіон. Цього разу результати команди бути трохи кращими й вона стала десятою, зберігши прописку в еліті.',
+        trophies:'Кубок Кіпру: 23/24'
+    },
+    'paralimni': {
+        players:'Goalkeepers: #24 Adebayo Adeleye, #11 Demosthenis Demosthenis, #1 Konstantinos Panagi, #1 Panagiotis Panagiotou, #13 Dimitrios Stylianidis; Defenders: #3 Andreas Christofi, #6 Jeremy Corinus, #27 Niv Fliter, #87 Ruben Hoogenhout, #4 Sean Ioannou, #20 Fotis Kotsonis, #21 Prosper Mendy, #5 Ilija Milicevic, #44 Georgiou Stylianos, #2 Simranjit Thandi; Midfielders: #11 Marcel Canadi, #37 Marios Chatzilefteri, #22 Dall`agna Diogo, #10 Niv Gotlieb, #80 Juninho, #14 Loizos Kosmas, #23 Marco Krainz, #8 Dimitris Mavroudis, #42 Nathan Mbengi, #94 Rodrigo Souza, #80 Edson Silva; Forwards: #28 Evangelos Andreou, #99 Michalis Charalampous, #33 Loukas Ikonomou, #29 Piotr Janczukowicz, #30 Zurab Museliani, #19 Elisha Sam, #17 Sherwin Seedorf, #40 Dimitris Solomou; Coach: Damir Canadi',
+        description:' Професійний футбольний клуб з міста Паралімні, Кіпр. Заснований у 1936 році, клуб виступає у Першому дивізіоні чемпіонату Кіпру. Домашні матчі проводить на стадіоні «Тасос Марку» місткістю 5 800 глядачів. «Еносіс Неон Паралімні» був створений у квітні 1944 року шляхом об`єднання двох місцевих клубів — «Гераклес» та «Народна любов». Назва клубу перекладається як «Союз молоді Паралімні». Клубні кольори — бордовий та блакитний — були обрані під впливом англійського клубу «Вест Гем Юнайтед», з яким ЕНП підтримує дружні стосунки з 1971 року.  До початку 1960-х років клуб брав участь лише в місцевих змаганнях, оскільки Кіпрська футбольна асоціація не допускала до своїх турнірів команди з сіл. У 1965 році правила були змінені, і ЕНП приєднався до другого дивізіону, а в сезоні 1968–69 років здобув підвищення до першого дивізіону, де виступає донині. ЕНП брав участь у європейських турнірах, зокрема в Кубку володарів кубків та Кубку УЄФА. Найбільш пам`ятним є сезон 1981–82, коли клуб переміг угорський «Вашаш» з рахунком 1:0 у першому матчі, але поступився 0:8 у матчі-відповіді.',
+        trophies:'Друга ліга: 2017/18, 2014/15, 196869'
+    }
+
+}
+
+
+// Косово
+function showKosovo() {
+    document.getElementById('supreme-league-button').style.display = 'block';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
+}
+function showSupremeLeagueTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#supreme-league-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('supreme-league-button').style.display = 'none';
+    document.getElementById('supreme-league-dropdown').style.display = 'block';
+}
+const teamdata_20 = {
+    'drita': {
+        players:'Goalkeepers: #22 Laurit Behluli, #1 Faton Maloku; Defenders: #15 Egzon Bejtulai, #2 Besnik Krasniqi, #5 Juan Mesa, #26 Raddy Ovouka, #33 Kastriot Rapuca, #3 Blerton Sheji, #30 Melos Zenunaj; Midfielders: #4 Derrick Bonsu, #4 Rron Broja, #14 Albert Dabiqaj, #6 Hasan Gomda, #8 Ensar Huruglica, #17 Salifu Ibrahim, #36 Ilir Mustafa, #11 Kastriot Selmani; Forwards: #7 Almir Ajzeraj, #19 Blerim Krasniqi, #9 Arb Manaj, #25 Veton Tusha, #20 Iljasa Zulfiu; Coach: Zekirija Ramadani',
+        description:'Косоварський футбольний клуб із міста Гнілане, заснований в 1947 році. У 2002/2003 команда вперше виграла Чемпіонат Косова з футболу, а в сезоні 2000/2001 завдяки внескові легендарного президента команди Селамі Османі виграла Кубок Косова з футболу. Коли команда підпорядковувалася югославській футбольній федерації, то мала назву ФК «Црвена Звезда» (серб. ФК Црвена звезда / FK Crvena zvezda, алб. KF Crvena Zvezda).',
+        trophies:'Суперкубок Косово: 18/19; Кубок Косово: 00/01; Чемпіон Косово: 19/20, 17/18, 02/03'
+    },
+    'dukagjini': {
+        players:'Goalkeepers: #1 Altik Muhaxhiri, #99 Cyrus Margono, #? Arber Bajraktari, #31 Dion Elezaj; Defenders: #14 Egzon Sinani, #4 Besir Iseni, #6 Ilir Syla, #5 Elton Basri, #93 Faton Neziri, #2 Albion Pllana, #44 Tun Bardhoku; Midfielders: #77 Vitor Hugo, #16 Met Milaku, #? Lendrit Palucaj, #17 Mergim Pefqeli, #21 Erlis Xhemaili, #47 Dienit Isufi, #66 Omer Sulejman, #23 Adonis Krasniqi, #80 Vlerson Berisha, #11 Vladyslav Khomutov, #8 Dardan Morina, #55 Rion Selimi; Forwards: #10 Altin Merlaku, #7 Granit Elezaj, #27 Leart Emini, #29 Hekuran Berisha, #9 Ebrima Jatta, #? Etienne Tare, #? Elan Raci; Coach: ',
+        description:'Професіональний косовський футбольний клуб з міста Кліне. Футбольний клуб «Дукаджині» було засновано в місті Кліна в 1958 році. З моменту свого заснування команда виступала в нижчих лігах чемпіонату Югославії. В 1990 році розпочав свої виступи в новоствореній Першій лізі Косова, а в сезоні 1994/95 років став перемоцем чемпіонату. Потім виступав у другій лізі. На початку XXI століття повернувся до першої ліги. Але в сезоні 2002/03 років зайняв останнє місце та вибув до другої ліги. В 2004 році вилетів до третьої ліги, а в 2007 році — до четвертої ліги. Допоки в 2010 році не аовернувся до Першої ліги (II рівень, Перша ліга згодом була перейменована в Суперлігу).',
+        trophies:'Чемпіон Косово: 93/94'
+    },
+    'fc ballkani': {
+        players:'Goalkeepers: #1 Artan Iljazi, #1 Enea olici, #13 Art Miftari; Defenders: #92 Elmando Gjini, #4 Gentrit Halili, #14 Marsel Ismajlgeci, #32 Bajram Jashanica, #34 Merlind Kodra, #3 Arber Potoku, #2 Geralb Smajli, #20 Astrit Thaqi; Midfielders: #77 Eris Abedini, #6 Lindon Emerllahu, #37 Giovanni, #10 Almir Kryeziu, #88 Queven; Forwards: #9 Sunday Adetunji, #11 Walid Hamidi, #25 Bernard Karrica, #14 Valentin Serebe, #99 Bleart Tolaj; Coach: ',
+        description:'Професіональний косовський футбольний клуб з міста Теранде. Команда виступає в Райфайзен Суперлізі Косова. Основним кольором клубу є помаранчевий. Декілька гравців у 1947 році заснували клуб під назвою «КФ Рінія Сухареке». У 1965 році команда отримала свою нинішню назву, «КФ Баллкані». В 1973 році клуб дебютував у Лізі е Паре, але вже по завершенню цього сезону вилетів до нижчого дивізіону, Ліги Дуте. З 2000 року КФ «Баллкані» виступав у другому за силою чемпіонаті Косова, Лізі е Паре, однак в 2010 році клуб забезпечив собі місце в Райффайзен Суперлізі. Згодом, однак, він вилетів навіть до третього дивізіону, Ліги Дуте, але в сезоні 2012/13 років клуб знову повернувся до Ліги е Паре.',
+        trophies:'Суперкубок Косово: 23/24, 22/23; Кубок Косово: 23/24; Чемпіон Косово: 23/24, 22/23, 21/22'
+    },
+    'ferizaj': {
+        players:'Goalkeepers: #1 Petrit Terziu, #12 Marko Jovanovski, #? Shqiprim Cakolli, #30 Elvis Shehu; Defenders: #5 Ensar Murseli, #4 Antonio Ilieski, #13 Ardit Topalaj, #? Guilherme, #? Granit Islami, #21 Qlirim Avdulli, #20 Filip Gligorov, #2 Enhar Cakolli; Midfielders: #? Erion Salihu, #? Blendi Topalli, #8 Arlind Shabani, #26 Gentrit Ramusa, #25 Donart Llabjani, #18 Marko Musulin; Forwards: #7 Albion Kurtaj, #10 Edon Sadriu, #11 Juozas Lubas, #19 Erion Sadriu, #24 Redon Syla, #23 Valmir Nafiu, #15 Fatjon Jusufi, #14 Abdeen Temitope Abdul, #22 Betim Haxhimusa, #? Elbasan Ademi; Coach: ',
+        description:'Професіональний косовський футбольний клуб з міста Ферізай (Урошевац). КФ «Ферізай» був заснований в місті Ферізай (Урошевац) в 1923 році. Раніше команда виступала в нижчих лігах чемпіонату Югославії. По завершенні війни в Косові в 1999 року стартував у Першій лізі чемпіонату Косова, але посів 17-те місце та вилетів до Другої ліги. У сезоні 2001/02 років виграв Групу Б першої ліги Чемпіонату Косова та вийшов до найвищого дивізіону національного чемпіонату. В 2007 році знову вилетів до Першої ліги. Наступного сезону посів друге місце та повернувся до Суперліги. Сезон 2010/11 років завершив на останньому місці та знову вилетів до першої ліги. У 2013 році виграв Першу лігу та повернувся до Суперліги. У сезоні 2014/15 років завершив чемпіонат на передостанньому місці та знову вилетів з Суперліги. Наступного року знову повернувся до найвищого дивізіону національного чемпіонату.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'feronikeli': {
+        players:'Goalkeepers: #1 Simone Moschin, #? Davide Borsellini, #? Marvin Brozi, #98 Jon Qorri; Defenders: #8 Endrit Morina, #28 Luan Lleshi, #15 Rinor Brahimi, #? Taulant Lutfiu, #3 Armend Halili, #? Arlind Krasniqi, #? Egert Selmani, #2 Granit Musa, #99 Leart Zekolli, #18 Bajte Rexhepi; Midfielders: #32 Vasilios Karagounis, #? Muhamed Llapashtica, #? Rizah Bardhi, #16 Visar Hoxha, #61 Rrustem Morina, #10 Lavdim Zumberi, #? Ersi Zaganjori, #34 Drilon Cenaj, #19 Arlind Maloku, #77 Yevgeniy Terzi, #51 Devid Ademaj, #11 Florent Avdyli; Forwards: #7 Hasan Hyseni, #6 Dmytro Semeniv, #? Suhejlj Muharem, #24 Lis Demiri, #9 Marin Mudrazija, #? Sokol Kiqina; Coach: ',
+        description:'Професіональний косовський футбольний клуб з міста Глоговац.',
+        trophies:'Суперкубок Косово: 18/19, 14/15; Кубок Косово: 18/19, 14/15, 13/14; Чемпіон Косово: 18/19, 15/16, 14/15'
+    },
+    'gjilani': {
+        players:'Goalkeepers: #1 Kenan Haxhihamza, #30 Aridon Bllaca, #12 Rrezon Matoshi; Defenders: #4 Marko Roganovic, #3 Jamal Arago, #6 Besir Ramadani, #? Endri Reci, #33 Yll Ibrahimi, #2 Armend Thaqi, #17 Edison Kqiku; Midfielders: #23 Kushtrim Shabani, #27 Shqiprim Taipi, #98 Enis Asani, #8 Sabit Bilali, #19 Robert Rrahmani, #14 Blerind Morina; Forwards: #11 Albin Prapashtica, #21 Lazim Krasniqi, #7 Oltion Bilalli, #10 Edi Basa, #20 Matheus Alisson, #77 Leon Miftari, #99 Senad Jarovic, #9 Almir Aganspahic; Coach: ',
+        description:'Професіональний косовський футбольний клуб з міста Г`їлані. Клуб створений у 1995 році братами Насер і Ридван Ізмаїлі, що живуть у місті Малишево.',
+        trophies:'Суперкубок Косово: 99/00; Кубок Косово: 99/00'
+    },
+    'kf llapi': {
+        players:'Goalkeepers: #1 Marijan Coric, #12 Vokli Laroshi; Defenders: #18 Ilir Blakqori, #8 Benjamin Emini, #4 Granit Jashari, #15 Landrit Rama, #6 Diar Vokrri; Midfielders: #11 Blend Baftiu, #19 Arber Bytyqi, #77 Elvir Gashijan, #24 Arianit Hasani, #44 Gentrit Limani, #23 Besar Musolli, #7 Hamdi Namani, #20 Lulzim Peci, #10 Arbnor Ramadani, #22 Muhamedin Useini; Forwards: #9 Mergim Cernaverni, #27 Ahmed Januzi, #99 Ardit Tahiri, #70 Valmir Veliu; Coach: Tahir Batatina',
+        description:'Професіональний косовський футбольний клуб з міста Бесіана.',
+        trophies:'Суперкубок Косово: 21/22; Кубок Косово: 21/22, 20/21'
+    },
+    'malisheva': {
+        players:'Goalkeepers: #1 Illir Avdyli, #23 Amrush Bujupi, #1 Enes Morina, #31 Hadis Velii; Defenders: #? Qlirim Avdulli, #24 Edis Malikji, #33 Arber Prekazi, #2 Arlind Veliu, #30 Donart Vitija; Midfielders: #11 Etnik Brruti, #8 Mark Bushaj, #17 Ibrahim Cervadiku, #6 Besnik Ferati, #5 Dren Kryeziu, #8 Vesel Limaj, #28 Robert Mathieu Ndjigi, #34 Agon Xhaka, #? Erblin Zogaj; Forwards: #7 Altin Aliu, #9 Valmir Berisha, #9 Fajton Bunjaku, #29 Alexandre Fressange, #10 Drilon Hazrollaj, #14 Laurent Xhylani; Coach: ',
+        description:'Професіональний косовський футбольний клуб з міста Малішево. Команда виступає в суперлізі чемпіонату Косова. Клуб створений у 2016 році. Три сезони відіграв у третьому дивізіоні. З сезону 2019–20 команда виступала в другому дивізіоні після чого підвищилась до суперліги. Домашнею ареною є стадіон «Ліман Гегай», який вміщує 1,800 глядачів.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'prishtina': {
+        players:'Goalkeepers: #1 Altin Gjokaj, #50 Agron Kolaj, #12 Ardit Nika; Defenders: #? Ardi Ajdini, #13 Philippe Boueye, #? Ramiz Bytyqi, #13 Dion Gallapeni, #? Diar Halili, #4 Ardian Limani, #? Ardian Muja, #? Ron Raqi; Midfielders: #23 Drilon Islami, #16 Albin Krasniqi, #? Rigon Llugiqi, #6 Leonat Vitija, #25 Najeeb Yakubu; Forwards: #17 Rin Ahmeti, #17 Dashmir Elezi, #21 Lavdrim Fazliu, #11 Axel Gnapi Dable, #23 Sinan Kadiri, #9 Leotrim Kryeziu, #? Paul Junior Ngatta, #17 Alban Shillova, #99 Ronald Sobowale; Coach: Jean-Michel Cavalli',
+        description:'Крофесіональний косовський футбольний клуб з міста Приштина. Найтитулованіший футбольний клуб напіввизнаної країни Косово.',
+        trophies:'Суперкубок Косово: 23/24, 20/21, 16/17, 12/13, 08/09, 07/08, 05/06, 03/04, 00/01, 95/96, 94/95; Кубок Косово: 22/23, 19/20, 17/18, 15/16, 12/13, 05/06, 94/95, 93/94; Чемпіон Косово: 20/21, 12/13, 11/12, 08/09, 07/08, 03/04, 00/01, 99/00, 96/97, 95/96, 91/92'
+    },
+    'suhareka': {
+        players:'Goalkeepers: #1 Betim Halimi, #26 Oytun Ozdogan, #12 Eurolind Avdimetaj; Defenders: #22 Eneid Kodra, #? Kemal Osmankovic, #13 Rudolf Turkaj, #4 Hysen Memolla, #21 Fuad Ajvazi, #5 Alpi Shahini, #88 Nikola Stijepovic, #99 Yll Hoxha, #23 Ajdin Nukic, #2 Donat Hasanaj; Midfielders: #7 Lorik Boshnjaku, #16 Blend Krasniqi, #17 Argtim Ismaili, #? Arbias Gashi, #8 Fitim Susuri, #18 Arvanit Rexhaj, #6 Andi Koshi, #10 Endrit Krasniqi; Forwards: #11 Jakup Berisha, #14 Adem Maliqi, #70 Alden Skrijelj, #30 Liridon Fetahaj, #9 Mevlan Zeka, #20 Gaira Joof, #? Drin Ymeri, #? Destan Bytyqi; Coach: ',
+        description:'Косовський футбольний клуб із міста Сува-Река (або Теранде). Клуб виступає в Райфайзен Суперлізі Косова, найвищому футбольному дивізіоні регіону. Клуб «Сухарека» було засновано 5 червня 2023 року кількома інвесторами, які раніше інвестували у клуб «Балкані». Через 13 днів на стадіоні «Бока-Бока» в Кориші відбулася надзвичайна зустріч між представниками клубів «A&N» і «Сухарека», під час якої було вирішено, що з сезону 2023—2024 Першої ліги Косова клуби об`єднаються, і будуть виступати під назвою «Сухарека». Новостворений клуб виграв Першу лігу Косова сезону 2023—2024 років, та з сезону 2024—2025 років грає в Райфайзен Суперлізі Косова.',
+        trophies:'Клуб не вигравав трофеї'
+    }
+}
+
+// Латвія
+function showLatvia() {
+    document.getElementById('virsliga-button').style.display = 'block';
+    document.getElementById('latvia-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('lithuania-button').style.display = 'none';
+}
+function showVirsligaTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#virsliga-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('virsliga-button').style.display = 'none';
+    document.getElementById('virsliga-dropdown').style.display = 'block';
+}
+const teamdata_21 = {
+    'auda': {
+        players:'Goalkeepers: #? Roberts Ozols, #1 Rihards Matrevics, #? Kristers Gabriels Bite, #16 Niks Aleksandrovs; Defenders: #15 Moussa Ouedraogo, #? Ralfs Kragliks, #4 Bakary Diawara, #? Emils Birka, #14 Tin Hrvoj, #22 Alexander Ogunji, #? Jegors Novikovs; Midfielders: #21 Deniss Melniks, #79 Ibrahim Pekegnon Kone, #7 Matheus Clemente, #11 Abiodun Ogunniyi, #88 Vladimirs Stepanovs; Forwards: #10 Abdoul Kader Traore, #71 Oskars Rubenis, #9 Meleye Diagne, #99 Stevenson Jeudi, #? Arturs Krancmanis, #? Enzo Monteiro; Coach: ',
+        description:'Латвійський футбольний клуб з міста Кекава, заснований у 1969 році. Історія «Ауди» почалася в 1960-х роках, коли футбольна команда була створена на базі місцевого колгоспа, що носив російськомовну назву «9 Мая». Виступала на одному із стадіонів ризького району Вецмілгравіс. Клуб виступав у нижчих дивізіонах латвійського футболу, сезони у вищій лізі припали на 1986–1987 роки, але вони також не принесли хороших результатів. Наприкінці 1980-х років змінено назву колгоспу на «Ауда», а також назву футбольної команди. У 1991 році під керівництвом Валерія Лейтанса та Юріса Доценка «Ауда» дебютувала у вищому дивізіоні чемпіонату Латвії. У змаганнях серед 20 команд «Ауда» фінішувала 15-ю. Наступного сезону латвійська футбольна команда РФК була реформована на базі команди «Ауда». Під такою назвою команда, брала участь у першій лізі (другий дивізіон латвійського футболу). У 1994 році команда змінилап назву на РФК «Ауда». У 1995 році клуб отримав сучасну назву ФК «Ауда». Наступного сезону клуб грав у другому дивизіоні, а в 1997 році підвищився до першого дивізіону. З 2002 по 2004 команда грає у вищому дивізіоні Латвії. 15 жовтня 2005 року «Ауда» зіграла свою першу гру на новому стадіоні в Кекаві. У 2007 році клуб об`єднався з командою «Албертс» (Рига). У 2022 році після тривалої перерви ФК «Ауда» повернулась до вищого дивізіону.',
+        trophies:'Друга ліга: 2021; Кубок Латвії: 2022'
+    },
+    'bfc daugavpils': {
+        players:'Goalkeepers: #27 Nikita Saranins, #31 Jurijs Saveljevs, #28 Lukass Zuravlovs; Defenders: #77 Rinalds Aizups, #5 Aleksejs Kudelkins, #37 Glebs Mihalcovs, #8 Raivis Skrebels, #2 Aleksejs Valpeters; Midfielders: #19 Valerijs Afanasjevs, #6 Nikita Barkovskis, #7 Kirils Bujanovs, #10 Wally Fofana, #22 Artem Harzha, #2 Artemijs Maslakovs, #15 Mareks Miksto, #19 Ervins Pinaskins; Forwards: #18 Deniss Avdejens, #17 Barthelemy Diedhiou, #18 Armans Galajs, #11 Maksims Kopilovs, #11 Marks Pacepko, #29 Lawrance Ugen; Coach: Kirils Kurbatov',
+        description:'Латвійський футбольний клуб із однойменного міста, заснований 2009 року. Клуб був створений у 2009 році і з сезону 2010 став виступати у другому за рівнем дивізіоні країни. У сезоні 2013 року клуб посів перше місце і вперше в своїй історії вийшов до вищого дивізіону чемпіонату Латвії. Там клуб провів три сезони, але в останньому, 2016 року, клуб зайняв останнє восьме місце у чемпіонаті і покинув вищий дивізіон. У сезоні 2018 року «Даугавпілс» співпрацював з футбольним клубом «Прогрес», тому мав назву «БФК Даугавпілс/Прогрес» і зумів зайняти перше місце, завдяки чому знову повернувся в елітний дивізіон із сезону 2019.',
+        trophies:'Друга ліга: 2018'
+    },
+    'fk liepaja': {
+        players:'Goalkeepers: #12 Davis Oss, #12 Danijel Petkovic; Defenders: #72 Anto Babic, #27 Cheikh Diouf, #26 Vlaceslavs Isajevs, #55 Marko Simic, #35 Vladislavs Sorokins; Midfielders: #21 Janis Grinbergs, #34 Andrii Korobenko, #91 Marin Kausic, #70 Danila Patijcuks, #22 Stefan Purtic, #14 Eduards Tidenbergs, #6 Oskars Vientiess, #2 Rudolfs Ziemelis; Forwards: #9 Aram Baghdasaryan, #11 Mouhamadou Diaw, #10 Dodo, #17 Emils Evelons, #19 Djibril Gueye, #44 Kyvon Leidsman, #19 Roberts Melkis, #10 Bruno Melnis, #9 Ede Oloko, #11 Tresor Samba; Coach: Tamaz Pertia',
+        description:'Латвійський футбольний клуб з міста Лієпая. Заснований в 2014 році. ФК «Лієпая» заснований в березні 2014 року як непрямий спадкоємець Металургс (Лієпая), який був розпущений у зв`язку з банкрутством власника команди і єдиного спонсора металургійного заводу в місті Лієпая. До команди ФК «Лієпая» були включені всі гравці, в тому числі молодіжних команд Металургс (Лієпая), а також команду допустили до участі в Латвійській футбольній Вищій лізі 2014 року. Клуб, в основному підтримувався місцевою радою міста Лієпая. У своєму дебютному сезоні ФК «Лієпая» закінчив сезон на 4 місці, а наступного року вже став чемпіоном Латвії.',
+        trophies:'Кубок Латвії: 2020, 16/17; Чемпіон Латвії: 2015'
+    },
+    'grobina': {
+        players:'Goalkeepers: #1 Artem Malysh; Defenders: #13 Ralfs Dzerins, #7 Janis Krautmanis, #9 Olgerts Rascevskis, #14 Krisjanis Rupeiks, #40 Raimonds Samietis, #14 Maksims Sidorovs, #11 Antons Tumanovs; Midfielders: #9 Ralph Bethers, #10 Devids Dobrecovs, #3 Davids Druzinins, #13 Peteris Dzerins, #23 Maksims Fjodorovs, #23 Glebs Kluskins, #19 Andris Krusatins, #6 Gustavs Leitavs, #6 Helistano Manga, #12 Rudolfs Melkis, #20 Tomass Mickevics, #15 Roberts Pirktins, #44 Zakaria Sdaigui, #67 Ingars Stuglis; Forwards: #21 Denys Halata, #8 Emils Knapsis, #20 Markuss Kruglauzs, #22 Diego Machado, #4 Nazim Mammadzade, #16 Dairon Mosquera; Coach: Viktors Dobrecovs',
+        description:'Латвійський футбольний клуб з міста Гробіня, який грає у Латвійській футбольній Вищій лізі та Кубку Латвії. У 2016 році «Гробіня» виграла регіональну лігу Курземе, та вийшла у фінальний турнір латвійської другої ліги, який виграла, перемігши у фіналі клуб «Цесіс», та здобула путівку до першої ліги. У своєму дебютному сезоні в першій лізі команда посіла 4 місце. Клуб «Гробіня» має партнерську угоду з клубом «Лієпая», і таким чином гравці клубу можуть постійно грати або знаходитись в оренді в клубі «Лієпая».',
+        trophies:'Друга ліга: 2023'
+    },
+    'jelgava': {
+        players:'Goalkeepers: #1 Adam Dvorak, #1 Vjaceslavs Kudrjavcevs, #16 Toms Leitis; Defenders: #99 Rihards Becers, #32 Artrem Kholod, #21 Valters Laivins, #19 Armands Petersons, #22 Valters Purs; Midfielders: #14 Adams Dreimanis, #6 Yasuhiro Hanada, #20 Yehor Hlushach, #31 Markuss Ivanovs, #70 Arturs Janovskis, #15 Krister Pantelejevs, #7 Marcis Peilans, #30 Marcis Susts; Forwards: #17 Andris Liepnieks; Coach: ',
+        description:'Латвійський футбольний клуб із однойменного міста, заснований 2004 року шляхом злиття клубів РАФ і «Віола». Двічі чемпіон ЛСРС. Шестиразовий володар Кубку Латвії з футболу. Виступав у вірслізі. В 2021 році клуб не пройшов процес ліцензування для участі в Вищій лізі Латвії. Передбачається, що в 2021 році єлгавський футбол буде представлений командами «Albatroz/Єлгава» в Першій лізі и ЮФЦ «Єлгава» в Третій лізі, однак ці команди не являються прямими наступниками «Єлгави».',
+        trophies:'Друга ліга: 2022; Кубок Латвії: 15/16, 14/15, 13/14, 09/10'
+    },
+    'metta': {
+        players:'Goalkeepers: #1 Alvis Sorokins, #25 Nikita Parfjonovs, #32 Toms Tolmanis; Defenders: #28 Alans Kangars, #4 Karlis Vilnis, #16 Ivo Minkevics, #5 Yusif Yakubu, #14 Hugo Jesse, #16 Ivans Smirnovs, #? Aleksandrs Molotkovs, #22 Gianluca Scremin; Midfielders: #? Lukass Vapne, #15 Daniils Cinajevs, #10 Rudolfs Klavinskis, #? Rendijs Sibass, #21 Kristofers Rekis, #19 Ralfs Pakulis; Forwards: #8 Kristaps Grabovskis, #17 Markuss Ivulans, #23 Mahamud Karimu, #9 Vinicius Souza; Coach: ',
+        description:'Латвійський футбольний клуб з міста Рига, заснований на початку 2007 року, за участю футбольної школи МЕТТА і Латвійського університету.',
+        trophies:'Друга ліга: 2011'
+    },
+    'rfs': {
+        players:'Goalkeepers: #40 Fabrice Ondoa, #1 Pavels Steinbors, #16 Sergejs Vilkovs; Defenders: #6 Alfusainey Jatta, #43 Ziga Lopuscek, #25 Petr Mares, #23 Herdi Prenga, #3 Niks Sliede, #21 Elvis Stuglis; Midfielders: #77 Ruslans Deruzinskis, #7 Ismael Diomande, #9 Janis Ikaunieks, #8 Yukiyoshi Karashima, #49 Martins Kigurs, #24 Mikaze Nagasawa, #15 Rostand Ndjiki, #26 Stefan Panic, #99 Mamadou Sylla, #8 Ceti Taty, #99 Glebs Zaleiko, #18 Dmitrijs Zelenkovs; Forwards: #69 Maksym Derkach, #11 Mohamed Kone, #17 Cedric Kouadio, #22 Darko Lemajic, #90 Valerijs Lizunovs, #30 Harona Njie, #8 Lasha Odisharia, #3 Victor Osuagwu, #11 Roberts Savalnieks, #70 Mor Talla; Coach: Viktors Morozs',
+        description:'Латвійський футбольний клуб з Риги. Виступає у Вищій лізі Латвії. Заснований у 2005 році, клуб має синю домашню форму та білу виїзну форму з моменту заснування. Історія клубу почалася  2003 року, коли відомий латвійський тренер Володимир Бєляєв та футбольний агент, колишній гравець «Даугави», Андрій Бахарєв вирішили відновити загублені традиції ризької «Даугави». Було створено структурний підрозділ «Футбольний Клуб Даугава» при спортивному агентстві «БАЛТІК СЕРВІС». Як самостійна юридична особа клуб був зареєстрований у 2005 році. Почавши працювати з 12-13-річними хлопчаками у 2003 році (футболісти 1990 року народження), команда «Даугава» вже у 2009 році пробилася у Вищий дивізіон латвійського футболу. З 2009 року старшим тренером у клубі працював Володимир Пачко, також колишній футболіст «Даугави», що виступав за клуб у 80-х роках XX століття. Втім у дебютному для себе сезоні команда зайняла останнє 8 місце і вилетіла назад у Першу лугу, де грала наступні шість сезонів. У сезоні 2015 року клуб зайняв 3-те місце в Першій лізі. Взимку 2016 року, коли стало відомо про проблеми «Сконто» з отриманням ліцензії ЛФФ-А, необхідної для участі у Вищій лізі, і про відмову клубу, який посів у минулому сезоні 2-те місце в Першій лізі — «Валмієри Гласс», від можливості претендувати на отримання відповідної ліцензії, Ризька футбольна школа стала претендентом на участь у Вищій лізі. Згідно з рішенням комісії ЛФФ з ліцензування клубів від 29 січня 2016 року, Ризька футбольна школа могла отримати ліцензію ЛФФ-А у разі, якщо «Сконто» не подасть апеляцію на рішення про видачу ліцензії, або ж у випадку, якщо апеляція буде подана, але відхилена. РФШ могла подавати документи, необхідні для ліцензії ЛФФ-А, до 5 лютого. 11 лютого 2016 року комісія ЛФФ по апеляціях відхилила апеляційну скаргу «Сконто». У той же день відбулося засідання комісії ЛФФ з ліцензування клубів, на якому Ризькій футбольній школі було присвоєна ліцензія ЛФФ-А, Таким чином, клуб отримав право виступати у Вищій лізі. РФШ тричі ставав чемпіоном Латвії у 2021, 2023 та 2024 роках, а також тричі вигравав Кубок Латвії — у 2019, 2021 та 2024 роках. 2022 року «РФШ» став лише другим латвійським клубом, який пройшов кваліфікацію до групового етапу єврокубку (після «Вентспілсу» у сезоні 2009–10) після перемоги над «Лінфілдом» у плей-оф.',
+        trophies:'Кубок Латвії: 2024, 2021, 2019; Чемпіон Латвії: 2024, 2023, 2021'
+    },
+    'riga fc': {
+        players:'Goalkeepers: #1 Marcis Kazainis, #16 Rihards Matrevics, #16 Nils Purins, #12 Kristaps Zommers, #12 Krisjanis Zviedris; Defenders: #34 Antonijs Cernomordijs, #35 Ivan Erquiaga, #4 Orlando Galo, #13 Raivis Jurkovskis, #21 Baba Musah, #25 Ngonda Muzinga, #3 Mouhamed Ngom, #5 Maksims Semesko; Midfielders: #40 Ahmed Ankrah, #23 Eduards Daskevics, #17 Ivans Galajevs, #17 Bacary Pape Gueye, #20 Iago Siqueira, #77 Gauthier Mankenda, #93 Kemehlo Nguena, #11 Brian Pena, #14 Nazar Prudchenko, #23 Maksims Tonisevs; Forwards: #77 Ousmane Camara, #9 Anthony Contreras, #20 Joao Grimaldo, #10 Reginaldo Ramires, #18 Marko Regza; Coach: Mareks Zuntners',
+        description:'Латвійський футбольний клуб з однойменного міста, заснований у 2014 році. Виступає у Віслізі. Домашні матчі приймає на стадіоні «Сконто», місткістю 8 087 глядачів.',
+        trophies:'Кубок Латвії: 2023, 2018; Чемпіон Латвії: 2020, 2019, 2018'
+    },
+    'super nova': {
+        players:'Goalkeepers: #55 Norberts Armanovics, #23 Nils Balaguss, #99 Kristers Bite, #29 Konstantins Maculevics, #91 Dabids Frenks Orols, #32 Deins Polis; Defenders: #32 Roberts Cevers, #5 Jegors Cirulis, #26 Bilaly Diallo, #7 Linards Liepins, #20 Kristaps Strupiss, #6 Davis Vejkrigers, #21 Rudolfs Zengis; Midfielders: #88 Timurs Abramenko, #16 Kristers Cudars, #28 Andris Deklavs, #50 Kristaps Klavins, #47 Krists Komorovskis, #14 Ryuga Nakamura, #30 Ricards Penka, #8 Ralfs Sitjakovs, #22 Kristers Skadmanis, #15 Milans Tihonovics, #7 Vladislavs Zihs; Forwards: #42 Kirils Artjomovs, #94 Artjoms Denisovs, #10 Agris Glaudans, #97 Jevgenijs Minins, #9 Haralds Silagailis, #17 Dmytro Sula; Coach: Ervins Perkons',
+        description:'Латвійський футбольний клуб з міста Саласпілс, заснований у 2000 році. Футбольна команда «Супер Нова» створена на базі Ризької загальноосвітньої школи № 62 та виступав суто в дитячо-юнацьких змаганнях Латвії. У грудні 2013 року «Супер Нова» разом з двома іншими дитячими клубами — «Олайне» та ризької «Балтики» об`єднались у футбольну академію «Олайне», а головна команда клубу стартувала у першій лізі Латвії. У 2017 році «Супер Нова» вийшла з об`єднання цих клубів та створила власну академію та клубну структуру дебютувавши у другій лізі. Наступного року клуб отримав ліцензію на участь в першій лізі. Двічі поспіль у 2018 та 2019 роках клбу посідав друге місце але у матчах плей-оф поступався за право виходу до вищого дивізіону Латвії. У 2021 році клуб такі здобув путівку до вищого дивізіону. 28 січня 2022 року клуб отримав ліцензію на право участі у вищому дивізіоні. Того ж дня клуб перебазувався до міста Саласпілс. Відігравши два сезони у вищому дивізіоні клуб вибув до першої ліги, де посів перше місце у 2024 році та знову повернувся до вищого дивізіону. Домашнею ареною клубу є стадіон «Саласпілс», який вміщує дві тисячі глядачів. ',
+        trophies:'Друга ліга: 2024'
+    },
+    'tukums 2000': {
+        players:'Goalkeepers: #18 Karlis Jansons, #77 Vladislavs Kapustins, #1 Raivo Sturins; Defenders: #15 Eduards Ansevics, #4 Glebs Kacanovs, #99 Maroine Mihoubi, #26 Mikuss Paulovics, #8 Rudolfs Reingolcs, #5 Deniss Rogovs; Midfielders: #11 Anmanis, #16 Ilja Atligins, #18 Niks Dusalijevs, #20 Rems Dzeguze, #25 Arona Fall, #21 Helvijs Joksts, #10 Daniils Putrans, #10 Bogdans Samoilovs, #9 Dans Sirbu, #88 Martins Stals, #17 Vladimirs Stepanovs, #32 Kristaps Uzis, #11 Davis Valmiers, #16 Kristers Volkovs; Forwards: #15 Raivis Kirss; Coach: Kristaps Dislers',
+        description:'Латвійський футбольний клуб з однойменного міста, заснований у 2000 році. «Тукумс 2000» до 2004 виступав серед аматорських команд, після чого дебютував у другій лізі, де посів четверте місце. У 2005 клуб дебютував у першій лізі та посів 13-е підсумкове місце. Наступні сезони клуб відіграв, як у другій так і у першій лізі. У 2019 році «Тукумс 2000» здобув перемогу в першій лізі та наступного року дебютував у найвищому дивізіоні Латвії. За підсумками першості клуб посів останнє місце та вибув до першої ліги.',
+        trophies:'Друга ліга: 2019'
+    }
+}
+
+
+// Литва
+function showLithuania() {
+    document.getElementById('A-lyga-button').style.display = 'block';
+    document.getElementById('lithuania-button').style.display = 'none';
+    document.getElementById('england-button').style.display = 'none';
+    document.getElementById('albania-button').style.display = 'none'; 
+    document.getElementById('austria-button').style.display = 'none';
+    document.getElementById('andorra-button').style.display = 'none'; 
+    document.getElementById('azerbaijan-button').style.display = 'none';   
+    document.getElementById('belgium-button').style.display = 'none';
+    document.getElementById('bolgaria-button').style.display = 'none'; 
+    document.getElementById('bosnia and Herzegovina-button').style.display = 'none';
+    document.getElementById('armenia-button').style.display = 'none';
+    document.getElementById('gibraltar-button').style.display = 'none';
+    document.getElementById('greece-button').style.display = 'none';
+    document.getElementById('georgia-button').style.display = 'none';
+    document.getElementById('denmark-button').style.display = 'none';
+    document.getElementById('israel-button').style.display = 'none';
+    document.getElementById('ireland-button').style.display = 'none';
+    document.getElementById('iceland-button').style.display = 'none';
+    document.getElementById('italy-button').style.display = 'none';
+    document.getElementById('spain-button').style.display = 'none';
+    document.getElementById('kazakhstan-button').style.display = 'none';
+    document.getElementById('cypr-button').style.display = 'none';
+    document.getElementById('kosovo-button').style.display = 'none';
+    document.getElementById('latvia-button').style.display = 'none';
+
+}
+function showALygaTeams() {
+    document.querySelectorAll('.team-button').forEach(button => button.style.display = 'none');
+    document.querySelectorAll('#A-lyga-dropdown .team-button').forEach(button => button.style.display = 'inline-block');
+    document.getElementById('A-lyga-button').style.display = 'none';
+    document.getElementById('A-lyga-dropdown').style.display = 'block';
+}
+const teamdata_22 = {
+    'banga': {
+        players:'Goalkeepers: #55 Mantas Bertasius, #12 Lukas Grinkevicius, #1 Armantas Vitkauskas; Defenders: #17 Maksim Andrejev, #19 Valdas Antuzis, #6 Hugo Figueredo, #14 Erik Kirjanov, #3 Deividas Malzinskas, #21 Karolis Pliuskys, #5 Benas Satkus, 324 Kostyantyn Shults, #11 Erikas Smulkys, #18 Pijus Srebalius, #13 Natanas Zebrauskas; Midfielders: #57 Matas Ambrazaitis, #15 Nouri El Harmazi, #10 Aivars Emsis, #19 Rokas Filipavicius, #10 Vaidas Magdusauskas, #7 Dovydas Norvilas, #99 Pamilerin Olugbogi, #6 Matas Ramanauskas, #20 Karolis Toleikis; Forwards: #37 Ignas Venckus, #32 Robertas Vezevicius; Coach: David Afonso',
+        description:'Литовський футбольний клуб із міста Гаргждай, заснований 1966 року. Клуб отримав право виступати у найвищому дивізіоні Литви 2009 року після того, як «Каунас» та «Атлантас» відмовилися від участі в елітному дивізіоні. Доти клуб виступав у топ-лізі з 1996 по 2000 рік.',
+        trophies:'Кубок Литви: 2024'
+    },
+    'dainava alytus': {
+        players:'Goalkeepers: #1 Volodymyr Krynskyi, #77 Airidas Mickevicius; Defenders: #5 Nikoloz Chikovani, #13 Cheikh Faye, #51 Glib Grachov, #28 Lamin Jawara, #23 Andrija Krivokapic, #30 Oskaras Maksymenko, #24 Naglis Paliusis, #27 Lukas Siaudvytis, #75 Ernestas Stockunas, #29 Gustas Zabita; Midfielders: #7 Artem Baftalovskiy, #6 Renatas Banevicius, #74 Artem Bilyi, #20 Ivan Koshkosh, #17 Dmitri Mandricenco, #19 Rokas Stanulevicius; Forwards: #11 Dominyk Kodz, #70 Marat Krasikov, #9 Davor Rakic; Coach: Sergey Kuznetsov',
+        description:'Литовський футбольний клуб з Алітуса. Футбольний клуб «Дайнава» в Алітусі був створений ще в 1935 році і відтоді припиняв існування та перезасновувався, змінюючи назву. Востаннє клуб було розформовано 2014 року, однак у 2016 році по ініціативі ультрас-спільноти Dzūkų tankai його діяльність було відновлено[1], і він розпочав свої виступи в другому дивізіоні литовського чемпіонату. З часу заснування клуб грав в усіх дивізіонах чемпіонату Литви з футболу. У сезоні 2021 виступає в А-лізі, вищому дивізіоні чемпіонату Литви.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'dziugas telsiai': {
+        players:'Goalkeepers: #99 Vykitas Gaudiesius, #1 Marius Paukste; Defenders: #77 Oleksandr Chernozub, #23 Ibrahim Cisse, #14 Guidas Girdvainis, #62 Sergiy Kulynych, #3 Miroslav Pushkarov, #24 Dejan Trajkovski; Midfielders: #33 Lukas Ankudinovas, #5 Joaquim Domingos, #11 Leif Fernandez Estevez, #16 Airimas Pilipavicius, #23 Vilius Piliukaitis, #15 Karolis Silkaitis, #77 Aurimas Stulga, #37 Deitonas Vinckus, #27 Hirotaka Yamada; Forwards: #26 Oleksandr Kurtsev, #20 Simonas Urbys; Coach: Andrius Lipskis',
+        description:'Литовський футбольний клуб з Тельшяй, заснований у 1923 році. Під час радянської окупації клуб було розпущено (1946), а в 1991 і 2014 роках було відновлено. Виступає в Першій лізі. Домашні матчі приймає на Міському стадіоні, місткістю 3 000 глядачів.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'fk panevezys': {
+        players:'Goalkeepers: #13 Daniel Bukel, #1 Vytautas Cerniauskas, #22 Emil Timbur; Defenders: #2 Karim Abdoul Dante, #4 Kaspars Dubra, #15 Justinas Janusevskis, #97 Andriy Karvatskyi, #2 Linas Klimavicius, #50 Laurit Krasniqi, #31 Matas Pusnys, #32 Rokas Rasimavicius, #4 Aironas Trakselis; Midfielders: #27 Kwadwo Asamoah, #20 Jovan Cadjenovic, #10 Lucas De Vega, #? Salomon Kouadio, #27 Jerome Simon, #25 Domantas Vaicekauskas, #7 Ernestas Veliulis; Forwards: #21 Cheikhou Dieng, #15 Foguinho, #28 Sivert Gussias, #96 Pavle Radunovic, #80 Ribeiro Dantas Elivelto, #20 Faustas Steponavicius; Coach: Stijn Vreven',
+        description:'Литовська футбольна команда з однойменного міста Паневежис, заснований в 2015 році. З 2019 року виступає у Вищій лізі Литви. «Футбольний клуб Паневежис» був заснований 2015. У 2015 році футбольна команда почала грати в Першій лізі, з 2019 виступає в А-лізі.',
+        trophies:'Суперкубок Литви: 2024, 2021; Кубок Литви: 2020; Чемпіон Литви: 2023'
+    },
+    'hegelmann': {
+        players:'Goalkeepers: #22 Arijus Brazinskas, #16 Vincentas Sarkauskas, #1 Emils Urbonas; Defenders: #5 Domantas Antanavicius, #4 Nikola Djoric, #17 Carlos Duke, #27 Jonathan Mulder, #42 Rokas Sinkevicius; Midfielders: #66 Vilius Armalas, #8 Denis Bosnjak, #30 Felipe Brisola, #24 Titas Buzas, #? Abdoul Harouna, #99 Donatas Kazlauskas, #28 Lazar Kojic, #13 Kipras Olsauskas, #10 Patrick Popescu, #45 Artem Shchedryi, #9 Klaudijus Upstas; Forwards: #4 Bolaji Samson Ajayi, #20 Lukas Jonaitis, #21 Esmilis Kausinis, #25 Kipras Keliauskas, #15 Leo Ribeiro, #11 Abdel Njoya, #80 Domas Sinkevicius, #41 Rasheed Yusuf; Coach: Andrius Skerla',
+        description:'Литовський футбольний клуб з Раудондваріса, Каунаського району. Заснований 2009 року. Тривалий час команда виступала в другій та першій лізі. З 2021 року грає у вищій лізі литовського футболу. Клуб заснований на початку 2009 року компанією «Hegelmann Transporte», яка надає транспортні та логістичні послуги. При заснуванні клуб отримав назву «Хегельманн Літауен», де Хегельманн — прізвище засновника клубу Антона Хегельманна, а Літауен — від назви країни Литва німецькою мовою. У 2018 клуб фінішують першими у другій лізі та підвищуються до першої ліги. У першій лізі в дебютному сезоні клуб посів сьоме місце, а наступного сезону посіли друге місце та право дебютувати в А-лізі.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'kauno zalgiris': {
+        players:'Goalkeepers: #22 Deividas Mikelionis, #35 Jurgis Miksiunas, #55 Tomas Svedkauskas; Defenders: #21 Haymenn Bah-Traore, #23 Aldayr Hernandez, #11 David Martin, #83 Pijus Nainys, #18 Sincere Seth, #99 Maxime Spano, #12 Jonathan Tamimi, #30 Anton Tolordava; Midfielders: #8 Vilius Armanavicius, #9 Amine Benchaib, #28 Ernestas Burdzilauskas, #50 Gabrielius Buslys, #17 Oyinlola Kayode, #80 Edvinas Kloniunas, #46 Titas Milius, #24 Divine Naah, #47 Damjan Pavlovic, #10 Gratas Sirgedas, #30 Nidas Vosylius; Forwards: #19 Fedor Cernych, #91 Temur Chogadze, #28 Jermaine Hylton, #23 Romualdas Jansonas, #79 Valdas Paulauskas, #77 Mery Traore; Coach: Eivinas Cerniauskas',
+        description:'Литовський футбольний клуб з Каунаса. Заснований 2005 року. Домашні матчі приймає на стадіоні «Та́урас». Ідея створення ФК «Спіріс» у Каунасі зародилася 2004 року серед тренерів місцевої футбольної школи «Таурас», які вирішили дати можливість реалізувати свій потенціал у професійному футболі для випускників школи. Засновано футбольний клуб «Спіріс» було в 2005 році. Його основу склали вихованці футбольної школи «Таурас». З часу заснування клуб тричі змінював назву. Протягом 2005—2013 років клуб грав у другому дивізіоні Південної зони. У 2013—2015 роках виступав у першій лізі Чемпіонату Литви з футболу. У 2015 році вже «Спіріс Каунас» дебютував у вищому дивізіоні, після чого оголосив про тісну співпрацю в чемпіонаті з вільнюським «Жальгірісом», що фактично зробило його фарм-клубом столичної команди. На початку 2016 року «Спіріс Каунас» оголосив про перейменування на «Кауно Жальгіріс».',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'siauliai fa': {
+        players:'Goalkeepers: #16 Orestas Apockinas, #61 Gustas Baliutavicius, #1 Lucas Paukste; Defenders: #23 Rolandas Baravykas, #44 Martynas Dapkus, #27 Danielius Jarasius, #5 Kristupas Kersys, #8 Dominykas Kubilinskas, #2 Marko Mandic, #8 Egidijus Vaitkunas; Midfielders: #80 Benny Silva, #3 Vytas Gaspuitis, #17 Eligijus Jankauskas, #6 Grantas Jaseliunas, #14 Nikita Komissarov, #88 Mantas Kuklys, #37 Gabijus Micevicius, #31 Gabrielius Micevicius, #36 Juozas Radavicius, #13 Daniel Romanovskij, #11 Deividas Sesplaukis, #33 Domantas Simkus, #14 Karolis Zebrauskas; Forwards: #29 Deividas Dovydaitis, #9 Augustinas Klimavicius; Coach: Mindaugas Cepas',
+        description:'Литовська футбольна академія із однойменного міста, заснована 2007 року.',
+        trophies:'Клуб не вигравав трофеї'
+    },
+    'suduva': {
+        players:'Goalkeepers: #66 Rokas Pacesa, #13 Ignas Plukas, #99 Vilius Stebrys, #12 Giedrius Zenkevicius; Defenders: #5 Zygimantas Baltrunas, #29 Markas Beneta, #2 Tautvydas Burdzilauskas, #97 Tomas Gumbelevicius, #23 Ivan Stojanov, #4 Henry Uzochukwu, #15 Aleksandar Zivanovic; Midfielders: #27 Amar Haidara, #8 Steve Lawson, #13 Maksym Pyrogov, #6 Kota Sakurai, #88 darius Stankevicius; Forwards: #10 Omran Haydary, #17 Artem Kovbasa, #7 Nojus Luksys, #28 Nauris Petkevicius, #21 Linas Zingerttas; Coach: Dovydas Lastauskas',
+        description:'Литовський футбольний клуб із Маріямполя, заснований 1968 року. Виступає у лізі A.',
+        trophies:'Суперкубок Литви: 2022, 2019, 2018, 08/09; Кубок Литви: 2019, 08/09, 05/06; Чемпіон Литви: 2019, 2018, 2017'
+    },
+    'transinvest': {
+        players:'Goalkeepers: #89 Ernest Cerniavskij, #25 Stefan Cupic, #79 Sergiy Melashenko, #1 Kornelijus Smilingis; Defenders: #31 Carlos Eduardo, #2 Arminas Civilis, #55 Erlandas Juska, #23 Andrius Kazakevicius, #22 Aleksandras Levsinas, #21 Gabrielis Nikonovas, #5 Ricardas Sveikauskas; Midfielders: #29 Kajus Bicka, #12 Ignas Kaskelevicius, #14 Yoichi Kawachi, #20 Povilas Kiselevskis, #98 Ignas Kruzikas, #18 Arvydas Novikovas, #77 Linas Pilibaitis, #14 Karolis Uzela, #44 Arturas Zulpa; Forwards: #49 Cesinha, #14 Artem Fedorov, #19 Guilherme Pires, #9 Chidera Nwoga, #11 Artem Radchenko; Coach: Marius Stankevicius',
+        description:'Литовський футбольний клуб з села Галине, Вільнюського району. Чинний володар Кубку Литви. Після перемоги в Першій Лізі вийшов до Ліги А. Клуб було засновано у 2022 році під назвою Futbolo klubas Transinvest (або TransINVEST). У сезоні 2024 клуб виступатиме в Лізі А чемпіонату Литви з футболу.',
+        trophies:'Кубок Литви: 2023'
+    },
+    'zalgiris': {
+        players:'Goalkeepers: #56 Joris Aliukonis, #96 Arpad Tordai; Defenders: #30 Dziugas Aleksa, #18 Myroslav Mazur, #45 Joris Moutachy, #41 Martynas Setkus, #49 Titas Stakenas, #49 Bruno Tavares, #41 Mohamed Youla, #26 Younn Zahary; Midfielders: #27 Vakaris Berenta, ##24 Motiejus Burba, #99 Leandro Fernandes, #81 Kassim Hadji, #77 Yuri Kendysh, #8 Nedas Klimavicius, #12 Jake Larsson, #17 Giedrius Matulevicius, #10 Dino Salcinovic, #30 Ugnius Simonavicius, #22 Ovidijus Verbickas; Forwards: #2 Adama Fofana, #99 Gustas Jarusevicius, #42 Kevin Lukasevic, #44 Patrik Matyzonok, #71 Nemanja Mihajlovic, #9 Meinardas Mikulenas, #11 Nikola Petkovic; Coach: Vladimir Cheburin',
+        description:'Литовський футбольний клуб з міста Вільнюс, один з найтитулованіших клубів країни. Виступає в А лізі. Після закінчення війни постало питання про створення литовського клубу, який би представляв республіку в чемпіонаті СРСР (фактично збірна Литви), і таку команду було створено на базі спортивного товариства «Динамо». До її складу було зібрано найкращих литовських футболістів, і в дебютному сезоні команда посіла 8-е місце у Центральній зоні Другої групи. З 1948 року команда підпорядковується вже товариству «Спартак». У сезонах 1953, 1960 та 1961 років «Спартак» грав у найвищому ешелоні чемпіонату СРСР - Класі А. 1962 року команда переходить під керівництво республіканського спортивного товариства «Жальгіріс», успадковуючи від «Спартака» місце у класі А. Щоправда, в тому сезоні команда займає останнє з 22 місць і вибуває з найсильнішого дивізіону аж до 1983 року. Протягом 1963-1971 років «Жальгіріс» грає у Першій лізі, з 1972 у Другій. У 1977 тренером команди стає Беньямінас Зелькявічюс, який працює з командою, з перервами, аж до 1996 року. З його ім`ям пов`язані найуспішніші виступи в історії клубу. Вже у тому ж 1977 році «Жальгіріс» виграє першість Другої ліги і піднімається у Першу. Протягом п`яти сезонів вільнюська команда впевнено грає у Першій лізі, доки у 1982 році не посідає перше місце і після двадцятирічної перерви не повертається у Вищу лігу. Починаючи з 1983 року і аж до здобуття Литвою незалежності «Жальгіріс» виступає у Вищій лізі Чемпіонату СРСР. Всі ці сезони клуб завершує у верхній частині турнірної таблиці. Сезон 1987 року став найуспішнішим в історії команди: «Жальгіріс» посідає 3-ю сходинку і отримує право на участь у Кубку УЄФА. Під прапором студентської збірної СРСР у 1987 році перемагає на Всесвітній Універсіаді. 1988 року «Жальгіріс» виходить з-під опіки однойменного спортивного товариства, засновується професійний футбольний клуб. Дебют у єврокубках не вдається: після домашньої перемоги 2:0, у Відні місцева «Аустрія» впевнено бере реванш - 2:5. Наступного сезону «Жальгіріс» у Кубку УЄФА спочатку проходить шведський «Гетеборг», але потім програє югославській «Црвені Звезді». 1990 року Литва проголошує незалежність, і керівництво вільнюського клубу вирішило відмовитися від участі у Чемпіонаті СРСР. Тоді ФІФА за клопотанням Федерації футболу СРСР забороняє грати литовським клубам та збірній цієї країни в міжнародних турнірах. Це тривало до 1991 року, коли санкції було знято, а Литва стала членом ФІФА та УЄФА. Протягом дев`яностих років «Жальгіріс» є одним з лідерів литовського футболу, безпосередньо сперечається за чемпіонське звання, хоча у єврокубках переважно вибуває вже на початкових стадіях. З 1999 року виступи команди поступово погіршуються, у 2002 команда фінішує за межами першої трійки, а у 2005 взагалі в нижній частині турнірної таблиці - на 8-й сходинці. В травні 2008 року президент клубу Вадим Костуєв заарештований у Москві. З того часу у команди починаються серйозні фінансові проблеми, виникає заборгованість перед футболістами. У сезоні 2009 року клуб спочатку відмовляється брати участь, а потім заявляється у другу за значенням литовську лігу. Домашні матчі команда проводить вже не на п`ятнадцятитисячному стадіоні «Жальгіріс», а на невеличкому «Вінгісі» в однойменному міському парку. З 2010 клуб знову виступає в А лізі, одразу завоювавши бронзові медалі. У 2011 та 2012 столичний клуб фінішує другим, а останні два сезони в активі команди золото. З 2022 рік ФК «Жальгіріс» представив нового генерального спонсора. У сезонах 2022 та 2023 років логотип Betsafe буде на передній частині футболки чемпіона Литви.',
+        trophies:'Друга ліга СРСР: 1982; Суперкубок Литви: 2023, 2020, 2017, 2016, 14/15, 13/14, 12/13, 02/03; Кубок Литви: 2022, 2021, 2018, 15/16, 14/15, 13/14, 12/13, 11/12, 02/03, 96/97, 93/94, 92/93, 90/91; Чемпіон Литви: 2024, 2022, 2021, 2020, 2016, 2015, 2014, 2013, 98/99, 91/92, 90/91'
     }
 }
