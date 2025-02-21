@@ -58,3 +58,19 @@ header {
 .info-section {
     padding: 20px;
 }
+
+.country-list {
+    display: flex; /* Робить список горизонтальним */
+    flex-wrap: wrap; /* Дозволяє переносити елементи, якщо не вистачає місця */
+    gap: 10px; /* Відстань між елементами */
+    padding: 0;
+    list-style: none; /* Видаляє маркери списку */
+}
+
+.country-list li {
+    background: #fff;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
