@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <title>Футбольний сайт</title>    
+    <script src="script.js" defer></script>
+    <title>Футбольний сайт</title>
 </head>
 <body>
     <header>
         <h1>Футбольний сайт</h1>
     </header>
-    
     <main>
-        <h3 id="greeting">Привіт! Про що саме бажаєте дізнатися?</h3>
+        <h3 id="greeting">Привіт! Про що саме бажаєте знати?</h3>
         <div class="button-container">
             <button onclick="showSection('news')" class="info-button">Новини</button>
             <button onclick="showClubs()" class="info-button">Клуби</button>
             <button onclick="showSection('transfers')" class="info-button">Трансфери</button>
         </div>
+
+<!-- Контейнер для кнопок новин -->
+<div id="news" class="info-section" style="display: none;">
+    <div id="news-container">
+        <button onclick="showNews('january2025')" class="news-button">Січень 2025</button>
+        <button onclick="showNews('february2025')" class="news-button">Лютий 2025</button>
+        <button onclick="showNews('march2025')" class="news-button">Березень 2025</button>
+        <button onclick="showNews('april2025')" class="news-button">Квітень 2025</button>
+        <button onclick="showNews('may2025')" class="news-button">Травень 2025</button>
+    </div>
+
+    <!-- Контейнер для тексту новин -->
+    <div id="news-text"></div>
+</div>
+
+<div id="transfers" class="info-section" style="display: none;">
+    <div id="transfers-container">
+        <button onclick="showTransfers('summer2024')" class="news-button">Літо 2024</button>
+        <button onclick="showTransfers('winter2025')" class="news-button">Зима 2025</button>
+        <button onclick="showTransfers('summer2025')" class="news-button">Літо 2025</button>
+    </div>
+    <div id="transfers-text"></div>
+</div>
+
+
+<!-- Контейнер для тексту новин -->
+<div id="news-text" style="display: none; font-size: 18px; font-weight: bold;"></div>
+
 <!-- Albania -->
         <button id="albania-button" class="extra-button" style="display: none;" onclick="showAlbania()">Албанія</button>
         <button id="superlig-button" class="extra-button" style="display: none;" onclick="showSuperLigTeams()">Суперліга</button>
@@ -1266,9 +1293,9 @@
     <img id="zwolle-logo" src="Netherlands(Eredivisie)/zwolle.png" alt="Зволле" style="display: none; width: 100px;">
 <!-- Німеччина -->
 <button id="germany-button" class="extra-button" style="display: none;" onclick="showGermany()">Німеччина</button>
-<button id="bundesliga-button" class="extra-button" style="display: none;" onclick="showBundesligaTeams()">Бундесліга</button>
+<button id="bundeslyga-button" class="extra-button" style="display: none;" onclick="showBundeslygaTeams()">Бундесліга</button>
 <button id="bundesliga2-button" class="extra-button" style="display: none;" onclick="showBundesliga2Teams()">Бундесліга 2</button>
-<div class="bundesliga-dropdown" id="bundesliga-dropdown" style="display: none;">
+<div class="bundeslyga-dropdown" id="bundeslyga-dropdown" style="display: none;">
     <div class="team-buttons">
         <button onclick="showTeamOptions('augsburg')" class="team-button" style="display: none;">Аугсбург</button>
         <button onclick="showTeamOptions('bayer leverkusen')" class="team-button" style="display: none;">Баєр Леверкузен</button>
@@ -1756,6 +1783,214 @@
     <img id="veres rivne-logo" src="Ukraine(VBETLiga)/veres rivne.png" alt="Верес Рівне" style="display: none; width: 100px;">
     <img id="vorskla poltava-logo" src="Ukraine(VBETLiga)/vorskla poltava.png" alt="Ворскла Полтава" style="display: none; width: 100px;">
     <img id="zorya luhansk-logo" src="Ukraine(VBETLiga)/zorya luhansk.png" alt="Зоря Луганськ" style="display: none; width: 100px;">  
+<!-- Ферерські Острови -->
+<button id="faroe-islands-button" class="extra-button" style="display: none;" onclick="showFaroeIslands()">Ферерські Острови</button>
+<button id="faroe-islands-premier-league-button" class="extra-button" style="display: none;" onclick="showFaroeIslandsPremierLeagueTeams()">Прем`єр Ліга</button>
+<div class="faroe-islands-premier-league-dropdown" id="faroe-islands-premier-league-dropdown" style="display: none;">
+    <div class="team-buttons">
+        <button onclick="showTeamOptions('07 vestur sorvagur')" class="team-button" style="display: none;">07 Вестур Сорвагур</button>
+        <button onclick="showTeamOptions('b36 torshavn')" class="team-button" style="display: none;">Б36 Торсхавн</button>
+        <button onclick="showTeamOptions('klaksvik')" class="team-button" style="display: none;">Клаксвік</button>
+        <button onclick="showTeamOptions('nsi runavik')" class="team-button" style="display: none;">НСІ Рунавік</button>
+        <button onclick="showTeamOptions('streymur')" class="team-button" style="display: none;">Стреймур</button>
+        <button onclick="showTeamOptions('suduroy')" class="team-button" style="display: none;">Сувурой</button>
+        <button onclick="showTeamOptions('toftir')" class="team-button" style="display: none;">Тофтір</button>
+        <button onclick="showTeamOptions('torshavn')" class="team-button" style="display: none;">Торсхавн</button>
+        <button onclick="showTeamOptions('tvoroyri')" class="team-button" style="display: none;">Ройн</button>
+        <button onclick="showTeamOptions('vikingur')" class="team-button" style="display: none;">Вікінгур</button>
+        </div>
+    </div>
+    <img id="07 vestur sorvagur-logo" src="Faroe Islands(PremierLeague)/07 vestur sorvagur.png" alt="07 Вестур Сорвагур" style="display: none; width: 100px;">
+    <img id="b36 torshavn-logo" src="Faroe Islands(PremierLeague)/b36 torshavn.png " alt="Б36 Торсхавн" style="display: none; width: 100px;">
+    <img id="klaksvik-logo" src="Faroe Islands(PremierLeague)/klaksvik.png" alt="Клаксвік" style="display: none; width: 100px;">
+    <img id="nsi runavik-logo" src="Faroe Islands(PremierLeague)/nsi runavik.png" alt="НСІ Рунавік" style="display: none; width: 100px;">
+    <img id="streymur-logo" src="Faroe Islands(PremierLeague)/streymur.png" alt="Стреймур" style="display: none; width: 100px;">
+    <img id="suduroy-logo" src="Faroe Islands(PremierLeague)/suduroy.png" alt="Сувурой" style="display: none; width: 100px;">
+    <img id="toftir-logo" src="Faroe Islands(PremierLeague)/toftir.png" alt="Тофтір" style="display: none; width: 100px;">
+    <img id="torshavn-logo" src="Faroe Islands(PremierLeague)/torshavn.png" alt="Торсхавн" style="display: none; width: 100px;">
+    <img id="tvoroyri-logo" src="Faroe Islands(PremierLeague)/tvoroyri.png" alt="Ройн" style="display: none; width: 100px;">
+    <img id="vikingur-logo" src="Faroe Islands(PremierLeague)/vikingur.png" alt="Вікінгур" style="display: none; width: 100px;">
+<!-- Фінляндія -->
+<button id="finland-button" class="extra-button" style="display: none;" onclick="showFinland()">Фінляндія</button>
+<button id="veikkausliiga-button" class="extra-button" style="display: none;" onclick="showVeikkausliigaTeams()">Вейккаусліга</button>
+<div class="veikkausliiga-dropdown" id="veikkausliiga-dropdown" style="display: none;">
+    <div class="team-buttons">
+        <button onclick="showTeamOptions('ac oulu')" class="team-button" style="display: none;">АК Оулу</button>
+        <button onclick="showTeamOptions('gnistan')" class="team-button" style="display: none;">Гністан</button>
+        <button onclick="showTeamOptions('haka')" class="team-button" style="display: none;">Хака</button>
+        <button onclick="showTeamOptions('hjk')" class="team-button" style="display: none;">ГІК</button>
+        <button onclick="showTeamOptions('ilves')" class="team-button" style="display: none;">Ільвес</button>
+        <button onclick="showTeamOptions('inter turku')" class="team-button" style="display: none;">Інтер Турку</button>
+        <button onclick="showTeamOptions('jaro')" class="team-button" style="display: none;">Яро</button>
+        <button onclick="showTeamOptions('ktp')" class="team-button" style="display: none;">КТП</button>
+        <button onclick="showTeamOptions('kups')" class="team-button" style="display: none;">КуПС</button>
+        <button onclick="showTeamOptions('mariehamn')" class="team-button" style="display: none;">Марієгамн</button>
+        <button onclick="showTeamOptions('sjk')" class="team-button" style="display: none;">СІК</button>
+        <button onclick="showTeamOptions('vps')" class="team-button" style="display: none;">ВПС</button>
+        </div>
+    </div>
+    <img id="ac oulu-logo" src="Finland(Veikkausliiga)/ac oulu.png" alt="АК Оулу" style="display: none; width: 100px;">
+    <img id="gnistan-logo" src="Finland(Veikkausliiga)/gnistan.png" alt="Гністан" style="display: none; width: 100px;">
+    <img id="haka-logo" src="Finland(Veikkausliiga)/haka.png" alt="Хака" style="display: none; width: 100px;">
+    <img id="hjk-logo" src="Finland(Veikkausliiga)/hjk.png" alt="ГІК" style="display: none; width: 100px;">
+    <img id="ilves-logo" src="Finland(Veikkausliiga)/ilves.png" alt="Ільвес" style="display: none; width: 100px;">
+    <img id="inter turku-logo" src="Finland(Veikkausliiga)/inter turku.png" alt="Інтер Турку" style="display: none; width: 100px;">
+    <img id="jaro-logo" src="Finland(Veikkausliiga)/jaro.png" alt="Яро" style="display: none; width: 100px;">
+    <img id="ktp-logo" src="Finland(Veikkausliiga)/ktp.png" alt="КТП" style="display: none; width: 100px;">
+    <img id="kups-logo" src="Finland(Veikkausliiga)/kups.png" alt="КуПС" style="display: none; width: 100px;">
+    <img id="mariehamn-logo" src="Finland(Veikkausliiga)/mariehamn.png" alt="Марієгамн" style="display: none; width: 100px;">
+    <img id="sjk-logo" src="Finland(Veikkausliiga)/sjk.png" alt="СІК" style="display: none; width: 100px;">
+    <img id="vps-logo" src="Finland(Veikkausliiga)/vps.png" alt="ВПС" style="display: none; width: 100px;">
+<!-- Франція -->
+<button id="france-button" class="extra-button" style="display: none;" onclick="showFrance()">Франція</button>
+<button id="league1-button" class="extra-button" style="display: none;" onclick="showLeague1Teams()">Ліга1</button>
+<button id="league2-button" class="extra-button" style="display: none;" onclick="showLeague2Teams()">Ліга2</button>
+<div class="league1-dropdown" id="league1-dropdown" style="display: none;">
+    <div class="team-buttons">
+        <button onclick="showTeamOptions('angers')" class="team-button" style="display: none;">Анже</button>
+        <button onclick="showTeamOptions('auxerre')" class="team-button" style="display: none;">Осер</button>
+        <button onclick="showTeamOptions('brest')" class="team-button" style="display: none;">Брест</button>
+        <button onclick="showTeamOptions('le havre')" class="team-button" style="display: none;">Гавр</button>
+        <button onclick="showTeamOptions('lens')" class="team-button" style="display: none;">Ленс</button>
+        <button onclick="showTeamOptions('lille')" class="team-button" style="display: none;">Лілль</button>
+        <button onclick="showTeamOptions('lyon')" class="team-button" style="display: none;">Ліон</button>
+        <button onclick="showTeamOptions('marseille')" class="team-button" style="display: none;">Марсель</button>
+        <button onclick="showTeamOptions('monako')" class="team-button" style="display: none;">Монако</button>
+        <button onclick="showTeamOptions('montpellier')" class="team-button" style="display: none;">Монпельє</button>
+        <button onclick="showTeamOptions('nantes')" class="team-button" style="display: none;">Нант</button>
+        <button onclick="showTeamOptions('nice')" class="team-button" style="display: none;">Ніцца</button>
+        <button onclick="showTeamOptions('psg')" class="team-button" style="display: none;">ПСЖ</button>
+        <button onclick="showTeamOptions('reims')" class="team-button" style="display: none;">Реймс</button>
+        <button onclick="showTeamOptions('rennes')" class="team-button" style="display: none;">Ренн</button>
+        <button onclick="showTeamOptions('st etienne')" class="team-button" style="display: none;">Сент-Етьєн</button>
+        <button onclick="showTeamOptions('strasbourg')" class="team-button" style="display: none;">Страсбург</button>
+        <button onclick="showTeamOptions('toulouse')" class="team-button" style="display: none;">Тулуза</button>
+        </div>
+    </div>
+    <img id="angers-logo" src="France(League1)/angers.png" alt="Анже" style="display: none; width: 100px;">
+    <img id="auxerre-logo" src="France(League1)/auxerre.png" alt="Осер" style="display: none; width: 100px;">
+    <img id="brest-logo" src="France(League1)/brest.png" alt="Брест" style="display: none; width: 100px;">
+    <img id="le havre-logo" src="France(League1)/le havre.png" alt="Гавр" style="display: none; width: 100px;">
+    <img id="lens-logo" src="France(League1)/lens.png" alt="Ленс" style="display: none; width: 100px;">
+    <img id="lille-logo" src="France(League1)/lille.png" alt="Лілль" style="display: none; width: 100px;">
+    <img id="lyon-logo" src="France(League1)/lyon.png" alt="Ліон" style="display: none; width: 100px;">
+    <img id="marseille-logo" src="France(League1)//marseille.png" alt="Марсель" style="display: none; width: 100px;">
+    <img id="monako-logo" src="France(League1)/monako.png" alt="Монако" style="display: none; width: 100px;">
+    <img id="montpellier-logo" src="France(League1)/montpellier.png" alt="Монпельє" style="display: none; width: 100px;">
+    <img id="nantes-logo" src="France(League1)/nantes.png" alt="Нант" style="display: none; width: 100px;">
+    <img id="nice-logo" src="France(League1)/nice.png" alt="Ніцца" style="display: none; width: 100px;">
+    <img id="psg-logo" src="France(League1)/psg.png" alt="ПСЖ" style="display: none; width: 100px;">
+    <img id="reims-logo" src="France(League1)/reims.png" alt="Реймс" style="display: none; width: 100px;">
+    <img id="rennes-logo" src="France(League1)/rennes.png" alt="Ренн" style="display: none; width: 100px;">
+    <img id="st etienne-logo" src="France(League1)/st etienne.png" alt="Сент-Етьєн" style="display: none; width: 100px;">
+    <img id="strasbourg-logo" src="France(League1)/strasbourg.png" alt="Страсбург" style="display: none; width: 100px;">
+    <img id="toulouse-logo" src="France(League1)/toulouse.png" alt="Тулуза" style="display: none; width: 100px;">
+<div class="league2-dropdown" id="league2-dropdown" style="display: none;">
+    <div class="team-buttons">
+        <button onclick="showTeamOptions('ajaccio')" class="team-button" style="display: none;">Аяччо</button>
+        <button onclick="showTeamOptions('amiens')" class="team-button" style="display: none;">Ам`єн</button>
+        <button onclick="showTeamOptions('annecy')" class="team-button" style="display: none;">Аннесі</button>
+        <button onclick="showTeamOptions('bastia')" class="team-button" style="display: none;">Бастія</button>
+        <button onclick="showTeamOptions('caen')" class="team-button" style="display: none;">Кан</button>
+        <button onclick="showTeamOptions('clermont')" class="team-button" style="display: none;">Клермон</button>
+        <button onclick="showTeamOptions('dunkerque')" class="team-button" style="display: none;">Дюнкерк</button>
+        <button onclick="showTeamOptions('grenoble')" class="team-button" style="display: none;">Гренобль</button>
+        <button onclick="showTeamOptions('guingamp')" class="team-button" style="display: none;">Генгам</button>
+        <button onclick="showTeamOptions('laval')" class="team-button" style="display: none;">Лаваль</button>
+        <button onclick="showTeamOptions('lorient')" class="team-button" style="display: none;">Лор`ян</button>
+        <button onclick="showTeamOptions('martigues')" class="team-button" style="display: none;">Мартіг</button>
+        <button onclick="showTeamOptions('metz')" class="team-button" style="display: none;">Мец</button>
+        <button onclick="showTeamOptions('paris')" class="team-button" style="display: none;">Париж</button>
+        <button onclick="showTeamOptions('pau')" class="team-button" style="display: none;">По</button>
+        <button onclick="showTeamOptions('red star')" class="team-button" style="display: none;">Ред Стар</button>
+        <button onclick="showTeamOptions('rodez')" class="team-button" style="display: none;">Родез</button>
+        <button onclick="showTeamOptions('troyes')" class="team-button" style="display: none;">Труа</button>
+        </div>
+    </div>
+    <img id="ajaccio-logo" src="France(League2)/ajaccio.png" alt="Аяччо" style="display: none; width: 100px;">
+    <img id="amiens-logo" src="France(League2)/amiens.png" alt="Ам`єн" style="display: none; width: 100px;">
+    <img id="annecy-logo" src="France(League2)/annecy.png" alt="Аннесі" style="display: none; width: 100px;">
+    <img id="bastia-logo" src="France(League2)/bastia.png" alt="Бастія" style="display: none; width: 100px;">
+    <img id="caen-logo" src="France(League2)/caen.png" alt="Кан" style="display: none; width: 100px;">
+    <img id="clermont-logo" src="France(League2)/clermont.png" alt="Клермон" style="display: none; width: 100px;">
+    <img id="dunkerque-logo" src="France(League2)/dunkerque.png" alt="Дюнкерк" style="display: none; width: 100px;">
+    <img id="grenoble-logo" src="France(League2)/grenoble.png" alt="Гренобль" style="display: none; width: 100px;">
+    <img id="guingamp-logo" src="France(League2)/guingamp.png" alt="Генгам" style="display: none; width: 100px;">
+    <img id="laval-logo" src="France(League2)/laval.png" alt="Лаваль" style="display: none; width: 100px;">
+    <img id="lorient-logo" src="France(League2)/lorient.png" alt="Лор`ян" style="display: none; width: 100px;">
+    <img id="martigues-logo" src="France(League2)/martigues.png" alt="Мартіг" style="display: none; width: 100px;">
+    <img id="metz-logo" src="France(League2)/metz.png" alt="Мец" style="display: none; width: 100px;">
+    <img id="paris-logo" src="France(League2)/paris.png" alt="Париж" style="display: none; width: 100px;">
+    <img id="pau-logo" src="France(League2)/pau.png" alt="По" style="display: none; width: 100px;">
+    <img id="red star-logo" src="France(League2)/red star.png" alt="Ред Стар" style="display: none; width: 100px;">
+    <img id="rodez-logo" src="France(League2)/rodez.png" alt="Родез" style="display: none; width: 100px;">
+    <img id="troyes-logo" src="France(League2)/troyes.png" alt="Труа" style="display: none; width: 100px;">
+<!-- Хорватія -->
+<button id="croatia-button" class="extra-button" style="display: none;" onclick="showCroatia()">Хорватія</button>
+<button id="nhl-button" class="extra-button" style="display: none;" onclick="showNHLTeams()">ХФЛ</button>
+<div class="nhl-dropdown" id="nhl-dropdown" style="display: none;">
+    <div class="team-buttons">
+        <button onclick="showTeamOptions('dynamo zagreb')" class="team-button" style="display: none;">Динамо Загреб</button>
+        <button onclick="showTeamOptions('gorica')" class="team-button" style="display: none;">Горіца</button>
+        <button onclick="showTeamOptions('hajduk split')" class="team-button" style="display: none;">Хайдук Спліт</button>
+        <button onclick="showTeamOptions('istra 1961')" class="team-button" style="display: none;">Істра 1961</button>
+        <button onclick="showTeamOptions('lokomotiv zagreb')" class="team-button" style="display: none;">Локомотив Загреб</button>
+        <button onclick="showTeamOptions('osijek')" class="team-button" style="display: none;">Осієк</button>
+        <button onclick="showTeamOptions('rijeka')" class="team-button" style="display: none;">Рієка</button>
+        <button onclick="showTeamOptions('sibenik')" class="team-button" style="display: none;">Шибеник</button>
+        <button onclick="showTeamOptions('slaven belupo')" class="team-button" style="display: none;">Белупо</button>
+        <button onclick="showTeamOptions('varazdin')" class="team-button" style="display: none;">Вараждин</button>
+        </div>
+    </div>
+    <img id="dynamo zagreb-logo" src="Croatia(NHL)/dynamo zagreb.png" alt="Динамо Загреб" style="display: none; width: 100px;">
+    <img id="gorica-logo" src="Croatia(NHL)/gorica.png" alt="Горіца" style="display: none; width: 100px;">
+    <img id="hajduk split-logo" src="Croatia(NHL)/hajduk split.png" alt="Хайдук Спліт" style="display: none; width: 100px;">
+    <img id="istra 1961-logo" src="Croatia(NHL)/istra 1961.png" alt="Істра 1961" style="display: none; width: 100px;">
+    <img id="lokomotiv zagreb-logo" src="Croatia(NHL)/lokomotiv zagreb.png" alt="Локомотив Загреб" style="display: none; width: 100px;">
+    <img id="osijek-logo" src="Croatia(NHL)/osijek.png" alt="Осієк" style="display: none; width: 100px;">
+    <img id="rijeka-logo" src="Croatia(NHL)/rijeka.png" alt="Рієка" style="display: none; width: 100px;">
+    <img id="sibenik-logo" src="Croatia(NHL)/sibenik.png" alt="Шибеник" style="display: none; width: 100px;">
+    <img id="slaven belupo-logo" src="Croatia(NHL)/slaven belupo.png" alt="Белупо" style="display: none; width: 100px;">
+    <img id="varazdin-logo" src="Croatia(NHL)/varazdin.png" alt="Вараждин" style="display: none; width: 100px;">
+<!-- Чехія -->
+<button id="czech-republic-button" class="extra-button" style="display: none;" onclick="showCzechRepublic()">Чехія</button>
+<button id="chance-liga-button" class="extra-button" style="display: none;" onclick="showChanceLigaTeams()">1 Ліга</button>
+<div class="chance-liga-dropdown" id="chance-liga-dropdown" style="display: none;">
+    <div class="team-buttons">
+        <button onclick="showTeamOptions('bohemians')" class="team-button" style="display: none;">Богеміанс</button>
+        <button onclick="showTeamOptions('ceske budejovice')" class="team-button" style="display: none;">Чеське Будейовіце</button>
+        <button onclick="showTeamOptions('dukla prague')" class="team-button" style="display: none;">Дукла Прага</button>
+        <button onclick="showTeamOptions('hradec kralove')" class="team-button" style="display: none;">Градец-Кралове</button>
+        <button onclick="showTeamOptions('jablonec')" class="team-button" style="display: none;">Яблонець</button>
+        <button onclick="showTeamOptions('karvina')" class="team-button" style="display: none;">Карвіна</button>
+        <button onclick="showTeamOptions('liberec')" class="team-button" style="display: none;">Ліберец</button>
+        <button onclick="showTeamOptions('mlada boleslav')" class="team-button" style="display: none;">Млада Болеслав</button>
+        <button onclick="showTeamOptions('ostrava')" class="team-button" style="display: none;">Острава</button>
+        <button onclick="showTeamOptions('pardubice')" class="team-button" style="display: none;">Пардубіце</button>
+        <button onclick="showTeamOptions('sigma olomouc')" class="team-button" style="display: none;">Сігма Оломоуц</button>
+        <button onclick="showTeamOptions('slavia prague')" class="team-button" style="display: none;">Славія Прага</button>
+        <button onclick="showTeamOptions('slovacko')" class="team-button" style="display: none;">Словацко</button>
+        <button onclick="showTeamOptions('sparta prague')" class="team-button" style="display: none;">Спарта Прага</button>
+        <button onclick="showTeamOptions('teplice')" class="team-button" style="display: none;">Тепліце</button>
+        <button onclick="showTeamOptions('viktoria plzen')" class="team-button" style="display: none;">Вікторія Плізень</button>
+        </div>
+    </div>
+    <img id="bohemians-logo" src="Czech Republic(ChanceLiga)/bohemians.png" alt="Богеміанс" style="display: none; width: 100px;">
+    <img id="ceske budejovice-logo" src="Czech Republic(ChanceLiga)/ceske budejovice.png" alt="Чеське Будейовіце" style="display: none; width: 100px;">
+    <img id="dukla prague-logo" src="Czech Republic(ChanceLiga)/dukla prague.png" alt="Дукла Прага" style="display: none; width: 100px;">
+    <img id="hradec kralove-logo" src="Czech Republic(ChanceLiga)/hradec kralove.png" alt="Градец-Кралове" style="display: none; width: 100px;">
+    <img id="jablonec-logo" src="Czech Republic(ChanceLiga)/jablonec.png" alt="Яблонець" style="display: none; width: 100px;">
+    <img id="karvina-logo" src="Czech Republic(ChanceLiga)/karvina.png" alt="Карвіна" style="display: none; width: 100px;">
+    <img id="liberec-logo" src="Czech Republic(ChanceLiga)/liberec.png" alt="Ліберец" style="display: none; width: 100px;">
+    <img id="mlada boleslav-logo" src="Czech Republic(ChanceLiga)/mlada boleslav.png" alt="Млада Болеслав" style="display: none; width: 100px;">
+    <img id="ostrava-logo" src="Czech Republic(ChanceLiga)/ostrava.png" alt="Острава" style="display: none; width: 100px;">
+    <img id="pardubice-logo" src="Czech Republic(ChanceLiga)/pardubice.png" alt="Пардубіце" style="display: none; width: 100px;">
+    <img id="sigma olomouc-logo" src="Czech Republic(ChanceLiga)/sigma olomouc.png" alt="Сігма Оломоуц" style="display: none; width: 100px;">
+    <img id="slavia prague-logo" src="Czech Republic(ChanceLiga)/slavia prague.png" alt="Славія Прага" style="display: none; width: 100px;">
+    <img id="slovacko-logo" src="Czech Republic(ChanceLiga)/slovacko.png" alt="Словацко" style="display: none; width: 100px;">
+    <img id="sparta prague-logo" src="Czech Republic(ChanceLiga)/sparta prague.png" alt="Спарта Прага" style="display: none; width: 100px;">
+    <img id="teplice-logo" src="Czech Republic(ChanceLiga)/teplice.png" alt="Тепліце" style="display: none; width: 100px;">
+    <img id="viktoria plzen-logo" src="Czech Republic(ChanceLiga)/viktoria plzen.png" alt="Вікторія Плізень" style="display: none; width: 100px;">
 
         <!-- Додайте текст для відображення -->
         <div id="team-options-text" style="display: none;">
